@@ -1,166 +1,549 @@
 <!DOCTYPE html>
-<html dir="ltr" lang="en" class="x-default-marker theme light classic">
-    <head>
-        <base href="/saeedeh-komasi/">
-        <meta charset="utf-8">
-        <title>saeedeh-komasi</title>
-        <meta name="app-name" content="export_website"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="_assets/df5e39281a996e6a.ltr.css" rel="stylesheet" integrity="sha512-GHdwERd5jQzpzSW3l9Q0LbpW7tA7zGh5CZnJHbpkUoCaP9oiip02XZ3BfnIGJz+UBT8V7DivB8zrk09e3cCfig==" crossorigin="anonymous">
-        <link href="_assets/static_font_4.ltr.css" rel="stylesheet">
-        <link href="_assets/90140f15bdce138a.runtime.js" rel="preload" as="script" crossorigin="anonymous" integrity="sha512-rHdSJItZkbQHpCI2Vr+nsCrv9zvCWGINrk2be++U3Cxhz4k9vi3dyM2razQ6Hj4ImGjvUGOC/npFLrdE9XZLdQ==" nonce="83eed0ff-ec50-4c6b-97dc-3ac9b1abef1e">
-        <link href="_assets/85e595197bb78173.s4le6a.vendor.js" rel="preload" as="script" crossorigin="anonymous" integrity="sha512-xRPQmKS1/HEJyCTmLIb3+Xrmks6BAFeK4H/ARiYolKOahlR/F+Nr/ewR7cm3GEKYWniJa/BT5cGwN0gboTQDqA==" nonce="83eed0ff-ec50-4c6b-97dc-3ac9b1abef1e">
-        <link href="_assets/5b9d39d011ce8497.vendor.js" rel="preload" as="script" crossorigin="anonymous" integrity="sha512-KfIFBmRKxyUTzLhz1S+gMCRVknyjSGpfxIVwJYjDJD+D97swvWMosmPAKH47qN+lvhI/G80dzaKe22n4hf+g4g==" nonce="83eed0ff-ec50-4c6b-97dc-3ac9b1abef1e">
-        <link href="_assets/f2c9c2439464f905.strings.js" rel="preload" as="script" crossorigin="anonymous" integrity="sha512-GfrUHzcG/Ez3GmNBpQnckFAO2w4FuenqY9aoJXvpOb8P4SV5wJZP1w2KQvR26z8V+snD5lCu3TqITCB4bzezYQ==" nonce="83eed0ff-ec50-4c6b-97dc-3ac9b1abef1e">
-        <link href="_assets/3cfc504a0216a88b.en.js" rel="preload" as="script" crossorigin="anonymous" integrity="sha512-SbPcYghqJ33wysj49WQPkAFwCq4uZDXPYsvbaLOaEbjP18LjN/tlp/ceHZXkHpacIWjyvB3G6HwxucWj8BuXdA==" nonce="83eed0ff-ec50-4c6b-97dc-3ac9b1abef1e">
-        <link href="_assets/db93fe4dc54edd08.js" rel="preload" as="script" crossorigin="anonymous" integrity="sha512-tUBw8kuC0J8Y+/JusAD6Ed8yg5SI/hVJJcHd+jDg9pq7j/Ie0rJFxQJqbT2UQ8KxYygbFURKmO6q10AKENwvUQ==" nonce="83eed0ff-ec50-4c6b-97dc-3ac9b1abef1e">
-        <meta name="referrer" content="strict-origin-when-cross-origin">
-        <meta property="og:title" content="saeedeh-komasi">
-        <meta property="og:type" content="website">
-        <link rel="shortcut icon" href="_assets/images/2d0b56e7e51cf11036ad8734bdb67e2d.png">
-        <link rel="icon" href="_assets/images/e53c4bd8da5e491d9ab09e7cf0daf874.png" sizes="192x192">
-        <link rel="apple-touch-icon" href="_assets/images/725b756a69a7d4c235070e51acd85560.png" sizes="180x180">
-        <script nonce="83eed0ff-ec50-4c6b-97dc-3ac9b1abef1e">
-            window['__canva_website_bootstrap__'] = JSON.parse('{"A":"DAHRnUvQXOA","B":"eyJhbGciOiJkaXIiLCJlbmMiOiJBMjU2R0NNIiwia2lkIjoia2lkLTE3Nzg0NzAzNjEzOTQifQ..26g5v9wdsvmNe_Ld.P4-tP-QuY72SiH7DGTsLiUYxGpO4EnRQoMBcoVZvtaFLPYkDuDu_MWlMfD3TMn8QkHQ-2CRAyA.EJ61ZsqKyeOS5N4L2A-DJA"}');
-        </script>
-        <script nonce="83eed0ff-ec50-4c6b-97dc-3ac9b1abef1e">
-            document.addEventListener('contextmenu', (e) => {
-                const isMedia = ['img', 'image', 'video', 'svg', 'picture'].some(tagName => tagName.localeCompare(e.target.tagName, undefined, {
-                    sensitivity: 'base'
-                }) === 0, );
-                isMedia && e.preventDefault();
-            }
-            );
-        </script>
-        <script nonce="83eed0ff-ec50-4c6b-97dc-3ac9b1abef1e">
-            const lang = navigator.language ? navigator.language : 'en';
-            window.canva_installFooter = (container) => {
-                if (!(container instanceof HTMLDivElement)) {
-                    return;
-                }
-                fetch('_footer?lang=' + encodeURIComponent(lang)).then(response => {
-                    if (response.status !== 200) {
-                        return;
-                    }
-                    response.text().then(footerStr => {
-                        container.innerHTML = '';
-                        const div = document.createElement('div');
-                        div.innerHTML = footerStr;
-                        for (const child of [...div.children]) {
-                            if (child.tagName.toLowerCase() !== 'script') {
-                                container.append(child);
-                            }
-                        }
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Saeedeh Komasi — Reservoir Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#17212B;
+    --ink-soft:#4B5A63;
+    --paper:#FFFFFF;
+    --paper-alt:#F1F4F3;
+    --deep:#123B3D;
+    --deep-2:#0C2B2C;
+    --rust:#B5541F;
+    --rust-soft:#E8C9B3;
+    --line:#DDE3E1;
+    --radius:2px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'Inter',sans-serif;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3{
+    font-family:'Fraunces',serif;
+    font-weight:600;
+    line-height:1.1;
+    margin:0;
+    color:var(--ink);
+  }
+  .mono{
+    font-family:'IBM Plex Mono',monospace;
+    letter-spacing:0.04em;
+  }
+  a{color:inherit;text-decoration:none;}
+  img,svg{display:block;max-width:100%;}
+  .wrap{
+    max-width:1080px;
+    margin:0 auto;
+    padding:0 32px;
+  }
+  section{padding:110px 0;}
+  .alt{background:var(--paper-alt);}
 
-                        ( () => {
-                            !function() {
-                                "use strict";
-                                const t = {
-                                    active: "active"
-                                }
-                                  , o = {
-                                    modalBackdrop: "modal_backdrop",
-                                    termsAndConditionsModal: "modal",
-                                    termsAndConditionsModalCloseButton: "form_close_initial",
-                                    reportButton: "form_report",
-                                    privacyPolicyModal: "privacy_policy_modal",
-                                    privacyPolicyModalCloseButton: "form_close_privacy_policy",
-                                    termsAndSupportFooterButton: "report_button",
-                                    privacyPolicyFooterButton: "privacy_policy_button"
-                                };
-                                !function() {
-                                    const c = document.getElementById(o.modalBackdrop);
-                                    null != c && (function(c) {
-                                        const e = document.getElementById(o.termsAndConditionsModal)
-                                          , n = document.getElementById(o.termsAndConditionsModalCloseButton)
-                                          , l = document.getElementById(o.reportButton)
-                                          , i = document.getElementById(o.termsAndSupportFooterButton);
-                                        if (null == e || null == n || null == l || null == i)
-                                            return;
-                                        l.onclick = () => {
-                                            const {origin: t, pathname: o} = window.location
-                                              , c = t + o
-                                              , e = l.dataset.reportUrl + encodeURIComponent(c);
-                                            window.open(e)
-                                        }
-                                        ;
-                                        const s = () => {
-                                            c.classList.remove(t.active),
-                                            e.classList.remove(t.active),
-                                            i.classList.remove(t.active),
-                                            i.focus(),
-                                            c.onclick = null
-                                        }
-                                        ;
-                                        n.onclick = s,
-                                        i.onclick = () => {
-                                            c.classList.add(t.active),
-                                            c.onclick = s,
-                                            e.classList.add(t.active),
-                                            i.classList.add(t.active)
-                                        }
-                                    }(c),
-                                    function(c) {
-                                        const e = document.getElementById(o.privacyPolicyModal)
-                                          , n = document.getElementById(o.privacyPolicyModalCloseButton)
-                                          , l = document.getElementById(o.privacyPolicyFooterButton);
-                                        if (null == e || null == n || null == l)
-                                            return;
-                                        const i = () => {
-                                            c.classList.remove(t.active),
-                                            e.classList.remove(t.active),
-                                            l.classList.remove(t.active),
-                                            l.focus(),
-                                            c.onclick = null
-                                        }
-                                        ;
-                                        n.onclick = i,
-                                        l.onclick = () => {
-                                            c.classList.add(t.active),
-                                            c.onclick = i,
-                                            e.classList.add(t.active),
-                                            l.classList.add(t.active)
-                                        }
-                                    }(c))
-                                }()
-                            }();
-                        }
-                        )();
-                    }
-                    );
-                }
-                );
-            }
-        </script>
-        <script nonce="83eed0ff-ec50-4c6b-97dc-3ac9b1abef1e">
-            window.C_CAPTCHA_IMPLEMENTATION = 'RECAPTCHA';
-        </script>
-        <script nonce="83eed0ff-ec50-4c6b-97dc-3ac9b1abef1e">
-            window.C_CAPTCHA_KEY = '6LdpNmIrAAAAAHQVezN3pBAfDjQQ2qUpo881f24o';
-        </script>
-    </head>
-    <body>
-        <script nonce="83eed0ff-ec50-4c6b-97dc-3ac9b1abef1e">
-            document.documentElement.classList.replace('adaptive', window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
-        </script>
-        <div id="root"></div>
-        <script nonce="83eed0ff-ec50-4c6b-97dc-3ac9b1abef1e">
-            (function() {
-                window['__canva_public_path__'] = '_assets\/';
-                window['bootstrap'] = JSON.parse('{"base":{"A?":"B","L":false,"N":false,"E":"b5f73f220534ed44689d42831161b3ef91f01399","j":"1661887","K":1786215626,"F":{"A?":"B"},"G":"CLIENT_FULL","I":"A","O":{"A?":"B"},"M":"/_online","U":[],"V":[],"k":true,"a":{"K":"export_website","H":{}},"d":{"A":"wss://www.canva.com/_stream","B":{"F":"export_website"},"C":8388608},"b":{"A?":"H","C":{"a":"WEB"},"D":{"a":"WEB","c":"en"},"E":{},"P":[],"Q":[],"R":false,"S":false}},"page":{"A":{"B":{"A?":"A","A":"TAEXfxtKgiU","B":1},"C":{"A":1366.0,"B":768.0,"C":"D"},"Q":[],"R":[],"P":"en","D":"saeedeh-komasi","E":"","F":[],"d":{},"G":{},"Y":{},"a":[],"b":[],"V":[],"W":[],"A":[{"A?":"i","Z":{"A?":"A","A":"TAEXfxtKgiU","B":1},"a":"PBc0XGz91pNmdV1P","R":false,"S":false,"U":false,"Q":{},"K":10,"W":[],"X":[],"H":[],"L":{},"C":{"A":1366.0,"B":768.0,"C":"D"},"G":{"A":"EAFBwclJCGM","B":1,"C":1},"D":{"C":"#060606","D":0.0,"F":false,"J":false,"G":false,"H":false},"r":[],"E":[{"A?":"H","A":319.46380285714287,"B":780.5714285714284,"D":487.857142857143,"C":252.20389831055923,"E":0.0,"F":0.0,"BD":[],"BE":[],"BA":[],"BB":[],"X":{"A?":"B","A":6},"Q":false,"S":false,"P":[],"5":{},"T":{},"W":{},"_":"LBlV4hZYQbcFjF9j","b":487.857142857143,"a":252.20389831055923,"y":{},"e":{},"c":[{"A?":"K","A":0.0,"B":1.1368683772161603E-13,"D":487.8571428571429,"C":68.58668,"E":0.0,"F":0.0,"BD":[],"BE":[],"BA":[],"BB":[],"Q":false,"S":false,"N":"title","P":[],"5":{},"T":{},"W":{},"_":"LBWz4c5bZWMwv9yj","a":{"A":[{"A?":"A","A":"Saeedeh Komasi\\n"}],"B":[{"A?":"A","A":{"color":{"B":"#fff6ea"},"font-family":{"B":"YAFdJsSpokU,0"},"font-size":{"B":"57.9334"},"font-style":{"B":"normal"},"font-weight":{"B":"normal"},"leading":{"B":"1000.0"},"text-align":{"B":"center"},"text-transform":{"B":"none"},"tracking":{"B":"-50.0"}}},{"A?":"B","A":14},{"A?":"A","A":{"decoration":{"B":"none"},"direction":{"B":"ltr"},"head-indent":{"B":"0.0"},"kerning":{"B":"0.0"},"link":{"B":""},"list-level":{"B":"0.0"},"list-marker":{"B":"none"},"style":{"B":"body"}}},{"A?":"B","A":1},{"A?":"A","A":{"color":{},"decoration":{},"direction":{},"font-family":{},"font-size":{},"font-style":{},"font-weight":{},"head-indent":{},"kerning":{},"leading":{},"link":{},"list-level":{},"list-marker":{},"style":{},"text-align":{},"text-transform":{},"tracking":{}}}],"E":{},"G":{}},"b":{"A":[15]},"d":"B","l":false,"g":false,"h":"A"},{"A?":"K","A":79.44572095238084,"B":1.1368683772161603E-13,"D":487.8571428571429,"C":76.0,"E":0.0,"F":0.0,"BD":[],"BE":[],"BA":[],"BB":[],"Q":false,"S":false,"N":"subtitle","P":[],"5":{},"T":{},"W":{},"_":"LBxWXf3VY6HGDQv0","a":{"A":[{"A?":"A","A":"Petroleum engineer \\nHydrocarbon reservoirs\\n"}],"B":[{"A?":"A","A":{"color":{"B":"#fff6ea"},"font-family":{"B":"YAFdJsSpokU,0"},"font-size":{"B":"32.0"},"font-style":{"B":"normal"},"font-weight":{"B":"normal"},"leading":{"B":"1200.0"},"text-align":{"B":"center"},"text-transform":{"B":"none"},"tracking":{"B":"100.0"}}},{"A?":"B","A":42},{"A?":"A","A":{"decoration":{"B":"none"},"direction":{"B":"ltr"},"head-indent":{"B":"0.0"},"kerning":{"B":"0.0"},"link":{"B":""},"list-level":{"B":"0.0"},"list-marker":{"B":"none"},"spacing":{"B":"0.0"},"style":{"B":"body"}}},{"A?":"B","A":1},{"A?":"A","A":{"color":{},"decoration":{},"direction":{},"font-family":{},"font-size":{},"font-style":{},"font-weight":{},"head-indent":{},"kerning":{},"leading":{},"link":{},"list-level":{},"list-marker":{},"spacing":{},"style":{},"text-align":{},"text-transform":{},"tracking":{}}}],"E":{},"G":{}},"b":{"A":[20,23]},"d":"A","l":false,"g":false,"h":"A"},{"A?":"J","A":206.15951545566847,"B":134.14144063785906,"D":219.574261581425,"C":46.04438285489076,"E":0.0,"F":0.0,"BD":[],"BE":[],"BA":[],"BB":[],"Q":false,"S":false,"P":[],"5":{},"T":{},"W":{},"_":"LBVp7x8Vt7m8nPxd","a":{"A":0.0,"B":0.0,"D":162.0,"C":41.0},"b":[{"A":"M162,0v1v39v1h-1H1H0v-1V1V0h1h160H162z","B":{"A":false,"C":"#56595f","D":0.0,"F":false,"J":false,"G":false,"H":false},"D":0.0}],"d":[],"c":{"A":{"A":5.760885453662552,"B":7.135179716917205,"D":149.5753290013554,"C":28.764486346414483},"B":234.70017592748843,"C":39.5861843126106,"D":"A","E":"A"},"f":[],"g":[]},{"A?":"K","A":220.8631044571196,"B":158.68495551714025,"D":169.4872318228626,"C":17.06666,"E":0.0,"F":0.0,"BD":[],"BE":[],"BA":[],"BB":[],"Q":false,"S":false,"N":"footer","P":[],"5":{},"T":{},"W":{},"_":"LBk3YzbZKHVhtVnq","a":{"A":[{"A?":"A","A":"Reach out\\n"}],"B":[{"A?":"A","A":{"color":{"B":"#fff6ea"},"font-family":{"B":"YAFdJsSpokU,0"},"font-size":{"B":"14.6667"},"font-style":{"B":"normal"},"font-weight":{"B":"normal"},"list-level":{"B":"1.0"},"text-align":{"B":"center"},"text-transform":{"B":"none"},"tracking":{"B":"0.0"}}},{"A?":"B","A":9},{"A?":"A","A":{"decoration":{"B":"none"},"direction":{"B":"ltr"},"kerning":{"B":"0.0"},"link":{"B":""},"style":{"B":"body"}}},{"A?":"B","A":1},{"A?":"A","A":{"color":{},"decoration":{},"direction":{},"font-family":{},"font-size":{},"font-style":{},"font-weight":{},"kerning":{},"link":{},"list-level":{},"style":{},"text-align":{},"text-transform":{},"tracking":{}}}],"E":{},"G":{}},"b":{"A":[10]},"d":"B","l":false,"g":true,"h":"A"}],"d":[]},{"A?":"J","A":126.18358466671418,"B":237.4123399301514,"D":469.2258759065804,"C":515.6328306665717,"E":0.0,"F":0.1,"BD":[],"BE":[],"BA":[],"BB":[],"X":{"A?":"B","A":8},"Q":false,"S":false,"P":[],"5":{},"T":{},"W":{},"_":"LB1JS5DTgbqM0YWn","a":{"A":0.0,"B":0.0,"D":455.0,"C":500.0},"b":[{"A":"M227.5,0C99.1,0,0,90.1,0,229.7C0,328.8,0,500,0,500h227.5H455c0,0,0-171.2,0-270.3  C455,90.1,355.9,0,227.5,0z","B":{"A":true,"I":{"A":"VAHRtGlxjHU","M":"VBmybYSLfQXFcC6B","B":{"A":0.0,"B":-275.1752988110916,"D":888.1578947368421,"C":499.99999999999994,"E":0.0},"C":0.0,"J":{},"N":[{"A?":"N","A":0,"B":125859,"C":{"0":{"A":"A","B":0.57},"125859":{"A":"A","B":0.57}},"y":{"A":"Cinematic_8.png"}}],"O":[],"Q":[],"R":[],"F":"A","I":false,"G":1.0},"D":0.0,"F":false,"J":false,"G":false,"H":false},"D":0.0}],"d":[],"c":{"A":{"A":0.0,"B":0.0,"D":455.0,"C":500.0},"B":455.0,"C":500.0,"D":"A","E":"A"},"e":{"A":false,"B":false},"f":[],"g":[]}],"I":[]},{"A?":"i","Z":{"A?":"A","A":"TAEXfxtKgiU","B":1},"a":"PB7VTQynbJB43sxg","R":false,"S":false,"U":false,"Q":{},"W":[],"X":[],"H":[],"L":{},"C":{"A":1366.0,"B":768.0,"C":"D"},"G":{"A":"EAFBwclJCGM","B":1,"C":2},"D":{"C":"#060606","D":0.0,"F":false,"J":false,"G":false,"H":false},"r":[],"E":[{"A?":"H","A":146.09696600722873,"B":195.14285714285688,"D":996.6697715827099,"C":358.20426904903945,"E":0.0,"F":0.0,"BD":[],"BE":[],"BA":[],"BB":[],"Q":false,"S":false,"P":[],"5":{},"T":{},"W":{},"_":"LBCzLq1BVyY639YM","b":996.6697715827099,"a":358.20426904903945,"y":{},"e":{},"c":[{"A?":"K","A":155.40423904903946,"B":2.2737367544323206E-13,"D":996.6697715827099,"C":202.80003,"E":0.0,"F":0.0,"BD":[],"BE":[],"BA":[],"BB":[],"Q":false,"S":false,"N":"paragraph1","P":[],"5":{},"T":{},"W":{},"_":"LBN9c5HxS9CB3gW2","a":{"A":[{"A?":"A","A":"I enjoy understanding the underlying causes of phenomena and solving complex problems rather than simply performing routine tasks. When faced with inconsistent data or unexpected results, I do not accept them at face value; instead, I investigate the root causes and strive to reach reliable conclusions through a combination of experimentation, simulation, and data analysis. I am a fast learner with strong analytical thinking, high attention to detail, and a keen interest in research and development projects as well as reservoir engineering studies.\\n"}],"B":[{"A?":"A","A":{"color":{"B":"#fff6ea"},"font-family":{"B":"YAFdJsSpokU,0"},"font-size":{"B":"23.9999"},"font-style":{"B":"normal"},"font-weight":{"B":"normal"},"leading":{"B":"1500.0"},"list-level":{"B":"1.0"},"text-align":{"B":"justify"},"text-transform":{"B":"none"},"tracking":{"B":"0.0"}}},{"A?":"B","A":554},{"A?":"A","A":{"decoration":{"B":"none"},"direction":{"B":"ltr"},"head-indent":{"B":"0.0"},"kerning":{"B":"0.0"},"link":{"B":""},"list-marker":{"B":"none"},"spacing":{"B":"0.0"},"style":{"B":"body"}}},{"A?":"B","A":1},{"A?":"A","A":{"color":{},"decoration":{},"direction":{},"font-family":{},"font-size":{},"font-style":{},"font-weight":{},"head-indent":{},"kerning":{},"leading":{},"link":{},"list-level":{},"list-marker":{},"spacing":{},"style":{},"text-align":{},"text-transform":{},"tracking":{}}}],"E":{},"G":{}},"b":{"A":[86,93,98,90,100,88]},"d":"A","l":false,"g":false,"h":"A"},{"A?":"K","A":34.66032811557517,"B":2.2737367544323206E-13,"D":996.6697715827099,"C":69.73334,"E":0.0,"F":0.0,"BD":[],"BE":[],"BA":[],"BB":[],"Q":false,"S":false,"N":"heading1","P":[],"5":{},"T":{},"W":{},"_":"LBgzW4SyhLC1MQf3","a":{"A":[{"A?":"A","A":"About Me\\n"}],"B":[{"A?":"A","A":{"color":{"B":"#fff6ea"},"font-family":{"B":"YAFdJsSpokU,0"},"font-size":{"B":"58.6667"},"font-style":{"B":"normal"},"font-weight":{"B":"normal"},"leading":{"B":"1000.0"},"text-transform":{"B":"none"},"tracking":{"B":"-50.0"}}},{"A?":"B","A":8},{"A?":"A","A":{"decoration":{"B":"none"},"direction":{"B":"ltr"},"head-indent":{"B":"0.0"},"kerning":{"B":"0.0"},"link":{"B":""},"list-level":{"B":"0.0"},"list-marker":{"B":"none"},"spacing":{"B":"0.0"},"style":{"B":"body"},"text-align":{"B":"start"}}},{"A?":"B","A":1},{"A?":"A","A":{"color":{},"decoration":{},"direction":{},"font-family":{},"font-size":{},"font-style":{},"font-weight":{},"head-indent":{},"kerning":{},"leading":{},"link":{},"list-level":{},"list-marker":{},"spacing":{},"style":{},"text-align":{},"text-transform":{},"tracking":{}}}],"E":{},"G":{}},"b":{"A":[9]},"d":"B","l":false,"g":true,"h":"A"},{"A?":"K","A":-2.4868995751603507E-14,"B":2.2737367544323206E-13,"D":996.6697715827099,"C":21.31334,"E":0.0,"F":0.0,"BD":[],"BE":[],"BA":[],"BB":[],"Q":false,"S":false,"N":"heading5","P":[],"5":{},"T":{},"W":{},"_":"LBvRvmjYb0zxk8SR","a":{"A":[{"A?":"A","A":"Who i am\\n"}],"B":[{"A?":"A","A":{"color":{"B":"#fff6ea"},"font-family":{"B":"YAFdJsSpokU,0"},"font-size":{"B":"18.4333"},"font-style":{"B":"normal"},"font-weight":{"B":"normal"},"list-level":{"B":"1.0"},"text-transform":{"B":"none"},"tracking":{"B":"100.0"}}},{"A?":"B","A":8},{"A?":"A","A":{"decoration":{"B":"none"},"direction":{"B":"ltr"},"kerning":{"B":"0.0"},"link":{"B":""},"style":{"B":"body"}}},{"A?":"B","A":1},{"A?":"A","A":{"color":{},"decoration":{},"direction":{},"font-family":{},"font-size":{},"font-style":{},"font-weight":{},"kerning":{},"link":{},"list-level":{},"style":{},"text-transform":{},"tracking":{}}}],"E":{},"G":{}},"b":{"A":[9]},"d":"A","l":false,"g":true,"h":"A"},{"A?":"U","A":139.00433470171683,"B":0.3242451384515448,"D":996.3455264442587,"C":2.0,"E":0.0,"F":0.0,"BD":[],"BE":[],"BA":[],"BB":[],"Q":false,"S":false,"P":[],"5":{},"T":{},"W":{},"_":"LBFFfHwkSl36xK3k","a":2,"b":{"C":{"A":140.00433470171683,"B":0.32424513845148795}},"c":{"C":{"A":140.00433470171683,"B":996.6697715827102}},"d":"#56595f","e":[],"f":true,"g":[],"h":[]}],"d":[]}],"I":[]},{"A?":"i","Z":{"A?":"A","A":"TAEXfxtKgiU","B":1},"a":"PBBzL14w9lBnYwQT","R":false,"S":false,"U":false,"Q":{},"W":[],"X":[],"H":[],"L":{},"C":{"A":1366.0,"B":768.0,"C":"D"},"G":{"A":"EAFBwclJCGM","B":1,"C":3},"D":{"C":"#060606","D":0.0,"F":false,"J":false,"G":false,"H":false},"r":[],"E":[{"A?":"H","A":128.4926951763294,"B":556.2789406446543,"D":675.6127635301277,"C":222.81363811557526,"E":0.0,"F":0.0,"BD":[],"BE":[],"BA":[],"BB":[],"Q":false,"S":false,"P":[],"5":{},"T":{},"W":{},"_":"LBWK7CNrdSsFMs2z","b":675.6127635301277,"a":222.81363811557526,"y":{},"e":{},"c":[{"A?":"K","A":35.61366811557511,"B":141.25073882836233,"D":534.3620247017653,"C":187.19997,"E":0.0,"F":0.0,"BD":[],"BE":[],"BA":[],"BB":[],"Q":false,"S":false,"N":"paragraph1","P":[],"5":{},"T":{},"W":{},"_":"LBgk7z6tFjdrmXP6","a":{"A":[{"A?":"A","A":"Iran University of Science and Technology, Tehran, Iran\\n\\nGPA: 18.79/20\\nAdmitted through the Exceptional Talents Program\\nTitle: Synthesis and Evaluation of a Salinity-Resistant Natural Surfactant for Enhanced Oil Recovery from a Tight Carbonate Reservoir\\nRanked 2nd among M.Sc. Petroleum Engineering classmates.\\n\\n"}],"B":[{"A?":"A","A":{"color":{"B":"#fff6ea"},"font-family":{"B":"YAFdJsSpokU,0"},"font-size":{"B":"16.0001"},"font-style":{"B":"normal"},"font-weight":{"B":"normal"},"leading":{"B":"1500.0"},"text-transform":{"B":"none"},"tracking":{"B":"0.0"}}},{"A?":"B","A":311},{"A?":"A","A":{"decoration":{"B":"none"},"direction":{"B":"ltr"},"head-indent":{"B":"0.0"},"kerning":{"B":"0.0"},"link":{"B":""},"list-level":{"B":"1.0"},"list-marker":{"B":"none"},"spacing":{"B":"0.0"},"style":{"B":"body"},"text-align":{"B":"start"}}},{"A?":"B","A":1},{"A?":"A","A":{"color":{},"decoration":{},"direction":{},"font-family":{},"font-size":{},"font-style":{},"font-weight":{},"head-indent":{},"kerning":{},"leading":{},"link":{},"list-level":{},"list-marker":{},"spacing":{},"style":{},"text-align":{},"text-transform":{},"tracking":{}}}],"E":{},"G":{}},"b":{"A":[56,1,14,49,79,55,57,1]},"d":"A","l":false,"g":false,"h":"A"},{"A?":"K","A":-1.4921397450962104E-13,"B":141.25073882836227,"D":534.3620247017654,"C":22.26668,"E":0.0,"F":0.0,"BD":[],"BE":[],"BA":[],"BB":[],"Q":false,"S":false,"N":"heading4","P":[],"5":{},"T":{},"W":{},"_":"LBdB49dBhwFQS4HY","a":{"A":[{"A?":"A","A":"M.Sc. in Petroleum Engineering\\n"}],"B":[{"A?":"A","A":{"color":{"B":"#fff6ea"},"font-family":{"B":"YAFdJsSpokU,0"},"font-size":{"B":"18.6666"},"font-style":{"B":"normal"},"font-weight":{"B":"normal"},"list-level":{"B":"1.0"},"text-transform":{"B":"none"},"tracking":{"B":"100.0"}}},{"A?":"B","A":30},{"A?":"A","A":{"decoration":{"B":"none"},"direction":{"B":"ltr"},"head-indent":{"B":"0.0"},"kerning":{"B":"0.0"},"leading":{"B":"1400.0"},"link":{"B":""},"list-marker":{"B":"none"},"spacing":{"B":"0.0"},"style":{"B":"body"},"text-align":{"B":"start"}}},{"A?":"B","A":1},{"A?":"A","A":{"color":{},"decoration":{},"direction":{},"font-family":{},"font-size":{},"font-style":{},"font-weight":{},"head-indent":{},"kerning":{},"leading":{},"link":{},"list-level":{},"list-marker":{},"spacing":{},"style":{},"text-align":{},"text-transform":{},"tracking":{}}}],"E":{},"G":{}},"b":{"A":[31]},"d":"A","l":false,"g":false,"h":"A"},{"A?":"K","A":-8.171241461241152E-14,"B":0.0,"D":102.46614541674217,"C":19.88998,"E":0.0,"F":0.0,"BD":[],"BE":[],"BA":[],"BB":[],"Q":false,"S":false,"N":"heading5","P":[],"5":{},"T":{},"W":{},"_":"LBQZfSgDszJhmYrc","a":{"A":[{"A?":"A","A":"2019-2022\\n"}],"B":[{"A?":"A","A":{"color":{"B":"#fff6ea"},"font-family":{"B":"YAFdJsSpokU,0"},"font-size":{"B":"17.0334"},"font-style":{"B":"normal"},"font-weight":{"B":"normal"},"leading":{"B":"1500.0"},"text-transform":{"B":"none"},"tracking":{"B":"100.0"}}},{"A?":"B","A":9},{"A?":"A","A":{"spacing":{"B":"0.0"}}},{"A?":"B","A":1},{"A?":"A","A":{"color":{},"font-family":{},"font-size":{},"font-style":{},"font-weight":{},"leading":{},"spacing":{},"text-transform":{},"tracking":{}}}],"E":{},"G":{}},"b":{"A":[10]},"d":"A","l":false,"g":false,"h":"A"}],"d":[]},{"A?":"H","A":343.68856063417707,"B":556.2789406446543,"D":675.6127635301277,"C":150.81363811557523,"E":0.0,"F":0.0,"BD":[],"BE":[],"BA":[],"BB":[],"Q":false,"S":false,"P":[],"5":{},"T":{},"W":{},"_":"LBVZLxLf8qjwCQPY","b":675.6127635301277,"a":150.81363811557523,"y":{},"e":{},"c":[{"A?":"K","A":35.61366811557512,"B":141.25073882836233,"D":534.3620247017653,"C":115.19997000000001,"E":0.0,"F":0.0,"BD":[],"BE":[],"BA":[],"BB":[],"Q":false,"S":false,"N":"paragraph1","P":[],"5":{},"T":{},"W":{},"_":"LB5QmG1lXSCMngcC","a":{"A":[{"A?":"A","A":"Shiraz University, Shiraz, Iran\\n\\nGPA: 17.44/20\\nRanked among the top 15% of undergraduate entrants.\\nSkills\\n"}],"B":[{"A?":"A","A":{"color":{"B":"#fff6ea"},"font-family":{"B":"YAFdJsSpokU,0"},"font-size":{"B":"16.0001"},"font-style":{"B":"normal"},"font-weight":{"B":"normal"},"leading":{"B":"1500.0"},"text-transform":{"B":"none"},"tracking":{"B":"0.0"}}},{"A?":"B","A":105},{"A?":"A","A":{"decoration":{"B":"none"},"direction":{"B":"ltr"},"head-indent":{"B":"0.0"},"kerning":{"B":"0.0"},"link":{"B":""},"list-level":{"B":"1.0"},"list-marker":{"B":"none"},"spacing":{"B":"0.0"},"style":{"B":"body"},"text-align":{"B":"start"}}},{"A?":"B","A":1},{"A?":"A","A":{"color":{},"decoration":{},"direction":{},"font-family":{},"font-size":{},"font-style":{},"font-weight":{},"head-indent":{},"kerning":{},"leading":{},"link":{},"list-level":{},"list-marker":{},"spacing":{},"style":{},"text-align":{},"text-transform":{},"tracking":{}}}],"E":{},"G":{}},"b":{"A":[32,1,14,52,7]},"d":"A","l":false,"g":false,"h":"A"},{"A?":"K","A":-1.3500311979441904E-13,"B":141.25073882836227,"D":534.3620247017654,"C":22.26668,"E":0.0,"F":0.0,"BD":[],"BE":[],"BA":[],"BB":[],"Q":false,"S":false,"N":"heading4","P":[],"5":{},"T":{},"W":{},"_":"LBxSSD8YGlXnj1YC","a":{"A":[{"A?":"A","A":"B.Sc. in Petroleum Engineering\\n"}],"B":[{"A?":"A","A":{"color":{"B":"#fff6ea"},"font-family":{"B":"YAFdJsSpokU,0"},"font-size":{"B":"18.6666"},"font-style":{"B":"normal"},"font-weight":{"B":"normal"},"list-level":{"B":"1.0"},"text-transform":{"B":"none"},"tracking":{"B":"100.0"}}},{"A?":"B","A":30},{"A?":"A","A":{"decoration":{"B":"none"},"direction":{"B":"ltr"},"head-indent":{"B":"0.0"},"kerning":{"B":"0.0"},"leading":{"B":"1400.0"},"link":{"B":""},"list-marker":{"B":"none"},"spacing":{"B":"0.0"},"style":{"B":"body"},"text-align":{"B":"start"}}},{"A?":"B","A":1},{"A?":"A","A":{"color":{},"decoration":{},"direction":{},"font-family":{},"font-size":{},"font-style":{},"font-weight":{},"head-indent":{},"kerning":{},"leading":{},"link":{},"list-level":{},"list-marker":{},"spacing":{},"style":{},"text-align":{},"text-transform":{},"tracking":{}}}],"E":{},"G":{}},"b":{"A":[31]},"d":"A","l":false,"g":false,"h":"A"},{"A?":"K","A":4.618527782440651E-14,"B":0.0,"D":101.19147365667595,"C":20.67998,"E":0.0,"F":0.0,"BD":[],"BE":[],"BA":[],"BB":[],"Q":false,"S":false,"N":"heading5","P":[],"5":{},"T":{},"W":{},"_":"LBm4hNH9zG2Gst54","a":{"A":[{"A?":"A","A":"2015-2019\\n"}],"B":[{"A?":"A","A":{"color":{"B":"#fff6ea"},"font-family":{"B":"YAFdJsSpokU,0"},"font-size":{"B":"17.7334"},"font-style":{"B":"normal"},"font-weight":{"B":"normal"},"leading":{"B":"1500.0"},"text-transform":{"B":"none"},"tracking":{"B":"100.0"}}},{"A?":"B","A":9},{"A?":"A","A":{"decoration":{"B":"none"},"direction":{"B":"ltr"},"head-indent":{"B":"0.0"},"kerning":{"B":"0.0"},"link":{"B":""},"list-level":{"B":"0.0"},"list-marker":{"B":"none"},"spacing":{"B":"0.0"},"style":{"B":"body"},"text-align":{"B":"start"}}},{"A?":"B","A":1},{"A?":"A","A":{"color":{},"decoration":{},"direction":{},"font-family":{},"font-size":{},"font-style":{},"font-weight":{},"head-indent":{},"kerning":{},"leading":{},"link":{},"list-level":{},"list-marker":{},"spacing":{},"style":{},"text-align":{},"text-transform":{},"tracking":{}}}],"E":{},"G":{}},"b":{"A":[10]},"d":"A","l":false,"g":false,"h":"A"}],"d":[]},{"A?":"K","A":111.92651427554563,"B":112.54986522911065,"D":310.1078167115902,"C":128.0,"E":0.0,"F":0.0,"BD":[],"BE":[],"BA":[],"BB":[],"Q":false,"S":false,"N":"heading2","P":[],"5":{},"T":{},"W":{},"_":"LBWnqPyq0Rdx5cKd","a":{"A":[{"A?":"A","A":"Experience & Education\\n"}],"B":[{"A?":"A","A":{"color":{"B":"#fff6ea"},"font-family":{"B":"YAFdJsSpokU,0"},"font-size":{"B":"53.3334"},"font-style":{"B":"normal"},"font-weight":{"B":"normal"},"leading":{"B":"1200.0"},"text-transform":{"B":"none"},"tracking":{"B":"-50.0"}}},{"A?":"B","A":22},{"A?":"A","A":{"decoration":{"B":"none"},"direction":{"B":"ltr"},"head-indent":{"B":"0.0"},"kerning":{"B":"0.0"},"link":{"B":""},"list-level":{"B":"0.0"},"list-marker":{"B":"none"},"spacing":{"B":"0.0"},"style":{"B":"body"}}},{"A?":"B","A":1},{"A?":"A","A":{"color":{},"decoration":{},"direction":{},"font-family":{},"font-size":{},"font-style":{},"font-weight":{},"head-indent":{},"kerning":{},"leading":{},"link":{},"list-level":{},"list-marker":{},"spacing":{},"style":{},"text-transform":{},"tracking":{}}}],"E":{},"G":{}},"b":{"A":[13,10]},"d":"A","l":false,"g":true,"h":"A"},{"A?":"H","A":508.3863618844249,"B":556.2789406446543,"D":675.6127635301277,"C":150.8136381155753,"E":0.0,"F":0.0,"BD":[],"BE":[],"BA":[],"BB":[],"Q":false,"S":false,"P":[],"5":{},"T":{},"W":{},"_":"LBzmd36XXNbcCKGY","b":675.6127635301277,"a":150.8136381155753,"y":{},"e":{},"c":[{"A?":"K","A":-1.1368683772161603E-13,"B":0.0,"D":103.74081717680792,"C":19.96,"E":0.0,"F":0.0,"BD":[],"BE":[],"BA":[],"BB":[],"Q":false,"S":false,"N":"heading5","P":[],"5":{},"T":{},"W":{},"_":"LBsRBhVZhtNBNp1k","a":{"A":[{"A?":"A","A":"2023-2026\\n"}],"B":[{"A?":"A","A":{"color":{"B":"#fff6ea"},"font-family":{"B":"YAFdJsSpokU,0"},"font-size":{"B":"16.8"},"font-style":{"B":"normal"},"font-weight":{"B":"normal"},"leading":{"B":"1500.0"},"text-transform":{"B":"none"},"tracking":{"B":"100.0"}}},{"A?":"B","A":9},{"A?":"A","A":{"decoration":{"B":"none"},"direction":{"B":"ltr"},"head-indent":{"B":"0.0"},"kerning":{"B":"0.0"},"link":{"B":""},"list-level":{"B":"0.0"},"list-marker":{"B":"none"},"spacing":{"B":"0.0"},"style":{"B":"body"},"text-align":{"B":"start"}}},{"A?":"B","A":1},{"A?":"A","A":{"color":{},"decoration":{},"direction":{},"font-family":{},"font-size":{},"font-style":{},"font-weight":{},"head-indent":{},"kerning":{},"leading":{},"link":{},"list-level":{},"list-marker":{},"spacing":{},"style":{},"text-align":{},"text-transform":{},"tracking":{}}}],"E":{},"G":{}},"b":{"A":[10]},"d":"A","l":false,"g":false,"h":"A"},{"A?":"K","A":35.61366811557507,"B":141.25073882836233,"D":534.3620247017653,"C":115.19997000000001,"E":0.0,"F":0.0,"BD":[],"BE":[],"BA":[],"BB":[],"Q":false,"S":false,"N":"paragraph1","P":[],"5":{},"T":{},"W":{},"_":"LBNFbNTHVbHwTB05","a":{"A":[{"A?":"A","A":"Research & Development Specialist\\n\\nConducted reservoir studies to identify the most suitable injection water and minimize scale formation risks in one of Iran’s oil fields.\\nEvaluated various water injection scenarios based on reservoir conditions.\\n"}],"B":[{"A?":"A","A":{"color":{"B":"#fff6ea"},"font-family":{"B":"YAFdJsSpokU,0"},"font-size":{"B":"16.0001"},"font-style":{"B":"normal"},"font-weight":{"B":"normal"},"leading":{"B":"1500.0"},"text-transform":{"B":"none"},"tracking":{"B":"0.0"}}},{"A?":"B","A":247},{"A?":"A","A":{"decoration":{"B":"none"},"direction":{"B":"ltr"},"head-indent":{"B":"0.0"},"kerning":{"B":"0.0"},"link":{"B":""},"list-level":{"B":"1.0"},"list-marker":{"B":"none"},"spacing":{"B":"0.0"},"style":{"B":"body"},"text-align":{"B":"start"}}},{"A?":"B","A":1},{"A?":"A","A":{"color":{},"decoration":{},"direction":{},"font-family":{},"font-size":{},"font-style":{},"font-weight":{},"head-indent":{},"kerning":{},"leading":{},"link":{},"list-level":{},"list-marker":{},"spacing":{},"style":{},"text-align":{},"text-transform":{},"tracking":{}}}],"E":{},"G":{}},"b":{"A":[34,1,74,64,75]},"d":"A","l":false,"g":false,"h":"A"},{"A?":"K","A":-1.9539925233402755E-13,"B":141.25073882836227,"D":534.3620247017654,"C":22.26668,"E":0.0,"F":0.0,"BD":[],"BE":[],"BA":[],"BB":[],"Q":false,"S":false,"N":"heading4","P":[],"5":{},"T":{},"W":{},"_":"LBZN2DxTBChFd7CC","a":{"A":[{"A?":"A","A":"PetroVision Pasargad\\n"}],"B":[{"A?":"A","A":{"color":{"B":"#fff6ea"},"font-family":{"B":"YAFdJsSpokU,0"},"font-size":{"B":"18.6666"},"font-style":{"B":"normal"},"font-weight":{"B":"normal"},"list-level":{"B":"1.0"},"text-transform":{"B":"none"},"tracking":{"B":"100.0"}}},{"A?":"B","A":20},{"A?":"A","A":{"decoration":{"B":"none"},"direction":{"B":"ltr"},"head-indent":{"B":"0.0"},"kerning":{"B":"0.0"},"leading":{"B":"1400.0"},"link":{"B":""},"list-marker":{"B":"none"},"spacing":{"B":"0.0"},"style":{"B":"body"},"text-align":{"B":"start"}}},{"A?":"B","A":1},{"A?":"A","A":{"color":{},"decoration":{},"direction":{},"font-family":{},"font-size":{},"font-style":{},"font-weight":{},"head-indent":{},"kerning":{},"leading":{},"link":{},"list-level":{},"list-marker":{},"spacing":{},"style":{},"text-align":{},"text-transform":{},"tracking":{}}}],"E":{},"G":{}},"b":{"A":[21]},"d":"A","l":false,"g":false,"h":"A"}],"d":[]}],"I":[]},{"A?":"i","Z":{"A?":"A","A":"TAEXfxtKgiU","B":1},"a":"PBPC4QNm7F2FsHnX","R":false,"S":false,"U":false,"Q":{},"W":[],"X":[],"H":[],"L":{},"C":{"A":1366.0,"B":768.0,"C":"D"},"G":{"A":"EAFBwclJCGM","B":1,"C":4},"D":{"C":"#060606","D":0.0,"F":false,"J":false,"G":false,"H":false},"r":[],"E":[{"A?":"M","A":458.505261089393,"B":124.74420862430358,"D":330.90174973386615,"C":26.47213997870929,"E":0.0,"F":0.0,"BD":[],"BE":[],"BA":[],"BB":[],"Q":false,"S":false,"P":[],"5":{},"T":{},"W":{},"_":"LB9PWn76Hk42QP1J","a":[{"A?":"J","A":0.0,"B":0.0,"D":576.0,"C":46.08,"E":0.0,"F":0.0,"BD":[],"BE":[],"BA":[],"BB":[],"Q":false,"S":false,"P":[],"5":{},"T":{},"W":{},"_":"LBG1f8htsFRqQXfr","a":{"A":0.0,"B":0.0,"D":100.0,"C":8.0},"b":[{"A":"M4 0 L96 0 A4 4 0 1 1 96 8 L4 8 A4 4 0 1 1 4 0Z","B":{"A":false,"C":"#fff6ea","D":0.0,"F":false,"J":false,"G":false,"H":false},"D":0.0},{"A":"M4 0 L82 0 A4 4 0 1 1 82 8 L4 8 A4 4 0 1 1 4 0Z","B":{"A":false,"C":"#56595f","D":0.0,"F":false,"J":false,"G":false,"H":false},"D":0.0}],"d":[],"f":[],"g":[]}],"j":[],"h":{"A":0.0,"B":0.0,"C":576.0,"D":576.0},"b":{"A?":"G","C":"B","A":"A","B":0.08},"c":[{"A":["86"],"C":[],"B":{"A?":"B","A":"B","B":"#fff6ea","C":"#fff6ea"},"D":"Series 1"},{"A":["14"],"C":[],"B":{"A?":"B","A":"B","B":"#56595f","C":"#56595f"},"D":"Series 2"}],"k":[],"d":[""],"l":[],"i":{"color":"#8a663f","font-family":"YAFdJsSpokU,0","font-size":"107.1221253993403","font-style":"normal","font-weight":"normal","text-transform":"none","tracking":"0"},"g":576.0,"f":46.08,"m":false,"n":false,"p":false,"q":false,"r":false},{"A?":"M","A":458.505261089393,"B":733.378855801379,"D":330.90174973386615,"C":26.47213997870929,"E":0.0,"F":0.0,"BD":[],"BE":[],"BA":[],"BB":[],"Q":false,"S":false,"P":[],"5":{},"T":{},"W":{},"_":"LBB7brsW9gSr36mY","a":[{"A?":"J","A":0.0,"B":0.0,"D":576.0,"C":46.08,"E":0.0,"F":0.0,"BD":[],"BE":[],"BA":[],"BB":[],"Q":false,"S":false,"P":[],"5":{},"T":{},"W":{},"_":"LBhRk5Mkfv4l77Nn","a":{"A":0.0,"B":0.0,"D":100.0,"C":8.0},"b":[{"A":"M4 0 L96 0 A4 4 0 1 1 96 8 L4 8 A4 4 0 1 1 4 0Z","B":{"A":false,"C":"#fff6ea","D":0.0,"F":false,"J":false,"G":false,"H":false},"D":0.0},{"A":"M4 0 L82 0 A4 4 0 1 1 82 8 L4 8 A4 4 0 1 1 4 0Z","B":{"A":false,"C":"#56595f","D":0.0,"F":false,"J":false,"G":false,"H":false},"D":0.0}],"d":[],"f":[],"g":[]}],"j":[],"h":{"A":0.0,"B":0.0,"C":576.0,"D":576.0},"b":{"A?":"G","C":"B","A":"A","B":0.08},"c":[{"A":["86"],"C":[],"B":{"A?":"B","A":"B","B":"#fff6ea","C":"#fff6ea"},"D":"Series 1"},{"A":["14"],"C":[],"B":{"A?":"B","A":"B","B":"#56595f","C":"#56595f"},"D":"Series 2"}],"k":[],"d":[""],"l":[],"i":{"color":"#8a663f","font-family":"YAFdJsSpokU,0","font-size":"107.1221253993403","font-style":"normal","font-weight":"normal","text-transform":"none","tracking":"0"},"g":576.0,"f":46.08,"m":false,"n":false,"p":false,"q":false,"r":false},{"A?":"M","A":537.5107610681023,"B":733.3788558013789,"D":330.90174973386615,"C":26.47213997870929,"E":0.0,"F":0.0,"BD":[],"BE":[],"BA":[],"BB":[],"Q":false,"S":false,"P":[],"5":{},"T":{},"W":{},"_":"LBw3HkXZq7sfJpBv","a":[{"A?":"J","A":0.0,"B":0.0,"D":576.0,"C":46.08,"E":0.0,"F":0.0,"BD":[],"BE":[],"BA":[],"BB":[],"Q":false,"S":false,"P":[],"5":{},"T":{},"W":{},"_":"LBmLMxqgJBfggBLy","a":{"A":0.0,"B":0.0,"D":100.0,"C":8.0},"b":[{"A":"M4 0 L96 0 A4 4 0 1 1 96 8 L4 8 A4 4 0 1 1 4 0Z","B":{"A":false,"C":"#fff6ea","D":0.0,"F":false,"J":false,"G":false,"H":false},"D":0.0},{"A":"M4 0 L82 0 A4 4 0 1 1 82 8 L4 8 A4 4 0 1 1 4 0Z","B":{"A":false,"C":"#56595f","D":0.0,"F":false,"J":false,"G":false,"H":false},"D":0.0}],"d":[],"f":[],"g":[]}],"j":[],"h":{"A":0.0,"B":0.0,"C":576.0,"D":576.0},"b":{"A?":"G","C":"B","A":"A","B":0.08},"c":[{"A":["86"],"C":[],"B":{"A?":"B","A":"B","B":"#fff6ea","C":"#fff6ea"},"D":"Series 1"},{"A":["14"],"C":[],"B":{"A?":"B","A":"B","B":"#56595f","C":"#56595f"},"D":"Series 2"}],"k":[],"d":[""],"l":[],"i":{"color":"#8a663f","font-family":"YAFdJsSpokU,0","font-size":"107.1221253993403","font-style":"normal","font-weight":"normal","text-transform":"none","tracking":"0"},"g":576.0,"f":46.08,"m":false,"n":false,"p":false,"q":false,"r":false},{"A?":"K","A":384.00000000000006,"B":124.74420862430358,"D":374.9154838212626,"C":21.533360000000002,"E":0.0,"F":0.0,"BD":[],"BE":[],"BA":[],"BB":[],"Q":false,"S":false,"N":"heading4","P":[],"5":{},"T":{},"W":{},"_":"LBWLLhtk935PnFq1","a":{"A":[{"A?":"A","A":"TECHNICAL SKILLS\\n"}],"B":[{"A?":"A","A":{"color":{"B":"#fff6ea"},"font-family":{"B":"YAFdJsSpokU,0"},"font-size":{"B":"18.6666"},"leading":{"B":"1600.0"},"list-level":{"B":"1.0"},"tracking":{"B":"100.0"}}},{"A?":"B","A":2},{"A?":"A","A":{"font-style":{"B":"normal"},"font-weight":{"B":"normal"},"text-transform":{"B":"none"}}},{"A?":"B","A":14},{"A?":"A","A":{"decoration":{"B":"none"},"direction":{"B":"ltr"},"head-indent":{"B":"0.0"},"kerning":{"B":"0.0"},"link":{"B":""},"list-marker":{"B":"none"},"style":{"B":"body"},"text-align":{"B":"start"}}},{"A?":"B","A":1},{"A?":"A","A":{"color":{},"decoration":{},"direction":{},"font-family":{},"font-size":{},"font-style":{},"font-weight":{},"head-indent":{},"kerning":{},"leading":{},"link":{},"list-level":{},"list-marker":{},"style":{},"text-align":{},"text-transform":{},"tracking":{}}}],"E":{},"G":{}},"b":{"A":[17]},"d":"A","l":false,"g":false,"h":"A"},{"A?":"K","A":384.00000000000006,"B":733.378855801379,"D":372.50038948164024,"C":21.533360000000002,"E":0.0,"F":0.0,"BD":[],"BE":[],"BA":[],"BB":[],"Q":false,"S":false,"N":"heading4","P":[],"5":{},"T":{},"W":{},"_":"LBXFBnkSKdxct4Yp","a":{"A":[{"A?":"A","A":"SOFTWARE SKILLS\\n"}],"B":[{"A?":"A","A":{"color":{"B":"#fff6ea"},"font-family":{"B":"YAFdJsSpokU,0"},"font-size":{"B":"18.6666"},"leading":{"B":"1600.0"},"list-level":{"B":"1.0"},"tracking":{"B":"100.0"}}},{"A?":"B","A":9},{"A?":"A","A":{"font-style":{"B":"normal"},"font-weight":{"B":"normal"},"text-transform":{"B":"none"}}},{"A?":"B","A":6},{"A?":"A","A":{"decoration":{"B":"none"},"direction":{"B":"ltr"},"head-indent":{"B":"0.0"},"kerning":{"B":"0.0"},"link":{"B":""},"list-marker":{"B":"none"},"style":{"B":"body"},"text-align":{"B":"start"}}},{"A?":"B","A":1},{"A?":"A","A":{"color":{},"decoration":{},"direction":{},"font-family":{},"font-size":{},"font-style":{},"font-weight":{},"head-indent":{},"kerning":{},"leading":{},"link":{},"list-level":{},"list-marker":{},"style":{},"text-align":{},"text-transform":{},"tracking":{}}}],"E":{},"G":{}},"b":{"A":[16]},"d":"A","l":false,"g":false,"h":"A"},{"A?":"M","A":537.5107610681023,"B":124.74420862430358,"D":330.90174973386615,"C":26.47213997870929,"E":0.0,"F":0.0,"BD":[],"BE":[],"BA":[],"BB":[],"Q":false,"S":false,"P":[],"5":{},"T":{},"W":{},"_":"LBppgwkJ06zSx1HY","a":[{"A?":"J","A":0.0,"B":0.0,"D":576.0,"C":46.08,"E":0.0,"F":0.0,"BD":[],"BE":[],"BA":[],"BB":[],"Q":false,"S":false,"P":[],"5":{},"T":{},"W":{},"_":"LB3RnQPmtx0ZzCGx","a":{"A":0.0,"B":0.0,"D":100.0,"C":8.0},"b":[{"A":"M4 0 L96 0 A4 4 0 1 1 96 8 L4 8 A4 4 0 1 1 4 0Z","B":{"A":false,"C":"#fff6ea","D":0.0,"F":false,"J":false,"G":false,"H":false},"D":0.0},{"A":"M4 0 L82 0 A4 4 0 1 1 82 8 L4 8 A4 4 0 1 1 4 0Z","B":{"A":false,"C":"#56595f","D":0.0,"F":false,"J":false,"G":false,"H":false},"D":0.0}],"d":[],"f":[],"g":[]}],"j":[],"h":{"A":0.0,"B":0.0,"C":576.0,"D":576.0},"b":{"A?":"G","C":"B","A":"A","B":0.08},"c":[{"A":["86"],"C":[],"B":{"A?":"B","A":"B","B":"#fff6ea","C":"#fff6ea"},"D":"Series 1"},{"A":["14"],"C":[],"B":{"A?":"B","A":"B","B":"#56595f","C":"#56595f"},"D":"Series 2"}],"k":[],"d":[""],"l":[],"i":{"color":"#8a663f","font-family":"YAFdJsSpokU,0","font-size":"107.1221253993403","font-style":"normal","font-weight":"normal","text-transform":"none","tracking":"0"},"g":576.0,"f":46.08,"m":false,"n":false,"p":false,"q":false,"r":false},{"A?":"K","A":433.67017405959535,"B":124.74420862430358,"D":312.2540120870863,"C":21.533360000000002,"E":0.0,"F":0.0,"BD":[],"BE":[],"BA":[],"BB":[],"Q":false,"S":false,"N":"heading5","P":[],"5":{},"T":{},"W":{},"_":"LBdFFjkk9fvCtVsr","a":{"A":[{"A?":"A","A":"EOR, Contact angle, HPHT IFT\\n"}],"B":[{"A?":"A","A":{"color":{"B":"#fff6ea"},"font-family":{"B":"YAFdJsSpokU,0"},"font-size":{"B":"18.6666"},"leading":{"B":"1600.0"},"list-level":{"B":"1.0"},"tracking":{"B":"100.0"}}},{"A?":"B","A":3},{"A?":"A","A":{"decoration":{"B":"none"},"direction":{"B":"ltr"},"font-style":{"B":"normal"},"font-weight":{"B":"normal"},"head-indent":{"B":"0.0"},"kerning":{"B":"0.0"},"link":{"B":""},"list-marker":{"B":"none"},"style":{"B":"body"},"text-align":{"B":"start"},"text-transform":{"B":"none"}}},{"A?":"B","A":25},{"A?":"A","A":{"list-level":{}}},{"A?":"B","A":1},{"A?":"A","A":{"color":{},"decoration":{},"direction":{},"font-family":{},"font-size":{},"font-style":{},"font-weight":{},"head-indent":{},"kerning":{},"leading":{},"link":{},"list-marker":{},"style":{},"text-align":{},"text-transform":{},"tracking":{}}}],"E":{},"G":{}},"b":{"A":[29]},"d":"A","l":false,"g":false,"h":"A"},{"A?":"K","A":433.67017405959535,"B":733.3788558013789,"D":372.50038948164035,"C":21.533360000000002,"E":0.0,"F":0.0,"BD":[],"BE":[],"BA":[],"BB":[],"Q":false,"S":false,"N":"heading5","P":[],"5":{},"T":{},"W":{},"_":"LBp0D2G87Hs9sP3X","a":{"A":[{"A?":"A","A":"Floviz, Pvti, Matlab, Phreeqc\\n"}],"B":[{"A?":"A","A":{"color":{"B":"#fff6ea"},"font-family":{"B":"YAFdJsSpokU,0"},"font-size":{"B":"18.6666"},"leading":{"B":"1600.0"},"list-level":{"B":"1.0"},"tracking":{"B":"100.0"}}},{"A?":"B","A":8},{"A?":"A","A":{"font-style":{"B":"normal"},"font-weight":{"B":"normal"},"text-transform":{"B":"none"}}},{"A?":"B","A":21},{"A?":"A","A":{"decoration":{"B":"none"},"direction":{"B":"ltr"},"head-indent":{"B":"0.0"},"kerning":{"B":"0.0"},"link":{"B":""},"list-marker":{"B":"none"},"style":{"B":"body"},"text-align":{"B":"start"}}},{"A?":"B","A":1},{"A?":"A","A":{"color":{},"decoration":{},"direction":{},"font-family":{},"font-size":{},"font-style":{},"font-weight":{},"head-indent":{},"kerning":{},"leading":{},"link":{},"list-level":{},"list-marker":{},"style":{},"text-align":{},"text-transform":{},"tracking":{}}}],"E":{},"G":{}},"b":{"A":[30]},"d":"A","l":false,"g":false,"h":"A"},{"A?":"K","A":512.9774010681023,"B":733.3788558013789,"D":372.50038948164024,"C":21.533360000000002,"E":0.0,"F":0.0,"BD":[],"BE":[],"BA":[],"BB":[],"Q":false,"S":false,"N":"heading5","P":[],"5":{},"T":{},"W":{},"_":"LBjGf3hWKDTZrWxd","a":{"A":[{"A?":"A","A":"Cydar, Eclipse E100, Pipesim\\n"}],"B":[{"A?":"A","A":{"color":{"B":"#fff6ea"},"font-family":{"B":"YAFdJsSpokU,0"},"font-size":{"B":"18.6666"},"font-style":{"B":"normal"},"font-weight":{"B":"normal"},"leading":{"B":"1600.0"},"list-level":{"B":"1.0"},"text-transform":{"B":"none"},"tracking":{"B":"0.0"}}},{"A?":"B","A":28},{"A?":"A","A":{"decoration":{"B":"none"},"direction":{"B":"ltr"},"head-indent":{"B":"0.0"},"kerning":{"B":"0.0"},"link":{"B":""},"list-marker":{"B":"none"},"style":{"B":"body"},"text-align":{"B":"start"}}},{"A?":"B","A":1},{"A?":"A","A":{"color":{},"decoration":{},"direction":{},"font-family":{},"font-size":{},"font-style":{},"font-weight":{},"head-indent":{},"kerning":{},"leading":{},"link":{},"list-level":{},"list-marker":{},"style":{},"text-align":{},"text-transform":{},"tracking":{}}}],"E":{},"G":{}},"b":{"A":[29]},"d":"A","l":false,"g":false,"h":"A"},{"A?":"H","A":124.55182230101265,"B":112.54986522911068,"D":487.85714285714283,"C":101.88032811557517,"E":0.0,"F":0.0,"BD":[],"BE":[],"BA":[],"BB":[],"Q":false,"S":false,"P":[],"5":{},"T":{},"W":{},"_":"LBRdcKkclWSwVdXk","b":487.85714285714283,"a":101.88032811557517,"y":{},"e":{},"c":[{"A?":"K","A":32.14698811557518,"B":8.526512829121202E-14,"D":487.8571428571427,"C":69.73334,"E":0.0,"F":0.0,"BD":[],"BE":[],"BA":[],"BB":[],"Q":false,"S":false,"N":"heading1","P":[],"5":{},"T":{},"W":{},"_":"LBQc9hxzhv2NKP2v","a":{"A":[{"A?":"A","A":"Skills & Proficiencies\\n"}],"B":[{"A?":"A","A":{"color":{"B":"#fff6ea"},"font-family":{"B":"YAFdJsSpokU,0"},"font-size":{"B":"58.6667"},"font-style":{"B":"normal"},"font-weight":{"B":"normal"},"leading":{"B":"1000.0"},"text-transform":{"B":"none"},"tracking":{"B":"-50.0"}}},{"A?":"B","A":22},{"A?":"A","A":{"decoration":{"B":"none"},"direction":{"B":"ltr"},"head-indent":{"B":"0.0"},"kerning":{"B":"0.0"},"link":{"B":""},"list-level":{"B":"0.0"},"list-marker":{"B":"none"},"spacing":{"B":"0.0"},"style":{"B":"body"},"text-align":{"B":"start"}}},{"A?":"B","A":1},{"A?":"A","A":{"color":{},"decoration":{},"direction":{},"font-family":{},"font-size":{},"font-style":{},"font-weight":{},"head-indent":{},"kerning":{},"leading":{},"link":{},"list-level":{},"list-marker":{},"spacing":{},"style":{},"text-align":{},"text-transform":{},"tracking":{}}}],"E":{},"G":{}},"b":{"A":[23]},"d":"A","l":false,"g":true,"h":"A"},{"A?":"K","A":-3.552713678800501E-14,"B":8.526512829121202E-14,"D":487.8571428571427,"C":18.8,"E":0.0,"F":0.0,"BD":[],"BE":[],"BA":[],"BB":[],"Q":false,"S":false,"N":"heading5","P":[],"5":{},"T":{},"W":{},"_":"LBVQS3vHW9f8syM3","a":{"A":[{"A?":"A","A":"wHAT I CAN DO\\n"}],"B":[{"A?":"A","A":{"color":{"B":"#fff6ea"},"decoration":{"B":"none"},"direction":{"B":"ltr"},"font-family":{"B":"YAFdJsSpokU,0"},"font-size":{"B":"16.0"},"font-style":{"B":"normal"},"font-weight":{"B":"normal"},"head-indent":{"B":"0.0"},"kerning":{"B":"0.0"},"leading":{"B":"1400.0"},"link":{"B":""},"list-level":{"B":"1.0"},"list-marker":{"B":"none"},"spacing":{"B":"0.0"},"style":{"B":"body"},"text-align":{"B":"start"},"text-transform":{"B":"none"},"tracking":{"B":"0.0"}}},{"A?":"B","A":14},{"A?":"A","A":{"color":{},"decoration":{},"direction":{},"font-family":{},"font-size":{},"font-style":{},"font-weight":{},"head-indent":{},"kerning":{},"leading":{},"link":{},"list-level":{},"list-marker":{},"spacing":{},"style":{},"text-align":{},"text-transform":{},"tracking":{}}}],"E":{},"G":{}},"b":{"A":[14]},"d":"A","l":false,"g":true,"h":"A"}],"d":[]},{"A?":"U","A":329.8625525863265,"B":119.05318936244589,"D":1112.982517538024,"C":2.0,"E":0.0,"F":0.0,"BD":[],"BE":[],"BA":[],"BB":[],"Q":false,"S":false,"P":[],"5":{},"T":{},"W":{},"_":"LBYsH413WTsh1KQ2","a":2,"b":{},"c":{},"d":"#fff6ea","e":[],"f":true,"g":[],"h":[]},{"A?":"K","A":512.9774010681023,"B":124.74420862430358,"D":454.1640625,"C":21.533360000000002,"E":0.0,"F":0.0,"BD":[],"BE":[],"BA":[],"BB":[],"Q":false,"S":false,"P":[],"5":{},"T":{},"W":{},"_":"LBd242hMYBpG6zg6","a":{"A":[{"A?":"A","A":"Spontaneous imbibition, Relative permeability\\n"}],"B":[{"A?":"A","A":{"color":{"B":"#fff6ea"},"fill-id":{"B":"none"},"font-family":{"B":"YAFdJsSpokU,0"},"font-kerning":{"B":"normal"},"font-size":{"B":"18.6666"},"font-style":{"B":"normal"},"font-weight":{"B":"normal"},"leading":{"B":"1600.0"},"spacing":{"B":"0.0"},"text-align":{"B":"center"},"text-transform":{"B":"none"},"tracking":{"B":"100.0"}}},{"A?":"B","A":46},{"A?":"A","A":{"color":{},"fill-id":{},"font-family":{},"font-kerning":{},"font-size":{},"font-style":{},"font-weight":{},"leading":{},"spacing":{},"text-align":{},"text-transform":{},"tracking":{}}}],"E":{},"G":{}},"b":{"A":[46]},"d":"A","l":false,"g":false,"h":"B"},{"A?":"M","A":630.9544707914166,"B":124.74420862430358,"D":330.90174973386615,"C":26.47213997870929,"E":0.0,"F":0.0,"BD":[],"BE":[],"BA":[],"BB":[],"Q":false,"S":false,"P":[],"5":{},"T":{},"W":{},"_":"LBmsK2nZrW2dcPKJ","a":[{"A?":"J","A":0.0,"B":0.0,"D":576.0,"C":46.08,"E":0.0,"F":0.0,"BD":[],"BE":[],"BA":[],"BB":[],"Q":false,"S":false,"P":[],"5":{},"T":{},"W":{},"_":"LBL06JV0fWck8vy6","a":{"A":0.0,"B":0.0,"D":100.0,"C":8.0},"b":[{"A":"M4 0 L96 0 A4 4 0 1 1 96 8 L4 8 A4 4 0 1 1 4 0Z","B":{"A":false,"C":"#fff6ea","D":0.0,"F":false,"J":false,"G":false,"H":false},"D":0.0},{"A":"M4 0 L82 0 A4 4 0 1 1 82 8 L4 8 A4 4 0 1 1 4 0Z","B":{"A":false,"C":"#56595f","D":0.0,"F":false,"J":false,"G":false,"H":false},"D":0.0}],"d":[],"f":[],"g":[]}],"j":[],"h":{"A":0.0,"B":0.0,"C":576.0,"D":576.0},"b":{"A?":"G","C":"B","A":"A","B":0.08},"c":[{"A":["86"],"C":[],"B":{"A?":"B","A":"B","B":"#fff6ea","C":"#fff6ea"},"D":"Series 1"},{"A":["14"],"C":[],"B":{"A?":"B","A":"B","B":"#56595f","C":"#56595f"},"D":"Series 2"}],"k":[],"d":[""],"l":[],"i":{"color":"#8a663f","font-family":"YAFdJsSpokU,0","font-size":"107.1221253993403","font-style":"normal","font-weight":"normal","text-transform":"none","tracking":"0"},"g":576.0,"f":46.08,"m":false,"n":false,"p":false,"q":false,"r":false},{"A?":"K","A":598.9829010468115,"B":124.74420862430358,"D":296.484375,"C":21.533360000000002,"E":0.0,"F":0.0,"BD":[],"BE":[],"BA":[],"BB":[],"Q":false,"S":false,"P":[],"5":{},"T":{},"W":{},"_":"LBmh4lBxR655LxCx","a":{"A":[{"A?":"A","A":"Capillary pressure, Simulation\\n"}],"B":[{"A?":"A","A":{"color":{"B":"#fff6ea"},"fill-id":{"B":"none"},"font-family":{"B":"YAFdJsSpokU,0"},"font-kerning":{"B":"normal"},"font-size":{"B":"18.6666"},"font-style":{"B":"normal"},"font-weight":{"B":"normal"},"leading":{"B":"1600.0"},"spacing":{"B":"0.0"},"text-align":{"B":"center"},"text-transform":{"B":"none"},"tracking":{"B":"100.0"}}},{"A?":"B","A":31},{"A?":"A","A":{"color":{},"fill-id":{},"font-family":{},"font-kerning":{},"font-size":{},"font-style":{},"font-weight":{},"leading":{},"spacing":{},"text-align":{},"text-transform":{},"tracking":{}}}],"E":{},"G":{}},"b":{"A":[31]},"d":"A","l":false,"g":false,"h":"B"}],"I":[]},{"A?":"i","Z":{"A?":"A","A":"TAEXfxtKgiU","B":1},"a":"PBlqvCQcSdFpNMzv","R":false,"S":false,"U":false,"Q":{},"W":[],"X":[],"H":[],"L":{},"C":{"A":1366.0,"B":768.0,"C":"D"},"G":{"A":"EAFBwav_hqE","B":2,"C":7},"D":{"C":"#000000","D":0.0,"F":false,"J":false,"G":false,"H":false},"r":[],"E":[{"A?":"U","A":568.2736094156902,"B":102.77488413416245,"D":329.78356506500836,"C":1.0,"E":0.0,"F":0.0,"BD":[],"BE":[],"BA":[],"BB":[],"Q":false,"S":false,"P":[],"5":{},"T":{},"W":{},"_":"LBJdMMrJsRd3D2SS","a":1,"b":{"C":{"A":568.7736094156902,"B":102.77488413416245}},"c":{"C":{"A":568.7736094156902,"B":432.5584491991708}},"d":"#ffffff","e":[],"f":true,"g":[],"h":[]},{"A?":"U","A":568.2736094156902,"B":518.1082174674958,"D":329.78356506500836,"C":1.0,"E":0.0,"F":0.0,"BD":[],"BE":[],"BA":[],"BB":[],"Q":false,"S":false,"P":[],"5":{},"T":{},"W":{},"_":"LBfZGV0nz8DmkWlk","a":1,"b":{"C":{"A":568.7736094156902,"B":518.1082174674958}},"c":{"C":{"A":568.7736094156902,"B":847.8917825325042}},"d":"#ffffff","e":[],"f":true,"g":[],"h":[]},{"A?":"U","A":568.2666666666668,"B":933.4415508008287,"D":329.78356506500836,"C":1.0,"E":0.0,"F":0.0,"BD":[],"BE":[],"BA":[],"BB":[],"Q":false,"S":false,"P":[],"5":{},"T":{},"W":{},"_":"LBdMSvKqkcscywKv","a":1,"b":{"C":{"A":568.7666666666668,"B":933.4415508008287}},"c":{"C":{"A":568.7666666666668,"B":1263.2251158658373}},"d":"#ffffff","e":[],"f":true,"g":[],"h":[]},{"A?":"J","A":178.64176908290088,"B":102.77488413416248,"D":329.7835650650083,"C":329.7835650650083,"E":0.0,"F":0.0,"BD":[],"BE":[],"BA":[],"BB":[],"X":{"A?":"B","A":6},"Q":false,"S":false,"P":[],"5":{},"T":{},"W":{},"_":"LBQS5vPhNDwQJBNt","a":{"A":0.0,"B":0.0,"D":64.0,"C":64.0},"b":[{"A":"M0 0H64V64H0z","B":{"A":true,"B":{"A":{"A?":"d","A":"MAHRtObb_Yk","B":1},"B":{"A":-2.5981805582920856,"B":0.0,"D":64.0,"C":90.78014184397163,"E":0.0},"E":0.0,"C":{}},"D":0.0,"F":false,"J":false,"G":false,"H":false},"D":16.0}],"d":[],"c":{"A":{"A":0.0,"B":0.0,"D":64.0,"C":64.0},"B":64.0,"C":64.0,"D":"A","E":"A"},"e":{"A":false,"B":false},"f":[],"g":[]},{"A?":"K","A":576.620597531265,"B":518.1082174674958,"D":329.78356506500836,"C":19.2,"E":0.0,"F":0.0,"BD":[],"BE":[],"BA":[],"BB":[],"Q":false,"S":false,"N":"paragraph1","P":[],"5":{},"T":{},"W":{},"_":"LB1THFHgmpVK3kTH","a":{"A":[{"A?":"A","A":"2022\\n"}],"B":[{"A?":"A","A":{"color":{"B":"#ffffff"},"font-family":{"B":"YAFdJvSyp_k,2"},"leading":{"B":"1500.0"},"list-level":{"B":"1.0"}}},{"A?":"B","A":4},{"A?":"A","A":{"decoration":{"B":"none"},"direction":{"B":"ltr"},"head-indent":{"B":"0.0"},"kerning":{"B":"0.0"},"link":{"B":""},"list-marker":{"B":"none"},"spacing":{"B":"0.0"},"style":{"B":"body"},"text-transform":{"B":"none"},"tracking":{"B":"0.0"}}},{"A?":"B","A":1},{"A?":"A","A":{"color":{},"decoration":{},"direction":{},"font-family":{},"head-indent":{},"kerning":{},"leading":{},"link":{},"list-level":{},"list-marker":{},"spacing":{},"style":{},"text-transform":{},"tracking":{}}}],"E":{},"G":{}},"b":{"A":[5]},"d":"A","l":false,"g":false,"h":"A"},{"A?":"K","A":538.0069427490234,"B":518.1082174674958,"D":329.78356506500836,"C":22.266666666666666,"E":0.0,"F":0.0,"BD":[],"BE":[],"BA":[],"BB":[],"Q":false,"S":false,"N":"heading5","P":[],"5":{},"T":{},"W":{},"_":"LBd6Y5MfrR4Yf5W4","a":{"A":[{"A?":"A","A":"Ranked Base On GPA\\n"}],"B":[{"A?":"A","A":{"color":{"B":"#ffffff"},"font-family":{"B":"YAFdJvSyp_k,2"},"font-size":{"B":"18.6667"},"font-weight":{"B":"bold"},"list-level":{"B":"1.0"}}},{"A?":"B","A":18},{"A?":"A","A":{"decoration":{"B":"none"},"direction":{"B":"ltr"},"font-size":{"B":"18.666666666666668"},"head-indent":{"B":"0.0"},"kerning":{"B":"0.0"},"leading":{"B":"1400.0"},"link":{"B":""},"list-marker":{"B":"none"},"spacing":{"B":"0.0"},"style":{"B":"body"},"text-transform":{"B":"none"},"tracking":{"B":"0.0"}}},{"A?":"B","A":1},{"A?":"A","A":{"color":{},"decoration":{},"direction":{},"font-family":{},"font-size":{},"font-weight":{},"head-indent":{},"kerning":{},"leading":{},"link":{},"list-level":{},"list-marker":{},"spacing":{},"style":{},"text-transform":{},"tracking":{}}}],"E":{},"G":{}},"b":{"A":[19]},"d":"A","l":false,"g":false,"h":"A"},{"A?":"K","A":576.6136547822416,"B":933.4415508008288,"D":329.78356506500836,"C":19.2,"E":0.0,"F":0.0,"BD":[],"BE":[],"BA":[],"BB":[],"Q":false,"S":false,"N":"paragraph1","P":[],"5":{},"T":{},"W":{},"_":"LBdwJSBM87X9gCFW","a":{"A":[{"A?":"A","A":"2019\\n"}],"B":[{"A?":"A","A":{"color":{"B":"#ffffff"},"font-family":{"B":"YAFdJvSyp_k,2"},"leading":{"B":"1500.0"},"list-level":{"B":"1.0"}}},{"A?":"B","A":4},{"A?":"A","A":{"decoration":{"B":"none"},"direction":{"B":"ltr"},"head-indent":{"B":"0.0"},"kerning":{"B":"0.0"},"link":{"B":""},"list-marker":{"B":"none"},"spacing":{"B":"0.0"},"style":{"B":"body"},"text-transform":{"B":"none"},"tracking":{"B":"0.0"}}},{"A?":"B","A":1},{"A?":"A","A":{"color":{},"decoration":{},"direction":{},"font-family":{},"head-indent":{},"kerning":{},"leading":{},"link":{},"list-level":{},"list-marker":{},"spacing":{},"style":{},"text-transform":{},"tracking":{}}}],"E":{},"G":{}},"b":{"A":[5]},"d":"A","l":false,"g":false,"h":"A"},{"A?":"K","A":538.0,"B":933.4415508008288,"D":329.78356506500836,"C":22.266666666666666,"E":0.0,"F":0.0,"BD":[],"BE":[],"BA":[],"BB":[],"Q":false,"S":false,"N":"heading5","P":[],"5":{},"T":{},"W":{},"_":"LBph3KR56GP2rn4M","a":{"A":[{"A?":"A","A":"Bachelor Of Science\\n"}],"B":[{"A?":"A","A":{"color":{"B":"#ffffff"},"font-family":{"B":"YAFdJvSyp_k,2"},"font-size":{"B":"18.6667"},"font-weight":{"B":"bold"},"list-level":{"B":"1.0"}}},{"A?":"B","A":19},{"A?":"A","A":{"decoration":{"B":"none"},"direction":{"B":"ltr"},"font-size":{"B":"18.666666666666668"},"head-indent":{"B":"0.0"},"kerning":{"B":"0.0"},"leading":{"B":"1400.0"},"link":{"B":""},"list-marker":{"B":"none"},"spacing":{"B":"0.0"},"style":{"B":"body"},"text-transform":{"B":"none"},"tracking":{"B":"0.0"}}},{"A?":"B","A":1},{"A?":"A","A":{"color":{},"decoration":{},"direction":{},"font-family":{},"font-size":{},"font-weight":{},"head-indent":{},"kerning":{},"leading":{},"link":{},"list-level":{},"list-marker":{},"spacing":{},"style":{},"text-transform":{},"tracking":{}}}],"E":{},"G":{}},"b":{"A":[20]},"d":"A","l":false,"g":false,"h":"A"},{"A?":"K","A":134.34294063453672,"B":102.77488413416245,"D":585.4285714285713,"C":38.0,"E":0.0,"F":0.0,"BD":[],"BE":[],"BA":[],"BB":[],"Q":false,"S":false,"N":"heading2","P":[],"5":{},"T":{},"W":{},"_":"LBLHcj0V7fzCXQXb","a":{"A":[{"A?":"A","A":"Certificates\\n"}],"B":[{"A?":"A","A":{"color":{"B":"#ffffff"},"font-family":{"B":"YAFdJvSyp_k,2"},"font-size":{"B":"32.0"},"font-weight":{"B":"bold"},"leading":{"B":"1200.0"},"text-transform":{"B":"uppercase"},"tracking":{"B":"-20.0"}}},{"A?":"B","A":12},{"A?":"A","A":{"decoration":{"B":"none"},"direction":{"B":"ltr"},"head-indent":{"B":"0.0"},"kerning":{"B":"0.0"},"link":{"B":""},"list-level":{"B":"0.0"},"list-marker":{"B":"none"},"spacing":{"B":"0.0"},"style":{"B":"body"}}},{"A?":"B","A":1},{"A?":"A","A":{"color":{},"decoration":{},"direction":{},"font-family":{},"font-size":{},"font-weight":{},"head-indent":{},"kerning":{},"leading":{},"link":{},"list-level":{},"list-marker":{},"spacing":{},"style":{},"text-transform":{},"tracking":{}}}],"E":{},"G":{}},"b":{"A":[13]},"d":"A","l":false,"g":false,"h":"A"},{"A?":"K","A":576.620597531265,"B":102.77488413416245,"D":329.78356506500836,"C":19.2,"E":0.0,"F":0.0,"BD":[],"BE":[],"BA":[],"BB":[],"Q":false,"S":false,"N":"paragraph1","P":[],"5":{},"T":{},"W":{},"_":"LBB04jglfxvJVPbR","a":{"A":[{"A?":"A","A":"2022\\n"}],"B":[{"A?":"A","A":{"color":{"B":"#ffffff"},"font-family":{"B":"YAFdJvSyp_k,2"},"leading":{"B":"1500.0"},"list-level":{"B":"1.0"}}},{"A?":"B","A":4},{"A?":"A","A":{"decoration":{"B":"none"},"direction":{"B":"ltr"},"head-indent":{"B":"0.0"},"kerning":{"B":"0.0"},"link":{"B":""},"list-marker":{"B":"none"},"spacing":{"B":"0.0"},"style":{"B":"body"},"text-transform":{"B":"none"},"tracking":{"B":"0.0"}}},{"A?":"B","A":1},{"A?":"A","A":{"color":{},"decoration":{},"direction":{},"font-family":{},"head-indent":{},"kerning":{},"leading":{},"link":{},"list-level":{},"list-marker":{},"spacing":{},"style":{},"text-transform":{},"tracking":{}}}],"E":{},"G":{}},"b":{"A":[5]},"d":"A","l":false,"g":false,"h":"A"},{"A?":"K","A":538.0069427490234,"B":102.77488413416245,"D":329.78356506500836,"C":22.266666666666666,"E":0.0,"F":0.0,"BD":[],"BE":[],"BA":[],"BB":[],"Q":false,"S":false,"N":"heading5","P":[],"5":{},"T":{},"W":{},"_":"LBdhwGnC55hSF9Hy","a":{"A":[{"A?":"A","A":"Master Of Science\\n"}],"B":[{"A?":"A","A":{"color":{"B":"#ffffff"},"font-family":{"B":"YAFdJvSyp_k,2"},"font-size":{"B":"18.6667"},"font-weight":{"B":"bold"},"list-level":{"B":"1.0"}}},{"A?":"B","A":17},{"A?":"A","A":{"decoration":{"B":"none"},"direction":{"B":"ltr"},"font-size":{"B":"18.666666666666668"},"head-indent":{"B":"0.0"},"kerning":{"B":"0.0"},"leading":{"B":"1400.0"},"link":{"B":""},"list-marker":{"B":"none"},"spacing":{"B":"0.0"},"style":{"B":"body"},"text-transform":{"B":"none"},"tracking":{"B":"0.0"}}},{"A?":"B","A":1},{"A?":"A","A":{"color":{},"decoration":{},"direction":{},"font-family":{},"font-size":{},"font-weight":{},"head-indent":{},"kerning":{},"leading":{},"link":{},"list-level":{},"list-marker":{},"spacing":{},"style":{},"text-transform":{},"tracking":{}}}],"E":{},"G":{}},"b":{"A":[18]},"d":"A","l":false,"g":false,"h":"A"},{"A?":"J","A":178.64176908290088,"B":523.3116730302296,"D":329.7835650650083,"C":329.7835650650083,"E":0.0,"F":0.0,"BD":[],"BE":[],"BA":[],"BB":[],"X":{"A?":"B","A":6},"Q":false,"S":false,"P":[],"5":{},"T":{},"W":{},"_":"LBNpvVSLQ8SWMSwl","a":{"A":0.0,"B":0.0,"D":64.0,"C":64.0},"b":[{"A":"M0 0H64V64H0z","B":{"A":true,"B":{"A":{"A?":"d","A":"MAHRuU_tVIQ","B":1},"B":{"A":-3.7917275697005834,"B":0.0,"D":64.0,"C":90.5393457117595,"E":0.0},"E":0.0,"C":{}},"D":0.0,"F":false,"J":false,"G":false,"H":false},"D":16.0}],"d":[],"c":{"A":{"A":0.0,"B":0.0,"D":64.0,"C":64.0},"B":64.0,"C":64.0,"D":"A","E":"A"},"e":{"A":false,"B":false},"f":[],"g":[]},{"A?":"J","A":178.64176908290088,"B":933.4415508008291,"D":329.7835650650083,"C":329.7835650650083,"E":0.0,"F":0.0,"BD":[],"BE":[],"BA":[],"BB":[],"X":{"A?":"B","A":6},"Q":false,"S":false,"P":[],"5":{},"T":{},"W":{},"_":"LB22zbLWlPgtF0Zs","a":{"A":0.0,"B":0.0,"D":64.0,"C":64.0},"b":[{"A":"M0 0H64V64H0z","B":{"A":true,"B":{"A":{"A?":"d","A":"MAHRufocv8s","B":1},"B":{"A":-8.966388757335146,"B":0.0,"D":64.0,"C":90.78014184397163,"E":0.0},"E":0.0,"C":{}},"D":0.0,"F":false,"J":false,"G":false,"H":false},"D":16.0}],"d":[],"c":{"A":{"A":0.0,"B":0.0,"D":64.0,"C":64.0},"B":64.0,"C":64.0,"D":"A","E":"A"},"e":{"A":false,"B":false},"f":[],"g":[]}],"I":[]},{"A?":"i","Z":{"A?":"A","A":"TAEXfxtKgiU","B":1},"a":"PBHV6c5SwDptmyXS","R":false,"S":false,"U":false,"Q":{},"W":[],"X":[],"H":[],"L":{},"C":{"A":1366.0,"B":768.0,"C":"D"},"G":{"A":"EAFBwclJCGM","B":1,"C":6},"D":{"C":"#060606","D":0.0,"F":false,"J":false,"G":false,"H":false},"r":[],"E":[{"A?":"J","A":183.57453764494406,"B":245.7851431428943,"D":186.0271707431009,"C":204.4254623550559,"E":0.0,"F":0.0,"BD":[],"BE":[],"BA":[],"BB":[],"X":{"A?":"B","A":6},"Q":false,"S":false,"P":[],"5":{},"T":{},"W":{},"_":"LBxgFTXSwqgchtYM","a":{"A":0.0,"B":0.0,"D":455.0,"C":500.0},"b":[{"A":"M227.5,0C99.1,0,0,90.1,0,229.7C0,328.8,0,500,0,500h227.5H455c0,0,0-171.2,0-270.3  C455,90.1,355.9,0,227.5,0z","B":{"A":true,"B":{"A":{"A?":"d","A":"MAHRuLCdjlU","B":1},"B":{"A":-2.842170943040401E-14,"B":-27.354368932038852,"D":509.7087378640777,"C":500.00000000000006,"E":0.0},"E":0.0,"C":{}},"D":0.0,"F":false,"J":false,"G":false,"H":false},"D":0.0}],"d":[],"c":{"A":{"A":0.0,"B":0.0,"D":455.0,"C":500.0},"B":455.0,"C":500.0,"D":"A","E":"A"},"e":{"A":false,"B":false},"f":[],"g":[]},{"A?":"J","A":404.00000000000006,"B":245.7851431428943,"D":186.0271707431009,"C":204.4254623550559,"E":0.0,"F":0.0,"BD":[],"BE":[],"BA":[],"BB":[],"X":{"A?":"B","A":8},"Q":false,"S":false,"P":[],"5":{},"T":{},"W":{},"_":"LBz9XhtmYHCmXXvc","a":{"A":0.0,"B":0.0,"D":455.0,"C":500.0},"b":[{"A":"M227.5,0C99.1,0,0,90.1,0,229.7C0,328.8,0,500,0,500h227.5H455c0,0,0-171.2,0-270.3  C455,90.1,355.9,0,227.5,0z","B":{"A":true,"B":{"A":{"A?":"d","A":"MAHRsHqotwg","B":1},"B":{"A":-31.262437810945244,"B":0.0,"D":455.0,"C":562.5248756218905,"E":0.0},"E":0.0,"C":{}},"D":0.0,"F":false,"J":false,"G":false,"H":false},"D":0.0}],"d":[],"c":{"A":{"A":0.0,"B":0.0,"D":455.0,"C":500.0},"B":455.0,"C":500.0,"D":"A","E":"A"},"e":{"A":false,"B":false},"f":[],"g":[]},{"A?":"U","A":399.0,"B":590.7004232449374,"D":622.1253403632713,"C":2.0,"E":0.0,"F":0.0,"BD":[],"BE":[],"BA":[],"BB":[],"Q":false,"S":false,"P":[],"5":{},"T":{},"W":{},"_":"LBm4r1WjXtKsmkGQ","a":2,"b":{"C":{"A":400.0,"B":590.7004232449374}},"c":{"C":{"A":400.0,"B":1212.8257636082087}},"d":"#56595f","e":[],"f":true,"g":[],"h":[]},{"A?":"H","A":209.99999999999997,"B":590.7004232449374,"D":538.2857142857142,"C":104.0,"E":0.0,"F":0.0,"BD":[],"BE":[],"BA":[],"BB":[],"X":{"A?":"B","A":6},"Q":false,"S":false,"P":[],"5":{},"T":{},"W":{},"_":"LBTNjRTv17NbQzsk","b":538.2857142857142,"a":104.0,"y":{},"e":{},"c":[{"A?":"K","A":0.0,"B":0.0,"D":538.2857142857142,"C":28.0,"E":0.0,"F":0.0,"BD":[],"BE":[],"BA":[],"BB":[],"Q":false,"S":false,"N":"heading3","P":[],"5":{},"T":{},"W":{},"_":"LB7s69RYNDxBh9SK","a":{"A":[{"A?":"A","A":"Dr. Rohaldin Miri\\n"}],"B":[{"A?":"A","A":{"color":{"B":"#fff6ea"},"font-family":{"B":"YAFdJsSpokU,0"},"font-size":{"B":"23.9999"},"font-style":{"B":"normal"},"font-weight":{"B":"normal"},"leading":{"B":"1200.0"},"text-transform":{"B":"none"},"tracking":{"B":"100.0"}}},{"A?":"B","A":17},{"A?":"A","A":{"decoration":{"B":"none"},"direction":{"B":"ltr"},"head-indent":{"B":"0.0"},"kerning":{"B":"0.0"},"link":{"B":""},"list-level":{"B":"0.0"},"list-marker":{"B":"none"},"spacing":{"B":"0.0"},"style":{"B":"body"}}},{"A?":"B","A":1},{"A?":"A","A":{"color":{},"decoration":{},"direction":{},"font-family":{},"font-size":{},"font-style":{},"font-weight":{},"head-indent":{},"kerning":{},"leading":{},"link":{},"list-level":{},"list-marker":{},"spacing":{},"style":{},"text-transform":{},"tracking":{}}}],"E":{},"G":{}},"b":{"A":[18]},"d":"B","l":false,"g":false,"h":"A"},{"A?":"K","A":37.99999999999994,"B":0.0,"D":538.2857142857142,"C":66.0,"E":0.0,"F":0.0,"BD":[],"BE":[],"BA":[],"BB":[],"Q":false,"S":false,"N":"heading4","P":[],"5":{},"T":{},"W":{},"_":"LBlgs5MNMhsHNX7d","a":{"A":[{"A?":"A","A":"Associate Professor, Iran University of Science and Technology\\n Email: rohaldinmiri@iust.ac.ir\\n \\n"}],"B":[{"A?":"A","A":{"color":{"B":"#fff6ea"},"font-family":{"B":"YAFdJsSpokU,0"},"font-size":{"B":"18.6666"},"font-style":{"B":"normal"},"font-weight":{"B":"normal"},"leading":{"B":"1200.0"},"text-transform":{"B":"none"},"tracking":{"B":"0.0"}}},{"A?":"B","A":71},{"A?":"A","A":{"decoration":{"B":"underline"},"link":{"B":"mailto:rohaldinmiri@iust.ac.ir"}}},{"A?":"B","A":23},{"A?":"A","A":{"decoration":{},"link":{}}},{"A?":"B","A":2},{"A?":"A","A":{"decoration":{"B":"none"},"direction":{"B":"ltr"},"head-indent":{"B":"0.0"},"kerning":{"B":"0.0"},"link":{"B":""},"list-level":{"B":"0.0"},"list-marker":{"B":"none"},"spacing":{"B":"0.0"},"style":{"B":"body"}}},{"A?":"B","A":1},{"A?":"A","A":{"color":{},"decoration":{},"direction":{},"font-family":{},"font-size":{},"font-style":{},"font-weight":{},"head-indent":{},"kerning":{},"leading":{},"link":{},"list-level":{},"list-marker":{},"spacing":{},"style":{},"text-transform":{},"tracking":{}}}],"E":{},"G":{}},"b":{"A":[63,32,2]},"d":"B","l":false,"g":false,"h":"A"}],"d":[]},{"A?":"H","A":441.4254623550559,"B":590.7004232449374,"D":538.2857142857142,"C":82.0,"E":0.0,"F":0.0,"BD":[],"BE":[],"BA":[],"BB":[],"X":{"A?":"B","A":8},"Q":false,"S":false,"P":[],"5":{},"T":{},"W":{},"_":"LB1z7lPJfphyqXcR","b":538.2857142857142,"a":82.0,"y":{},"e":{},"c":[{"A?":"K","A":-5.684341886080802E-14,"B":0.0,"D":538.2857142857142,"C":28.0,"E":0.0,"F":0.0,"BD":[],"BE":[],"BA":[],"BB":[],"Q":false,"S":false,"N":"heading3","P":[],"5":{},"T":{},"W":{},"_":"LBLMLRkcBlN0s5gl","a":{"A":[{"A?":"A","A":"Dr. Masoud Riazi\\n"}],"B":[{"A?":"A","A":{"color":{"B":"#fff6ea"},"decoration":{"B":"none"},"direction":{"B":"ltr"},"font-family":{"B":"YAFdJsSpokU,0"},"font-size":{"B":"23.9999"},"font-style":{"B":"normal"},"font-weight":{"B":"normal"},"head-indent":{"B":"0.0"},"kerning":{"B":"0.0"},"leading":{"B":"1200.0"},"link":{"B":""},"list-level":{"B":"0.0"},"list-marker":{"B":"none"},"spacing":{"B":"0.0"},"style":{"B":"body"},"text-align":{"B":"start"},"text-transform":{"B":"none"},"tracking":{"B":"100.0"}}},{"A?":"B","A":17},{"A?":"A","A":{"color":{},"decoration":{},"direction":{},"font-family":{},"font-size":{},"font-style":{},"font-weight":{},"head-indent":{},"kerning":{},"leading":{},"link":{},"list-level":{},"list-marker":{},"spacing":{},"style":{},"text-align":{},"text-transform":{},"tracking":{}}}],"E":{},"G":{}},"b":{"A":[17]},"d":"B","l":false,"g":false,"h":"A"},{"A?":"K","A":37.999999999999886,"B":0.0,"D":538.2857142857142,"C":44.0,"E":0.0,"F":0.0,"BD":[],"BE":[],"BA":[],"BB":[],"Q":false,"S":false,"N":"heading4","P":[],"5":{},"T":{},"W":{},"_":"LBVKMkvlpnr8RCDF","a":{"A":[{"A?":"A","A":"Associate Professor, Nazarbayev University\\nEmail: masoud.riazi@nu.edu.kz\\n"}],"B":[{"A?":"A","A":{"color":{"B":"#fff6ea"},"font-family":{"B":"YAFdJsSpokU,0"},"font-size":{"B":"18.6666"},"font-style":{"B":"normal"},"font-weight":{"B":"normal"},"leading":{"B":"1200.0"},"text-transform":{"B":"none"},"tracking":{"B":"0.0"}}},{"A?":"B","A":3},{"A?":"A","A":{"decoration":{"B":"none"},"direction":{"B":"ltr"},"head-indent":{"B":"0.0"},"kerning":{"B":"0.0"},"link":{"B":""},"list-level":{"B":"0.0"},"list-marker":{"B":"none"},"spacing":{"B":"0.0"},"style":{"B":"body"},"text-align":{"B":"start"}}},{"A?":"B","A":47},{"A?":"A","A":{"decoration":{"B":"underline"},"link":{"B":"mailto:masoud.riazi@nu.edu.kz"}}},{"A?":"B","A":22},{"A?":"A","A":{"decoration":{"B":"none"},"link":{"B":""}}},{"A?":"B","A":1},{"A?":"A","A":{"color":{},"decoration":{},"direction":{},"font-family":{},"font-size":{},"font-style":{},"font-weight":{},"head-indent":{},"kerning":{},"leading":{},"link":{},"list-level":{},"list-marker":{},"spacing":{},"style":{},"text-align":{},"text-transform":{},"tracking":{}}}],"E":{},"G":{}},"b":{"A":[43,30]},"d":"B","l":false,"g":false,"h":"A"}],"d":[]},{"A?":"K","A":44.80000000000001,"B":390.2857142857142,"D":585.4285714285713,"C":64.0,"E":0.0,"F":0.0,"BD":[],"BE":[],"BA":[],"BB":[],"Q":false,"S":false,"N":"heading2","P":[],"5":{},"T":{},"W":{},"_":"LB7PQ5SZT38ZlJ4M","a":{"A":[{"A?":"A","A":"References\\n"}],"B":[{"A?":"A","A":{"color":{"B":"#fff6ea"},"font-family":{"B":"YAFdJsSpokU,0"},"font-size":{"B":"53.3334"},"font-style":{"B":"normal"},"font-weight":{"B":"normal"},"leading":{"B":"1200.0"},"text-align":{"B":"center"},"text-transform":{"B":"none"},"tracking":{"B":"-50.0"}}},{"A?":"B","A":3},{"A?":"A","A":{"decoration":{"B":"none"},"direction":{"B":"ltr"},"head-indent":{"B":"0.0"},"kerning":{"B":"0.0"},"link":{"B":""},"list-level":{"B":"0.0"},"list-marker":{"B":"none"},"spacing":{"B":"0.0"},"style":{"B":"body"}}},{"A?":"B","A":8},{"A?":"A","A":{"color":{},"decoration":{},"direction":{},"font-family":{},"font-size":{},"font-style":{},"font-weight":{},"head-indent":{},"kerning":{},"leading":{},"link":{},"list-level":{},"list-marker":{},"spacing":{},"style":{},"text-align":{},"text-transform":{},"tracking":{}}}],"E":{},"G":{}},"b":{"A":[11]},"d":"A","l":false,"g":false,"h":"A"}],"I":[]},{"A?":"i","Z":{"A?":"A","A":"TAEXfxtKgiU","B":1},"a":"PBMjpGCtsmhYkCD5","R":false,"S":false,"U":false,"Q":{},"W":[],"X":[],"H":[],"L":{},"C":{"A":1366.0,"B":768.0,"C":"D"},"G":{"A":"EAFBwclJCGM","B":1,"C":7},"D":{"C":"#060606","D":0.0,"F":false,"J":false,"G":false,"H":false},"r":[],"E":[{"A?":"K","A":448.90271188383616,"B":575.6666666666664,"D":240.47619047619065,"C":61.20004,"E":0.0,"F":0.0,"BD":[],"BE":[],"BA":[],"BB":[],"Q":false,"S":false,"N":"heading6","P":[],"5":{},"T":{},"W":{},"_":"LBjRlhsfV6g5gLtn","a":{"A":[{"A?":"A","A":"connect with me\\n+989102660234\\n"}],"B":[{"A?":"A","A":{"color":{"B":"#fff6ea"},"decoration":{"B":"none"},"direction":{"B":"ltr"},"font-family":{"B":"YAFdJsSpokU,0"},"font-size":{"B":"23.9998"},"font-style":{"B":"normal"},"font-weight":{"B":"normal"},"head-indent":{"B":"0.0"},"kerning":{"B":"0.0"},"leading":{"B":"1400.0"},"link":{"B":""},"list-level":{"B":"1.0"},"list-marker":{"B":"none"},"spacing":{"B":"0.0"},"style":{"B":"body"},"text-align":{"B":"start"},"text-transform":{"B":"none"},"tracking":{"B":"0.0"}}},{"A?":"B","A":15},{"A?":"A","A":{"list-level":{}}},{"A?":"B","A":14},{"A?":"A","A":{"list-level":{"B":"1.0"}}},{"A?":"B","A":1},{"A?":"A","A":{"color":{},"decoration":{},"direction":{},"font-family":{},"font-size":{},"font-style":{},"font-weight":{},"head-indent":{},"kerning":{},"leading":{},"link":{},"list-level":{},"list-marker":{},"spacing":{},"style":{},"text-align":{},"text-transform":{},"tracking":{}}}],"E":{},"G":{}},"b":{"A":[16,14]},"d":"A","l":false,"h":"A"},{"A?":"I","A":540.7560884141017,"B":575.6666666666664,"D":37.97566288593321,"C":38.750676414217565,"E":0.0,"F":0.0,"BD":[],"BE":[],"BA":[],"BB":[],"G":"https://www.linkedin.com/in/saeedeh-komasi/","Q":false,"S":false,"P":[],"5":{},"T":{},"W":{},"_":"LB3Fj9LbFS1S0tKX","a":{"A":false,"B":{"A":{"A?":"d","A":"MAAkOhltISs","B":4},"B":{"A":0.0,"B":7.105427357601002E-15,"D":37.97566288593321,"C":38.750676414217565,"E":0.0},"E":0.0,"C":{"#000000":"#fff6ea"}},"D":0.0,"F":false,"J":false,"G":false,"H":false},"e":[]},{"A?":"J","A":164.29827315541613,"B":97.5714285714285,"D":399.85714285714266,"C":439.40345368916775,"E":0.0,"F":0.0,"BD":[],"BE":[],"BA":[],"BB":[],"Q":false,"S":false,"P":[],"5":{},"T":{},"W":{},"_":"LBPtxBrjGmFflWmz","a":{"A":0.0,"B":0.0,"D":455.0,"C":500.0},"b":[{"A":"M227.5,0C99.1,0,0,90.1,0,229.7C0,328.8,0,500,0,500h227.5H455c0,0,0-171.2,0-270.3  C455,90.1,355.9,0,227.5,0z","B":{"A":true,"B":{"A":{"A?":"d","A":"MAHRtC78gyc","B":1},"B":{"A":-58.620832366715774,"B":0.0,"D":455.0,"C":606.6666666666666,"E":0.0},"E":0.0,"C":{}},"D":0.0,"F":false,"J":false,"G":false,"H":false},"D":0.0}],"d":[],"c":{"A":{"A":0.0,"B":0.0,"D":455.0,"C":500.0},"B":455.0,"C":500.0,"D":"A","E":"A"},"e":{"A":false,"B":false},"f":[],"g":[]},{"A?":"U","A":416.90271188383616,"B":575.6666666666664,"D":487.69842899690514,"C":2.0,"E":0.0,"F":0.0,"BD":[],"BE":[],"BA":[],"BB":[],"Q":false,"S":false,"P":[],"5":{},"T":{},"W":{},"_":"LBn47xNyYZnKDT7S","a":2,"b":{},"c":{},"d":"#fff6ea","e":[],"f":true,"g":[],"h":[]},{"A?":"K","A":228.23978447983978,"B":575.6666666666664,"D":585.4285714285714,"C":38.0,"E":0.0,"F":0.0,"BD":[],"BE":[],"BA":[],"BB":[],"Q":false,"S":false,"N":"heading2","P":[],"5":{},"T":{},"W":{},"_":"LBbM1BJthn5WGYyR","a":{"A":[{"A?":"A","A":"Reach out\\n"}],"B":[{"A?":"A","A":{"color":{"B":"#fff6ea"},"font-family":{"B":"YAFdJsSpokU,0"},"font-size":{"B":"32.0"},"font-style":{"B":"normal"},"font-weight":{"B":"normal"},"leading":{"B":"1200.0"},"text-transform":{"B":"none"},"tracking":{"B":"-50.0"}}},{"A?":"B","A":9},{"A?":"A","A":{"decoration":{"B":"none"},"direction":{"B":"ltr"},"head-indent":{"B":"0.0"},"kerning":{"B":"0.0"},"link":{"B":""},"list-level":{"B":"0.0"},"list-marker":{"B":"none"},"spacing":{"B":"0.0"},"style":{"B":"body"}}},{"A?":"B","A":1},{"A?":"A","A":{"color":{},"decoration":{},"direction":{},"font-family":{},"font-size":{},"font-style":{},"font-weight":{},"head-indent":{},"kerning":{},"leading":{},"link":{},"list-level":{},"list-marker":{},"spacing":{},"style":{},"text-transform":{},"tracking":{}}}],"E":{},"G":{}},"b":{"A":[10]},"d":"A","l":false,"g":true,"h":"A"},{"A?":"H","A":296.57524849141,"B":575.6666666666665,"D":432.926647343371,"C":81.54027541681897,"E":0.0,"F":0.0,"BD":[],"BE":[],"BA":[],"BB":[],"Q":false,"S":false,"P":[],"5":{},"T":{},"W":{},"_":"LBWtwwX93xX36HyF","b":432.926647343371,"a":81.54027541681897,"y":{},"e":{},"c":[{"A?":"K","A":2.4868995751603507E-14,"B":-1.1368683772161603E-13,"D":335.28929591182816,"C":33.41344,"E":0.0,"F":0.0,"BD":[],"BE":[],"BA":[],"BB":[],"Q":false,"S":false,"N":"logo","P":[],"5":{},"T":{},"W":{},"_":"LBhbqbgM797dwjNW","a":{"A":[{"A?":"A","A":"Saeedeh Komasi\\n"}],"B":[{"A?":"A","A":{"color":{"B":"#fff6ea"},"font-family":{"B":"YAFdJsSpokU,0"},"font-size":{"B":"27.9328"},"font-style":{"B":"normal"},"font-weight":{"B":"normal"},"list-level":{"B":"1.0"},"text-transform":{"B":"none"},"tracking":{"B":"100.0"}}},{"A?":"B","A":14},{"A?":"A","A":{"decoration":{"B":"none"},"direction":{"B":"ltr"},"kerning":{"B":"0.0"},"leading":{"B":"1400.0"},"link":{"B":""},"style":{"B":"body"}}},{"A?":"B","A":1},{"A?":"A","A":{"color":{},"decoration":{},"direction":{},"font-family":{},"font-size":{},"font-style":{},"font-weight":{},"kerning":{},"leading":{},"link":{},"list-level":{},"style":{},"text-transform":{},"tracking":{}}}],"E":{},"G":{}},"b":{"A":[15]},"d":"A","l":false,"g":false,"h":"A"},{"A?":"K","A":51.60691541681899,"B":-1.1368683772161603E-13,"D":432.926647343371,"C":29.93336,"E":0.0,"F":0.0,"BD":[],"BE":[],"BA":[],"BB":[],"Q":false,"S":false,"N":"heading5","P":[],"5":{},"T":{},"W":{},"_":"LBZ0k9sFpzDnsPxw","a":{"A":[{"A?":"A","A":"komasisaeedeh@gmail.com\\n"}],"B":[{"A?":"A","A":{"color":{"B":"#fff6ea"},"font-family":{"B":"YAFdJsSpokU,0"},"font-size":{"B":"25.3332"},"font-style":{"B":"normal"},"font-weight":{"B":"normal"},"list-level":{"B":"1.0"},"text-transform":{"B":"none"},"tracking":{"B":"0.0"}}},{"A?":"B","A":23},{"A?":"A","A":{"decoration":{"B":"none"},"direction":{"B":"ltr"},"head-indent":{"B":"0.0"},"kerning":{"B":"0.0"},"leading":{"B":"1400.0"},"link":{"B":""},"list-marker":{"B":"none"},"spacing":{"B":"0.0"},"style":{"B":"body"},"text-align":{"B":"start"}}},{"A?":"B","A":1},{"A?":"A","A":{"color":{},"decoration":{},"direction":{},"font-family":{},"font-size":{},"font-style":{},"font-weight":{},"head-indent":{},"kerning":{},"leading":{},"link":{},"list-level":{},"list-marker":{},"spacing":{},"style":{},"text-align":{},"text-transform":{},"tracking":{}}}],"E":{},"G":{}},"b":{"A":[24]},"d":"A","l":false,"g":false,"h":"A"}],"d":[]}],"I":[]}],"I":[]},"Z":{"A?":"A","M":"en","P":{"A":false,"B":"B","C":"#000000","D":"#ffffff","E":true},"e":true,"f":false,"g":{"A":"YAFdJsSpokU-0","B":"#060606","C":"#ffffff"}},"I":{"A":[{"A":"YACgEZ1cb1Q","B":0,"C":"Arimo","D":[{"style":"BOLD_ITALICS","files":[{"url":"_assets/fonts/0803f40e19a074a5520c2746a6ba3c95.woff","format":"WOFF","unicodeRanges":[],"sizeBytes":237588}],"subsettedFiles":[],"scriptSubsetFiles":[],"metadata":{"head":{"unitsPerEm":2048,"yMin":-771,"yMax":2109},"hhea":{"ascender":1854,"descender":-434,"lineGap":67},"os2":{"sTypoAscender":1491,"sTypoDescender":-431,"sTypoLineGap":307,"usWinAscent":1854,"usWinDescent":434,"fsSelection":33}}},{"style":"ITALICS","files":[{"url":"_assets/fonts/711f50b3a8c00bb7e2e05ef85f982cb6.woff","format":"WOFF","unicodeRanges":[],"sizeBytes":240584}],"subsettedFiles":[],"scriptSubsetFiles":[],"metadata":{"head":{"unitsPerEm":2048,"yMin":-621,"yMax":2077},"hhea":{"ascender":1854,"descender":-434,"lineGap":67},"os2":{"sTypoAscender":1491,"sTypoDescender":-425,"sTypoLineGap":307,"usWinAscent":1854,"usWinDescent":434,"fsSelection":1}}},{"style":"REGULAR","files":[{"url":"_assets/fonts/834f64ff415fb8f4f5d92d8fd40507e9.woff","format":"WOFF","unicodeRanges":[],"sizeBytes":234332}],"subsettedFiles":[],"scriptSubsetFiles":[],"metadata":{"head":{"unitsPerEm":2048,"yMin":-621,"yMax":2007},"hhea":{"ascender":1854,"descender":-434,"lineGap":67},"os2":{"sTypoAscender":1491,"sTypoDescender":-431,"sTypoLineGap":307,"usWinAscent":1854,"usWinDescent":434,"fsSelection":64}}},{"style":"BOLD","files":[{"url":"_assets/fonts/b07201e0e9fc452103c1c0345b0e7c1d.woff","format":"WOFF","unicodeRanges":[],"sizeBytes":234660}],"subsettedFiles":[],"scriptSubsetFiles":[],"metadata":{"head":{"unitsPerEm":2048,"yMin":-771,"yMax":2116},"hhea":{"ascender":1854,"descender":-434,"lineGap":67},"os2":{"sTypoAscender":1491,"sTypoDescender":-431,"sTypoLineGap":307,"usWinAscent":1854,"usWinDescent":434,"fsSelection":32}}}],"E":false},{"A":"YAFdJsSpokU","B":0,"C":"Anantason","D":[{"style":"REGULAR","files":[{"url":"_assets/fonts/f9e49eaf4b2a4192363507284eefeae3.woff","format":"WOFF","unicodeRanges":[],"sizeBytes":28868}],"subsettedFiles":[],"scriptSubsetFiles":[],"metadata":{"head":{"unitsPerEm":1000,"yMin":-500,"yMax":1160},"hhea":{"ascender":1300,"descender":-700,"lineGap":0},"os2":{"sTypoAscender":700,"sTypoDescender":-200,"sTypoLineGap":1100,"usWinAscent":1300,"usWinDescent":700,"fsSelection":64}}}],"E":false},{"A":"YAFdJvSyp_k","B":2,"C":"Inter","D":[{"style":"MEDIUM","files":[{"url":"_assets/fonts/6f4ebe2ec66d073a77d3ac42facb1fd0.woff","format":"WOFF","unicodeRanges":[],"sizeBytes":155480}],"subsettedFiles":[],"scriptSubsetFiles":[],"metadata":{"head":{"unitsPerEm":2816,"yMin":-900,"yMax":3072},"hhea":{"ascender":2728,"descender":-680,"lineGap":0},"os2":{"sTypoAscender":2728,"sTypoDescender":-680,"sTypoLineGap":0,"usWinAscent":2728,"usWinDescent":680,"fsSelection":192}}},{"style":"THIN_ITALICS","files":[{"url":"_assets/fonts/d8e3d0da973997511dc8d37a6c23a146.woff","format":"WOFF","unicodeRanges":[],"sizeBytes":144876}],"subsettedFiles":[],"scriptSubsetFiles":[],"metadata":{"head":{"unitsPerEm":2816,"yMin":-1032,"yMax":3104},"hhea":{"ascender":2708,"descender":-660,"lineGap":0},"os2":{"sTypoAscender":2708,"sTypoDescender":-660,"sTypoLineGap":0,"usWinAscent":2708,"usWinDescent":660,"fsSelection":1}}},{"style":"LIGHT","files":[{"url":"_assets/fonts/901f56581f071d1f1800d4d0a0e6893e.woff","format":"WOFF","unicodeRanges":[],"sizeBytes":153152}],"subsettedFiles":[],"scriptSubsetFiles":[],"metadata":{"head":{"unitsPerEm":2816,"yMin":-900,"yMax":3072},"hhea":{"ascender":2728,"descender":-680,"lineGap":0},"os2":{"sTypoAscender":2728,"sTypoDescender":-680,"sTypoLineGap":0,"usWinAscent":2728,"usWinDescent":680,"fsSelection":192}}},{"style":"REGULAR","files":[{"url":"_assets/fonts/36b153bae63e1efdc8ed78bceb83bcbd.woff","format":"WOFF","unicodeRanges":[],"sizeBytes":124928}],"subsettedFiles":[],"scriptSubsetFiles":[],"metadata":{"head":{"unitsPerEm":2816,"yMin":-1084,"yMax":3072},"hhea":{"ascender":2708,"descender":-660,"lineGap":0},"os2":{"sTypoAscender":2708,"sTypoDescender":-660,"sTypoLineGap":0,"usWinAscent":2708,"usWinDescent":660,"fsSelection":64}}},{"style":"EXTRA_LIGHT","files":[{"url":"_assets/fonts/74dd46e96bb4798eed149b95e0d71f5e.woff","format":"WOFF","unicodeRanges":[],"sizeBytes":153540}],"subsettedFiles":[],"scriptSubsetFiles":[],"metadata":{"head":{"unitsPerEm":2816,"yMin":-900,"yMax":3072},"hhea":{"ascender":2728,"descender":-680,"lineGap":0},"os2":{"sTypoAscender":2728,"sTypoDescender":-680,"sTypoLineGap":0,"usWinAscent":2728,"usWinDescent":680,"fsSelection":192}}},{"style":"BOLD_ITALICS","files":[{"url":"_assets/fonts/6f74722419a8467fed2608f1fd985d71.woff","format":"WOFF","unicodeRanges":[],"sizeBytes":139816}],"subsettedFiles":[],"scriptSubsetFiles":[],"metadata":{"head":{"unitsPerEm":2816,"yMin":-1150,"yMax":3077},"hhea":{"ascender":2708,"descender":-660,"lineGap":0},"os2":{"sTypoAscender":2708,"sTypoDescender":-660,"sTypoLineGap":0,"usWinAscent":2708,"usWinDescent":660,"fsSelection":33}}},{"style":"ITALICS","files":[{"url":"_assets/fonts/55daec838868135443fd066c9d85c2f9.woff","format":"WOFF","unicodeRanges":[],"sizeBytes":133632}],"subsettedFiles":[],"scriptSubsetFiles":[],"metadata":{"head":{"unitsPerEm":2816,"yMin":-1080,"yMax":3072},"hhea":{"ascender":2708,"descender":-660,"lineGap":0},"os2":{"sTypoAscender":2708,"sTypoDescender":-660,"sTypoLineGap":0,"usWinAscent":2708,"usWinDescent":660,"fsSelection":1}}},{"style":"THIN","files":[{"url":"_assets/fonts/dbbdf6e5a0cb285fad3d6d9c64919581.woff","format":"WOFF","unicodeRanges":[],"sizeBytes":137272}],"subsettedFiles":[],"scriptSubsetFiles":[],"metadata":{"head":{"unitsPerEm":2816,"yMin":-1032,"yMax":3029},"hhea":{"ascender":2708,"descender":-660,"lineGap":0},"os2":{"sTypoAscender":2708,"sTypoDescender":-660,"sTypoLineGap":0,"usWinAscent":2708,"usWinDescent":660,"fsSelection":64}}},{"style":"SEMI_BOLD","files":[{"url":"_assets/fonts/d5b3ef22d90242a48a8b95f3ff8033e0.woff","format":"WOFF","unicodeRanges":[],"sizeBytes":156464}],"subsettedFiles":[],"scriptSubsetFiles":[],"metadata":{"head":{"unitsPerEm":2816,"yMin":-900,"yMax":3072},"hhea":{"ascender":2728,"descender":-680,"lineGap":0},"os2":{"sTypoAscender":2728,"sTypoDescender":-680,"sTypoLineGap":0,"usWinAscent":2728,"usWinDescent":680,"fsSelection":192}}},{"style":"BOLD","files":[{"url":"_assets/fonts/2f3244b2b373fb48d0223443cf55b7b8.woff","format":"WOFF","unicodeRanges":[],"sizeBytes":133336}],"subsettedFiles":[],"scriptSubsetFiles":[],"metadata":{"head":{"unitsPerEm":2816,"yMin":-1152,"yMax":3077},"hhea":{"ascender":2708,"descender":-660,"lineGap":0},"os2":{"sTypoAscender":2708,"sTypoDescender":-660,"sTypoLineGap":0,"usWinAscent":2708,"usWinDescent":660,"fsSelection":32}}},{"style":"ULTRA_BOLD","files":[{"url":"_assets/fonts/80b137a98fbba828618bb89dbe1a0455.woff","format":"WOFF","unicodeRanges":[],"sizeBytes":156552}],"subsettedFiles":[],"scriptSubsetFiles":[],"metadata":{"head":{"unitsPerEm":2816,"yMin":-900,"yMax":3072},"hhea":{"ascender":2728,"descender":-680,"lineGap":0},"os2":{"sTypoAscender":2728,"sTypoDescender":-680,"sTypoLineGap":0,"usWinAscent":2728,"usWinDescent":680,"fsSelection":192}}},{"style":"HEAVY","files":[{"url":"_assets/fonts/128f296d3c1fd97ced39b6c065e06968.woff","format":"WOFF","unicodeRanges":[],"sizeBytes":151888}],"subsettedFiles":[],"scriptSubsetFiles":[],"metadata":{"head":{"unitsPerEm":2816,"yMin":-900,"yMax":3072},"hhea":{"ascender":2728,"descender":-680,"lineGap":0},"os2":{"sTypoAscender":2728,"sTypoDescender":-680,"sTypoLineGap":0,"usWinAscent":2728,"usWinDescent":680,"fsSelection":192}}}],"E":false}],"B":[{"type":"RASTER","id":"MAHRtC78gyc","version":1,"files":[{"url":"_assets/media/60d5779bd31d0d39574305ce8ae5a941.png","urlDenied":false,"width":600,"height":800,"watermarked":false,"spritesheet":false,"recoloring":{},"quality":"SCREEN","mimeType":"image/png"}]},{"type":"RASTER","id":"MAHRtC78gyc","version":1,"files":[{"url":"_assets/media/78e2158bdd371aa54a37fac274a8d4ca.png","urlDenied":false,"width":1086,"height":1448,"watermarked":false,"spritesheet":false,"recoloring":{},"quality":"SCREEN_2X","mimeType":"image/png"}]},{"type":"RASTER","id":"MAHRtC78gyc","version":1,"files":[{"url":"_assets/media/78e2158bdd371aa54a37fac274a8d4ca.png","urlDenied":false,"width":1086,"height":1448,"watermarked":false,"spritesheet":false,"recoloring":{},"quality":"SCREEN_3X","mimeType":"image/png"}]},{"type":"RASTER","id":"MAHRuU_tVIQ","version":1,"files":[{"url":"_assets/media/8d193f3fc08dc5a6ccea3db1677471eb.png","urlDenied":false,"width":565,"height":800,"watermarked":false,"spritesheet":false,"recoloring":{},"quality":"SCREEN","mimeType":"image/png"}]},{"type":"RASTER","id":"MAHRuU_tVIQ","version":1,"files":[{"url":"_assets/media/1bf67c62d07fb6764d2d5929f0bcf36b.png","urlDenied":false,"width":1131,"height":1600,"watermarked":false,"spritesheet":false,"recoloring":{},"quality":"SCREEN_2X","mimeType":"image/png"}]},{"type":"RASTER","id":"MAHRuU_tVIQ","version":1,"files":[{"url":"_assets/media/2333303a98db8c5cabe16f8750301744.png","urlDenied":false,"width":1697,"height":2400,"watermarked":false,"spritesheet":false,"recoloring":{},"quality":"SCREEN_3X","mimeType":"image/png"}]},{"type":"RASTER","id":"MAHRufocv8s","version":1,"files":[{"url":"_assets/media/9715f544dfc5773d7c62df4cae28ebcb.png","urlDenied":false,"width":565,"height":800,"watermarked":false,"spritesheet":false,"recoloring":{},"quality":"SCREEN","mimeType":"image/png"}]},{"type":"RASTER","id":"MAHRufocv8s","version":1,"files":[{"url":"_assets/media/2264165fdbf9a4d3545b3a7c074900bc.png","urlDenied":false,"width":1131,"height":1600,"watermarked":false,"spritesheet":false,"recoloring":{},"quality":"SCREEN_2X","mimeType":"image/png"}]},{"type":"RASTER","id":"MAHRufocv8s","version":1,"files":[{"url":"_assets/media/48b5f65d0490f2a197a7f26bf055893b.png","urlDenied":false,"width":1697,"height":2400,"watermarked":false,"spritesheet":false,"recoloring":{},"quality":"SCREEN_3X","mimeType":"image/png"}]},{"type":"RASTER","id":"MAHRuLCdjlU","version":1,"files":[{"url":"_assets/media/940f5afc686a89cc418badd0c16e8ff5.jpg","urlDenied":false,"width":315,"height":309,"watermarked":false,"spritesheet":false,"recoloring":{},"quality":"SCREEN","mimeType":"image/jpeg"}]},{"type":"RASTER","id":"MAHRuLCdjlU","version":1,"files":[{"url":"_assets/media/940f5afc686a89cc418badd0c16e8ff5.jpg","urlDenied":false,"width":315,"height":309,"watermarked":false,"spritesheet":false,"recoloring":{},"quality":"SCREEN_2X","mimeType":"image/jpeg"}]},{"type":"RASTER","id":"MAHRuLCdjlU","version":1,"files":[{"url":"_assets/media/940f5afc686a89cc418badd0c16e8ff5.jpg","urlDenied":false,"width":315,"height":309,"watermarked":false,"spritesheet":false,"recoloring":{},"quality":"SCREEN_3X","mimeType":"image/jpeg"}]},{"type":"VECTOR","id":"MAAkOhltISs","version":4,"files":[{"url":"_assets/media/b1a198267bf862185fe836d5f4fc2b5b.png","urlDenied":false,"width":784,"height":800,"watermarked":false,"spritesheet":true,"recoloring":{},"quality":"SCREEN","mimeType":"image/png"}],"spritesheetMetadata":{"spritesWide":3,"spritesHigh":2,"fullyRecolorable":true,"layers":[{"type":"BACKGROUND_R"},{"type":"BACKGROUND_G"},{"type":"BACKGROUND_B"},{"type":"BACKGROUND_A"},{"type":"RECOLORABLE","color":"rgb(0, 0, 0)"}]}},{"type":"VECTOR","id":"MAAkOhltISs","version":4,"files":[{"url":"_assets/media/b65c1c9c3fed0ecc180a3886cd7dbb1a.svg","urlDenied":false,"width":49,"height":50,"watermarked":false,"spritesheet":false,"recoloring":{},"quality":"SCREEN_2X","mimeType":"image/svg+xml"}],"spritesheetMetadata":{"spritesWide":3,"spritesHigh":2,"fullyRecolorable":true,"layers":[{"type":"BACKGROUND_R"},{"type":"BACKGROUND_G"},{"type":"BACKGROUND_B"},{"type":"BACKGROUND_A"},{"type":"RECOLORABLE","color":"rgb(0, 0, 0)"}]}},{"type":"VECTOR","id":"MAAkOhltISs","version":4,"files":[{"url":"_assets/media/b65c1c9c3fed0ecc180a3886cd7dbb1a.svg","urlDenied":false,"width":49,"height":50,"watermarked":false,"spritesheet":false,"recoloring":{},"quality":"SCREEN_3X","mimeType":"image/svg+xml"}],"spritesheetMetadata":{"spritesWide":3,"spritesHigh":2,"fullyRecolorable":true,"layers":[{"type":"BACKGROUND_R"},{"type":"BACKGROUND_G"},{"type":"BACKGROUND_B"},{"type":"BACKGROUND_A"},{"type":"RECOLORABLE","color":"rgb(0, 0, 0)"}]}},{"type":"RASTER","id":"MAHRtObb_Yk","version":1,"files":[{"url":"_assets/media/789e5c5408a1d8f967a2f695a622e7ca.png","urlDenied":false,"width":565,"height":800,"watermarked":false,"spritesheet":false,"recoloring":{},"quality":"SCREEN","mimeType":"image/png"}]},{"type":"RASTER","id":"MAHRtObb_Yk","version":1,"files":[{"url":"_assets/media/9024e75312065bc2d2b2e7a596758572.png","urlDenied":false,"width":1131,"height":1600,"watermarked":false,"spritesheet":false,"recoloring":{},"quality":"SCREEN_2X","mimeType":"image/png"}]},{"type":"RASTER","id":"MAHRtObb_Yk","version":1,"files":[{"url":"_assets/media/949b7ef0ed021ee26770460c79882f89.png","urlDenied":false,"width":1697,"height":2400,"watermarked":false,"spritesheet":false,"recoloring":{},"quality":"SCREEN_3X","mimeType":"image/png"}]},{"type":"RASTER","id":"MAHRsHqotwg","version":1,"files":[{"url":"_assets/media/ff5a9913a395656b6814978e854ab6b1.jpg","urlDenied":false,"width":402,"height":497,"watermarked":false,"spritesheet":false,"recoloring":{},"quality":"SCREEN","mimeType":"image/jpeg"}]},{"type":"RASTER","id":"MAHRsHqotwg","version":1,"files":[{"url":"_assets/media/ff5a9913a395656b6814978e854ab6b1.jpg","urlDenied":false,"width":402,"height":497,"watermarked":false,"spritesheet":false,"recoloring":{},"quality":"SCREEN_2X","mimeType":"image/jpeg"}]},{"type":"RASTER","id":"MAHRsHqotwg","version":1,"files":[{"url":"_assets/media/ff5a9913a395656b6814978e854ab6b1.jpg","urlDenied":false,"width":402,"height":497,"watermarked":false,"spritesheet":false,"recoloring":{},"quality":"SCREEN_3X","mimeType":"image/jpeg"}]}],"C":[{"id":"VAHRtGlxjHU","files":[{"url":"_assets/video/800f8c059d8778efedd7eae10d3a85bb.mp4","width":1080,"height":608,"container":"A","watermarked":false,"frameRate":30.0}],"dashVideoFiles":[{"A?":"A","x":302025,"y":"avc1.64001e","z":{"A":0,"B":838},"0":{"A":839,"B":1538},"1":"_assets/video/1c729130ecddfee5970bf0e3d13ef56e.mp4","A":640,"B":360,"C":false,"D":"A","E":30.0},{"A?":"A","x":876535,"y":"avc1.64001f","z":{"A":0,"B":839},"0":{"A":840,"B":1635},"1":"_assets/video/962a6230406b09bdc9dc18fa642ac3d4.mp4","A":1080,"B":608,"C":false,"D":"A","E":30.0},{"A?":"A","x":89758,"y":"avc1.640014","z":{"A":0,"B":838},"0":{"A":839,"B":1634},"1":"_assets/video/0634dc7880de4ea1a04509dc59625dde.mp4","A":320,"B":180,"C":false,"D":"A","E":30.0}],"dashAudioFiles":[{"A?":"B","x":195219,"y":"mp4a.40.2","z":{"A":0,"B":767},"0":{"A":768,"B":1563},"1":"_assets/video/1f7eda6a51fe4e1cd483a35c509ec909.M4A"}],"width":1080,"height":608,"durationSeconds":125.858159,"posterframes":[{"A":"_assets/video/91abccc4c39d9e1bc68737b672952c62.jpg"}],"videoTimelines":[{"A":256,"B":144,"G":30,"C":5,"D":6,"E":1.0,"F":"_assets/video/de5b769b1ab686c952ff36b380c69037.jpg"},{"A":256,"B":144,"G":30,"C":5,"D":6,"E":1.0,"F":"_assets/video/aa4529c7e6d4a347d8ed5fe4d82bd2e7.jpg"},{"A":256,"B":144,"G":30,"C":5,"D":6,"E":1.0,"F":"_assets/video/f803b9796bb6c1a03c56b0a1a1a12be5.jpg"},{"A":256,"B":144,"G":30,"C":5,"D":6,"E":1.0,"F":"_assets/video/9b24275461f9ec9c63fe82df1070883c.jpg"},{"A":256,"B":144,"G":6,"C":5,"D":6,"E":1.0,"F":"_assets/video/5049a186ff4d67b2c42660486094d7f7.jpg"},{"A":256,"B":144,"G":0,"C":4,"D":1,"E":1.0,"F":"_assets/video/6aef225618c5746dbc56bba4f03222e3.jpg"}],"contentType":"VIDEO","hlsManifestUrl":"_assets/video/d02265802562676378432dd4d246d21a.m3u","modifiers":[]}],"D":[],"E":[],"F":[],"H":[],"G":[]},"B":[{"A":"YACgEZ1cb1Q","B":0,"C":"Arimo","D":[{"style":"BOLD_ITALICS","files":[{"url":"_assets/fonts/0803f40e19a074a5520c2746a6ba3c95.woff","format":"WOFF","unicodeRanges":[],"sizeBytes":237588}],"subsettedFiles":[],"scriptSubsetFiles":[],"metadata":{"head":{"unitsPerEm":2048,"yMin":-771,"yMax":2109},"hhea":{"ascender":1854,"descender":-434,"lineGap":67},"os2":{"sTypoAscender":1491,"sTypoDescender":-431,"sTypoLineGap":307,"usWinAscent":1854,"usWinDescent":434,"fsSelection":33}}},{"style":"ITALICS","files":[{"url":"_assets/fonts/711f50b3a8c00bb7e2e05ef85f982cb6.woff","format":"WOFF","unicodeRanges":[],"sizeBytes":240584}],"subsettedFiles":[],"scriptSubsetFiles":[],"metadata":{"head":{"unitsPerEm":2048,"yMin":-621,"yMax":2077},"hhea":{"ascender":1854,"descender":-434,"lineGap":67},"os2":{"sTypoAscender":1491,"sTypoDescender":-425,"sTypoLineGap":307,"usWinAscent":1854,"usWinDescent":434,"fsSelection":1}}},{"style":"REGULAR","files":[{"url":"_assets/fonts/834f64ff415fb8f4f5d92d8fd40507e9.woff","format":"WOFF","unicodeRanges":[],"sizeBytes":234332}],"subsettedFiles":[],"scriptSubsetFiles":[],"metadata":{"head":{"unitsPerEm":2048,"yMin":-621,"yMax":2007},"hhea":{"ascender":1854,"descender":-434,"lineGap":67},"os2":{"sTypoAscender":1491,"sTypoDescender":-431,"sTypoLineGap":307,"usWinAscent":1854,"usWinDescent":434,"fsSelection":64}}},{"style":"BOLD","files":[{"url":"_assets/fonts/b07201e0e9fc452103c1c0345b0e7c1d.woff","format":"WOFF","unicodeRanges":[],"sizeBytes":234660}],"subsettedFiles":[],"scriptSubsetFiles":[],"metadata":{"head":{"unitsPerEm":2048,"yMin":-771,"yMax":2116},"hhea":{"ascender":1854,"descender":-434,"lineGap":67},"os2":{"sTypoAscender":1491,"sTypoDescender":-431,"sTypoLineGap":307,"usWinAscent":1854,"usWinDescent":434,"fsSelection":32}}}],"E":false},{"A":"YAFdJsSpokU","B":0,"C":"Anantason","D":[{"style":"REGULAR","files":[{"url":"_assets/fonts/f9e49eaf4b2a4192363507284eefeae3.woff","format":"WOFF","unicodeRanges":[],"sizeBytes":28868}],"subsettedFiles":[],"scriptSubsetFiles":[],"metadata":{"head":{"unitsPerEm":1000,"yMin":-500,"yMax":1160},"hhea":{"ascender":1300,"descender":-700,"lineGap":0},"os2":{"sTypoAscender":700,"sTypoDescender":-200,"sTypoLineGap":1100,"usWinAscent":1300,"usWinDescent":700,"fsSelection":64}}}],"E":false},{"A":"YAFdJvSyp_k","B":2,"C":"Inter","D":[{"style":"MEDIUM","files":[{"url":"_assets/fonts/6f4ebe2ec66d073a77d3ac42facb1fd0.woff","format":"WOFF","unicodeRanges":[],"sizeBytes":155480}],"subsettedFiles":[],"scriptSubsetFiles":[],"metadata":{"head":{"unitsPerEm":2816,"yMin":-900,"yMax":3072},"hhea":{"ascender":2728,"descender":-680,"lineGap":0},"os2":{"sTypoAscender":2728,"sTypoDescender":-680,"sTypoLineGap":0,"usWinAscent":2728,"usWinDescent":680,"fsSelection":192}}},{"style":"THIN_ITALICS","files":[{"url":"_assets/fonts/d8e3d0da973997511dc8d37a6c23a146.woff","format":"WOFF","unicodeRanges":[],"sizeBytes":144876}],"subsettedFiles":[],"scriptSubsetFiles":[],"metadata":{"head":{"unitsPerEm":2816,"yMin":-1032,"yMax":3104},"hhea":{"ascender":2708,"descender":-660,"lineGap":0},"os2":{"sTypoAscender":2708,"sTypoDescender":-660,"sTypoLineGap":0,"usWinAscent":2708,"usWinDescent":660,"fsSelection":1}}},{"style":"LIGHT","files":[{"url":"_assets/fonts/901f56581f071d1f1800d4d0a0e6893e.woff","format":"WOFF","unicodeRanges":[],"sizeBytes":153152}],"subsettedFiles":[],"scriptSubsetFiles":[],"metadata":{"head":{"unitsPerEm":2816,"yMin":-900,"yMax":3072},"hhea":{"ascender":2728,"descender":-680,"lineGap":0},"os2":{"sTypoAscender":2728,"sTypoDescender":-680,"sTypoLineGap":0,"usWinAscent":2728,"usWinDescent":680,"fsSelection":192}}},{"style":"REGULAR","files":[{"url":"_assets/fonts/36b153bae63e1efdc8ed78bceb83bcbd.woff","format":"WOFF","unicodeRanges":[],"sizeBytes":124928}],"subsettedFiles":[],"scriptSubsetFiles":[],"metadata":{"head":{"unitsPerEm":2816,"yMin":-1084,"yMax":3072},"hhea":{"ascender":2708,"descender":-660,"lineGap":0},"os2":{"sTypoAscender":2708,"sTypoDescender":-660,"sTypoLineGap":0,"usWinAscent":2708,"usWinDescent":660,"fsSelection":64}}},{"style":"EXTRA_LIGHT","files":[{"url":"_assets/fonts/74dd46e96bb4798eed149b95e0d71f5e.woff","format":"WOFF","unicodeRanges":[],"sizeBytes":153540}],"subsettedFiles":[],"scriptSubsetFiles":[],"metadata":{"head":{"unitsPerEm":2816,"yMin":-900,"yMax":3072},"hhea":{"ascender":2728,"descender":-680,"lineGap":0},"os2":{"sTypoAscender":2728,"sTypoDescender":-680,"sTypoLineGap":0,"usWinAscent":2728,"usWinDescent":680,"fsSelection":192}}},{"style":"BOLD_ITALICS","files":[{"url":"_assets/fonts/6f74722419a8467fed2608f1fd985d71.woff","format":"WOFF","unicodeRanges":[],"sizeBytes":139816}],"subsettedFiles":[],"scriptSubsetFiles":[],"metadata":{"head":{"unitsPerEm":2816,"yMin":-1150,"yMax":3077},"hhea":{"ascender":2708,"descender":-660,"lineGap":0},"os2":{"sTypoAscender":2708,"sTypoDescender":-660,"sTypoLineGap":0,"usWinAscent":2708,"usWinDescent":660,"fsSelection":33}}},{"style":"ITALICS","files":[{"url":"_assets/fonts/55daec838868135443fd066c9d85c2f9.woff","format":"WOFF","unicodeRanges":[],"sizeBytes":133632}],"subsettedFiles":[],"scriptSubsetFiles":[],"metadata":{"head":{"unitsPerEm":2816,"yMin":-1080,"yMax":3072},"hhea":{"ascender":2708,"descender":-660,"lineGap":0},"os2":{"sTypoAscender":2708,"sTypoDescender":-660,"sTypoLineGap":0,"usWinAscent":2708,"usWinDescent":660,"fsSelection":1}}},{"style":"THIN","files":[{"url":"_assets/fonts/dbbdf6e5a0cb285fad3d6d9c64919581.woff","format":"WOFF","unicodeRanges":[],"sizeBytes":137272}],"subsettedFiles":[],"scriptSubsetFiles":[],"metadata":{"head":{"unitsPerEm":2816,"yMin":-1032,"yMax":3029},"hhea":{"ascender":2708,"descender":-660,"lineGap":0},"os2":{"sTypoAscender":2708,"sTypoDescender":-660,"sTypoLineGap":0,"usWinAscent":2708,"usWinDescent":660,"fsSelection":64}}},{"style":"SEMI_BOLD","files":[{"url":"_assets/fonts/d5b3ef22d90242a48a8b95f3ff8033e0.woff","format":"WOFF","unicodeRanges":[],"sizeBytes":156464}],"subsettedFiles":[],"scriptSubsetFiles":[],"metadata":{"head":{"unitsPerEm":2816,"yMin":-900,"yMax":3072},"hhea":{"ascender":2728,"descender":-680,"lineGap":0},"os2":{"sTypoAscender":2728,"sTypoDescender":-680,"sTypoLineGap":0,"usWinAscent":2728,"usWinDescent":680,"fsSelection":192}}},{"style":"BOLD","files":[{"url":"_assets/fonts/2f3244b2b373fb48d0223443cf55b7b8.woff","format":"WOFF","unicodeRanges":[],"sizeBytes":133336}],"subsettedFiles":[],"scriptSubsetFiles":[],"metadata":{"head":{"unitsPerEm":2816,"yMin":-1152,"yMax":3077},"hhea":{"ascender":2708,"descender":-660,"lineGap":0},"os2":{"sTypoAscender":2708,"sTypoDescender":-660,"sTypoLineGap":0,"usWinAscent":2708,"usWinDescent":660,"fsSelection":32}}},{"style":"ULTRA_BOLD","files":[{"url":"_assets/fonts/80b137a98fbba828618bb89dbe1a0455.woff","format":"WOFF","unicodeRanges":[],"sizeBytes":156552}],"subsettedFiles":[],"scriptSubsetFiles":[],"metadata":{"head":{"unitsPerEm":2816,"yMin":-900,"yMax":3072},"hhea":{"ascender":2728,"descender":-680,"lineGap":0},"os2":{"sTypoAscender":2728,"sTypoDescender":-680,"sTypoLineGap":0,"usWinAscent":2728,"usWinDescent":680,"fsSelection":192}}},{"style":"HEAVY","files":[{"url":"_assets/fonts/128f296d3c1fd97ced39b6c065e06968.woff","format":"WOFF","unicodeRanges":[],"sizeBytes":151888}],"subsettedFiles":[],"scriptSubsetFiles":[],"metadata":{"head":{"unitsPerEm":2816,"yMin":-900,"yMax":3072},"hhea":{"ascender":2728,"descender":-680,"lineGap":0},"os2":{"sTypoAscender":2728,"sTypoDescender":-680,"sTypoLineGap":0,"usWinAscent":2728,"usWinDescent":680,"fsSelection":192}}}],"E":false}],"E":[{"type":"RASTER","id":"MAHRtC78gyc","version":1,"files":[{"url":"_assets/media/60d5779bd31d0d39574305ce8ae5a941.png","urlDenied":false,"width":600,"height":800,"watermarked":false,"spritesheet":false,"recoloring":{},"quality":"SCREEN","mimeType":"image/png"}]},{"type":"RASTER","id":"MAHRtC78gyc","version":1,"files":[{"url":"_assets/media/78e2158bdd371aa54a37fac274a8d4ca.png","urlDenied":false,"width":1086,"height":1448,"watermarked":false,"spritesheet":false,"recoloring":{},"quality":"SCREEN_2X","mimeType":"image/png"}]},{"type":"RASTER","id":"MAHRtC78gyc","version":1,"files":[{"url":"_assets/media/78e2158bdd371aa54a37fac274a8d4ca.png","urlDenied":false,"width":1086,"height":1448,"watermarked":false,"spritesheet":false,"recoloring":{},"quality":"SCREEN_3X","mimeType":"image/png"}]},{"type":"RASTER","id":"MAHRuU_tVIQ","version":1,"files":[{"url":"_assets/media/8d193f3fc08dc5a6ccea3db1677471eb.png","urlDenied":false,"width":565,"height":800,"watermarked":false,"spritesheet":false,"recoloring":{},"quality":"SCREEN","mimeType":"image/png"}]},{"type":"RASTER","id":"MAHRuU_tVIQ","version":1,"files":[{"url":"_assets/media/1bf67c62d07fb6764d2d5929f0bcf36b.png","urlDenied":false,"width":1131,"height":1600,"watermarked":false,"spritesheet":false,"recoloring":{},"quality":"SCREEN_2X","mimeType":"image/png"}]},{"type":"RASTER","id":"MAHRuU_tVIQ","version":1,"files":[{"url":"_assets/media/2333303a98db8c5cabe16f8750301744.png","urlDenied":false,"width":1697,"height":2400,"watermarked":false,"spritesheet":false,"recoloring":{},"quality":"SCREEN_3X","mimeType":"image/png"}]},{"type":"RASTER","id":"MAHRufocv8s","version":1,"files":[{"url":"_assets/media/9715f544dfc5773d7c62df4cae28ebcb.png","urlDenied":false,"width":565,"height":800,"watermarked":false,"spritesheet":false,"recoloring":{},"quality":"SCREEN","mimeType":"image/png"}]},{"type":"RASTER","id":"MAHRufocv8s","version":1,"files":[{"url":"_assets/media/2264165fdbf9a4d3545b3a7c074900bc.png","urlDenied":false,"width":1131,"height":1600,"watermarked":false,"spritesheet":false,"recoloring":{},"quality":"SCREEN_2X","mimeType":"image/png"}]},{"type":"RASTER","id":"MAHRufocv8s","version":1,"files":[{"url":"_assets/media/48b5f65d0490f2a197a7f26bf055893b.png","urlDenied":false,"width":1697,"height":2400,"watermarked":false,"spritesheet":false,"recoloring":{},"quality":"SCREEN_3X","mimeType":"image/png"}]},{"type":"RASTER","id":"MAHRuLCdjlU","version":1,"files":[{"url":"_assets/media/940f5afc686a89cc418badd0c16e8ff5.jpg","urlDenied":false,"width":315,"height":309,"watermarked":false,"spritesheet":false,"recoloring":{},"quality":"SCREEN","mimeType":"image/jpeg"}]},{"type":"RASTER","id":"MAHRuLCdjlU","version":1,"files":[{"url":"_assets/media/940f5afc686a89cc418badd0c16e8ff5.jpg","urlDenied":false,"width":315,"height":309,"watermarked":false,"spritesheet":false,"recoloring":{},"quality":"SCREEN_2X","mimeType":"image/jpeg"}]},{"type":"RASTER","id":"MAHRuLCdjlU","version":1,"files":[{"url":"_assets/media/940f5afc686a89cc418badd0c16e8ff5.jpg","urlDenied":false,"width":315,"height":309,"watermarked":false,"spritesheet":false,"recoloring":{},"quality":"SCREEN_3X","mimeType":"image/jpeg"}]},{"type":"VECTOR","id":"MAAkOhltISs","version":4,"files":[{"url":"_assets/media/b1a198267bf862185fe836d5f4fc2b5b.png","urlDenied":false,"width":784,"height":800,"watermarked":false,"spritesheet":true,"recoloring":{},"quality":"SCREEN","mimeType":"image/png"}],"spritesheetMetadata":{"spritesWide":3,"spritesHigh":2,"fullyRecolorable":true,"layers":[{"type":"BACKGROUND_R"},{"type":"BACKGROUND_G"},{"type":"BACKGROUND_B"},{"type":"BACKGROUND_A"},{"type":"RECOLORABLE","color":"rgb(0, 0, 0)"}]}},{"type":"VECTOR","id":"MAAkOhltISs","version":4,"files":[{"url":"_assets/media/b65c1c9c3fed0ecc180a3886cd7dbb1a.svg","urlDenied":false,"width":49,"height":50,"watermarked":false,"spritesheet":false,"recoloring":{},"quality":"SCREEN_2X","mimeType":"image/svg+xml"}],"spritesheetMetadata":{"spritesWide":3,"spritesHigh":2,"fullyRecolorable":true,"layers":[{"type":"BACKGROUND_R"},{"type":"BACKGROUND_G"},{"type":"BACKGROUND_B"},{"type":"BACKGROUND_A"},{"type":"RECOLORABLE","color":"rgb(0, 0, 0)"}]}},{"type":"VECTOR","id":"MAAkOhltISs","version":4,"files":[{"url":"_assets/media/b65c1c9c3fed0ecc180a3886cd7dbb1a.svg","urlDenied":false,"width":49,"height":50,"watermarked":false,"spritesheet":false,"recoloring":{},"quality":"SCREEN_3X","mimeType":"image/svg+xml"}],"spritesheetMetadata":{"spritesWide":3,"spritesHigh":2,"fullyRecolorable":true,"layers":[{"type":"BACKGROUND_R"},{"type":"BACKGROUND_G"},{"type":"BACKGROUND_B"},{"type":"BACKGROUND_A"},{"type":"RECOLORABLE","color":"rgb(0, 0, 0)"}]}},{"type":"RASTER","id":"MAHRtObb_Yk","version":1,"files":[{"url":"_assets/media/789e5c5408a1d8f967a2f695a622e7ca.png","urlDenied":false,"width":565,"height":800,"watermarked":false,"spritesheet":false,"recoloring":{},"quality":"SCREEN","mimeType":"image/png"}]},{"type":"RASTER","id":"MAHRtObb_Yk","version":1,"files":[{"url":"_assets/media/9024e75312065bc2d2b2e7a596758572.png","urlDenied":false,"width":1131,"height":1600,"watermarked":false,"spritesheet":false,"recoloring":{},"quality":"SCREEN_2X","mimeType":"image/png"}]},{"type":"RASTER","id":"MAHRtObb_Yk","version":1,"files":[{"url":"_assets/media/949b7ef0ed021ee26770460c79882f89.png","urlDenied":false,"width":1697,"height":2400,"watermarked":false,"spritesheet":false,"recoloring":{},"quality":"SCREEN_3X","mimeType":"image/png"}]},{"type":"RASTER","id":"MAHRsHqotwg","version":1,"files":[{"url":"_assets/media/ff5a9913a395656b6814978e854ab6b1.jpg","urlDenied":false,"width":402,"height":497,"watermarked":false,"spritesheet":false,"recoloring":{},"quality":"SCREEN","mimeType":"image/jpeg"}]},{"type":"RASTER","id":"MAHRsHqotwg","version":1,"files":[{"url":"_assets/media/ff5a9913a395656b6814978e854ab6b1.jpg","urlDenied":false,"width":402,"height":497,"watermarked":false,"spritesheet":false,"recoloring":{},"quality":"SCREEN_2X","mimeType":"image/jpeg"}]},{"type":"RASTER","id":"MAHRsHqotwg","version":1,"files":[{"url":"_assets/media/ff5a9913a395656b6814978e854ab6b1.jpg","urlDenied":false,"width":402,"height":497,"watermarked":false,"spritesheet":false,"recoloring":{},"quality":"SCREEN_3X","mimeType":"image/jpeg"}]}],"F":[{"id":"VAHRtGlxjHU","files":[{"url":"_assets/video/800f8c059d8778efedd7eae10d3a85bb.mp4","width":1080,"height":608,"container":"A","watermarked":false,"frameRate":30.0}],"dashVideoFiles":[{"A?":"A","x":302025,"y":"avc1.64001e","z":{"A":0,"B":838},"0":{"A":839,"B":1538},"1":"_assets/video/1c729130ecddfee5970bf0e3d13ef56e.mp4","A":640,"B":360,"C":false,"D":"A","E":30.0},{"A?":"A","x":876535,"y":"avc1.64001f","z":{"A":0,"B":839},"0":{"A":840,"B":1635},"1":"_assets/video/962a6230406b09bdc9dc18fa642ac3d4.mp4","A":1080,"B":608,"C":false,"D":"A","E":30.0},{"A?":"A","x":89758,"y":"avc1.640014","z":{"A":0,"B":838},"0":{"A":839,"B":1634},"1":"_assets/video/0634dc7880de4ea1a04509dc59625dde.mp4","A":320,"B":180,"C":false,"D":"A","E":30.0}],"dashAudioFiles":[{"A?":"B","x":195219,"y":"mp4a.40.2","z":{"A":0,"B":767},"0":{"A":768,"B":1563},"1":"_assets/video/1f7eda6a51fe4e1cd483a35c509ec909.M4A"}],"width":1080,"height":608,"durationSeconds":125.858159,"posterframes":[{"A":"_assets/video/91abccc4c39d9e1bc68737b672952c62.jpg"}],"videoTimelines":[{"A":256,"B":144,"G":30,"C":5,"D":6,"E":1.0,"F":"_assets/video/de5b769b1ab686c952ff36b380c69037.jpg"},{"A":256,"B":144,"G":30,"C":5,"D":6,"E":1.0,"F":"_assets/video/aa4529c7e6d4a347d8ed5fe4d82bd2e7.jpg"},{"A":256,"B":144,"G":30,"C":5,"D":6,"E":1.0,"F":"_assets/video/f803b9796bb6c1a03c56b0a1a1a12be5.jpg"},{"A":256,"B":144,"G":30,"C":5,"D":6,"E":1.0,"F":"_assets/video/9b24275461f9ec9c63fe82df1070883c.jpg"},{"A":256,"B":144,"G":6,"C":5,"D":6,"E":1.0,"F":"_assets/video/5049a186ff4d67b2c42660486094d7f7.jpg"},{"A":256,"B":144,"G":0,"C":4,"D":1,"E":1.0,"F":"_assets/video/6aef225618c5746dbc56bba4f03222e3.jpg"}],"contentType":"VIDEO","hlsManifestUrl":"_assets/video/d02265802562676378432dd4d246d21a.m3u","modifiers":[]}],"G":[],"H":[],"S":[],"K":{"A":"YAFdJsSpokU-0","B":"#060606","C":"#ffffff"},"Q":{"A":false,"B":true,"M":true},"R":false,"W":false,"U":true,"V":true,"X":false,"Y":{"A":false}},"ui":{"N":false,"A":true,"B":"A","C":false,"D":false,"H":false,"K":"A","J":false,"P":false}}');
-                window['flags'] = JSON.parse('{"64d09158":true,"4675fd09":true,"9e7217ba":true,"4073adf":true,"77a59a5b":false,"978ce15d":150000.0,"de7ef84c":true,"4815eb32":true,"9854ac9f":true,"a5f31b0e":true,"1684b2d1":true,"a59560d3":600000.0,"7c939d70":true,"8679f7b1":true,"4b968126":false,"73edcb53":true}');
-                window['cmsg'] = window['cmsg'] || {
-                    locale: "en",
-                    strings: {}
-                };
-            }
-            )();
-        </script>
-        <script crossorigin="anonymous" src="_assets/90140f15bdce138a.runtime.js" defer integrity="sha512-rHdSJItZkbQHpCI2Vr+nsCrv9zvCWGINrk2be++U3Cxhz4k9vi3dyM2razQ6Hj4ImGjvUGOC/npFLrdE9XZLdQ==" nonce="83eed0ff-ec50-4c6b-97dc-3ac9b1abef1e"></script>
-        <script crossorigin="anonymous" src="_assets/85e595197bb78173.s4le6a.vendor.js" defer integrity="sha512-xRPQmKS1/HEJyCTmLIb3+Xrmks6BAFeK4H/ARiYolKOahlR/F+Nr/ewR7cm3GEKYWniJa/BT5cGwN0gboTQDqA==" nonce="83eed0ff-ec50-4c6b-97dc-3ac9b1abef1e"></script>
-        <script crossorigin="anonymous" src="_assets/5b9d39d011ce8497.vendor.js" defer integrity="sha512-KfIFBmRKxyUTzLhz1S+gMCRVknyjSGpfxIVwJYjDJD+D97swvWMosmPAKH47qN+lvhI/G80dzaKe22n4hf+g4g==" nonce="83eed0ff-ec50-4c6b-97dc-3ac9b1abef1e"></script>
-        <script crossorigin="anonymous" src="_assets/f2c9c2439464f905.strings.js" integrity="sha512-GfrUHzcG/Ez3GmNBpQnckFAO2w4FuenqY9aoJXvpOb8P4SV5wJZP1w2KQvR26z8V+snD5lCu3TqITCB4bzezYQ==" nonce="83eed0ff-ec50-4c6b-97dc-3ac9b1abef1e"></script>
-        <script crossorigin="anonymous" src="_assets/3cfc504a0216a88b.en.js" integrity="sha512-SbPcYghqJ33wysj49WQPkAFwCq4uZDXPYsvbaLOaEbjP18LjN/tlp/ceHZXkHpacIWjyvB3G6HwxucWj8BuXdA==" nonce="83eed0ff-ec50-4c6b-97dc-3ac9b1abef1e"></script>
-        <script crossorigin="anonymous" src="_assets/db93fe4dc54edd08.js" defer integrity="sha512-tUBw8kuC0J8Y+/JusAD6Ed8yg5SI/hVJJcHd+jDg9pq7j/Ie0rJFxQJqbT2UQ8KxYygbFURKmO6q10AKENwvUQ==" nonce="83eed0ff-ec50-4c6b-97dc-3ac9b1abef1e"></script>
-    </body>
+  /* ---------- NAV ---------- */
+  nav{
+    position:fixed;top:0;left:0;right:0;z-index:100;
+    background:rgba(255,255,255,0.88);
+    backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--line);
+  }
+  .nav-inner{
+    max-width:1080px;margin:0 auto;padding:0 32px;
+    height:72px;display:flex;align-items:center;justify-content:space-between;
+  }
+  .nav-name{
+    font-family:'Fraunces',serif;font-weight:600;font-size:1.05rem;
+  }
+  .nav-links{display:flex;gap:36px;list-style:none;margin:0;padding:0;}
+  .nav-links a{
+    font-size:0.82rem;font-family:'IBM Plex Mono',monospace;
+    letter-spacing:0.05em;text-transform:uppercase;color:var(--ink-soft);
+    transition:color .2s ease;
+  }
+  .nav-links a:hover{color:var(--rust);}
+  .nav-toggle{display:none;background:none;border:none;cursor:pointer;padding:8px;}
+  .nav-toggle span{display:block;width:22px;height:2px;background:var(--ink);margin:5px 0;}
+
+  /* ---------- HERO ---------- */
+  #home{
+    padding-top:170px;
+    padding-bottom:80px;
+    position:relative;
+    overflow:hidden;
+  }
+  .eyebrow{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:0.8rem;letter-spacing:0.12em;text-transform:uppercase;
+    color:var(--rust);
+    display:flex;align-items:center;gap:10px;margin-bottom:22px;
+  }
+  .eyebrow .curve-mark{width:22px;height:14px;flex-shrink:0;}
+  .hero-grid{
+    display:grid;grid-template-columns:1.15fr 0.85fr;gap:64px;align-items:center;
+  }
+  .hero-title{
+    font-size:clamp(2.3rem,4.6vw,3.6rem);
+    max-width:11.5ch;
+  }
+  .hero-title em{
+    font-style:italic;color:var(--deep);
+  }
+  .hero-sub{
+    margin-top:26px;max-width:52ch;color:var(--ink-soft);font-size:1.06rem;
+  }
+  .hero-cta{margin-top:38px;display:flex;gap:16px;flex-wrap:wrap;}
+  .btn{
+    display:inline-flex;align-items:center;gap:8px;
+    padding:13px 26px;font-size:0.86rem;font-weight:600;
+    border-radius:var(--radius);cursor:pointer;
+    font-family:'Inter',sans-serif;
+    transition:transform .18s ease, background .18s ease, color .18s ease;
+    border:1px solid var(--deep);
+  }
+  .btn-solid{background:var(--deep);color:#fff;}
+  .btn-solid:hover{background:var(--deep-2);transform:translateY(-1px);}
+  .btn-ghost{background:transparent;color:var(--deep);}
+  .btn-ghost:hover{background:var(--deep);color:#fff;transform:translateY(-1px);}
+  .hero-visual{position:relative;}
+  .hero-visual svg{width:100%;height:auto;}
+
+  /* ---------- SECTION HEADERS ---------- */
+  .sec-head{max-width:640px;margin-bottom:56px;}
+  .sec-head h2{font-size:clamp(1.7rem,3vw,2.3rem);margin-top:14px;}
+  .sec-head p{color:var(--ink-soft);margin-top:16px;font-size:1.02rem;max-width:56ch;}
+
+  /* ---------- RESEARCH GRID ---------- */
+  .research-grid{
+    display:grid;grid-template-columns:repeat(3,1fr);gap:1px;
+    background:var(--line);border:1px solid var(--line);
+  }
+  .research-card{
+    background:var(--paper);padding:34px 30px;
+  }
+  .research-card .curve-mark{width:34px;height:22px;margin-bottom:20px;}
+  .research-card h3{font-size:1.06rem;font-weight:600;margin-bottom:10px;}
+  .research-card p{color:var(--ink-soft);font-size:0.92rem;margin:0;}
+
+  /* ---------- FEATURED PROJECT ---------- */
+  .feature{
+    display:grid;grid-template-columns:0.9fr 1.1fr;gap:60px;align-items:center;
+  }
+  .feature-stat{
+    background:var(--deep);color:#fff;padding:48px 40px;border-radius:var(--radius);
+  }
+  .feature-stat .num{
+    font-family:'Fraunces',serif;font-size:4.6rem;font-weight:600;color:#fff;line-height:1;
+  }
+  .feature-stat .num span{color:var(--rust-soft);}
+  .feature-stat .cap{
+    margin-top:14px;font-family:'IBM Plex Mono',monospace;font-size:0.82rem;
+    letter-spacing:0.03em;color:#CFE0DE;text-transform:uppercase;
+  }
+  .feature-stat .divider{height:1px;background:rgba(255,255,255,0.18);margin:28px 0;}
+  .feature-stat ul{margin:0;padding:0;list-style:none;}
+  .feature-stat li{
+    font-size:0.88rem;color:#D9E5E3;padding:7px 0 7px 18px;position:relative;
+  }
+  .feature-stat li::before{
+    content:"";position:absolute;left:0;top:15px;width:6px;height:1px;background:var(--rust-soft);
+  }
+  .feature-text h3{font-size:1.5rem;margin-bottom:16px;max-width:20ch;}
+  .feature-text p{color:var(--ink-soft);margin-bottom:14px;}
+  .feature-text .tag-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px;}
+  .tag{
+    font-family:'IBM Plex Mono',monospace;font-size:0.74rem;
+    padding:6px 12px;border:1px solid var(--line);color:var(--ink-soft);
+    border-radius:20px;
+  }
+
+  /* ---------- EXPERIENCE / EDU LAYOUT ---------- */
+  .exp-layout{display:grid;grid-template-columns:1.4fr 1fr;gap:70px;}
+  .timeline{position:relative;padding-left:28px;border-left:1px solid var(--line);}
+  .tl-item{position:relative;padding-bottom:52px;}
+  .tl-item:last-child{padding-bottom:0;}
+  .tl-item::before{
+    content:"";position:absolute;left:-33px;top:4px;width:9px;height:9px;
+    background:var(--rust);border-radius:50%;
+  }
+  .tl-date{
+    font-family:'IBM Plex Mono',monospace;font-size:0.78rem;color:var(--rust);
+    text-transform:uppercase;letter-spacing:0.04em;
+  }
+  .tl-item h3{font-size:1.15rem;margin-top:8px;}
+  .tl-item .role{color:var(--ink-soft);font-size:0.9rem;margin-top:2px;font-style:italic;}
+  .tl-item ul{margin:16px 0 0;padding-left:18px;color:var(--ink-soft);font-size:0.93rem;}
+  .tl-item li{margin-bottom:6px;}
+
+  .side-block{margin-bottom:48px;}
+  .side-block h4{
+    font-family:'IBM Plex Mono',monospace;font-size:0.78rem;letter-spacing:0.08em;
+    text-transform:uppercase;color:var(--rust);margin-bottom:18px;
+  }
+  .edu-item{margin-bottom:22px;}
+  .edu-item .deg{font-weight:600;font-size:0.98rem;}
+  .edu-item .school{color:var(--ink-soft);font-size:0.88rem;margin-top:3px;}
+  .edu-item .meta{
+    font-family:'IBM Plex Mono',monospace;font-size:0.78rem;color:var(--ink-soft);
+    margin-top:5px;
+  }
+  .skill-group{margin-bottom:20px;}
+  .skill-group .label{font-size:0.82rem;color:var(--ink-soft);margin-bottom:10px;}
+  .skill-tags{display:flex;flex-wrap:wrap;gap:7px;}
+  .skill-tags .tag{font-size:0.72rem;padding:5px 10px;}
+  .awards-list{list-style:none;margin:0;padding:0;}
+  .awards-list li{
+    font-size:0.9rem;color:var(--ink-soft);padding:10px 0;border-top:1px solid var(--line);
+  }
+  .awards-list li:first-child{border-top:none;}
+
+  /* ---------- PUBLICATIONS ---------- */
+  .pub-card{
+    border:1px solid var(--line);padding:36px;display:grid;
+    grid-template-columns:auto 1fr;gap:28px;align-items:start;
+  }
+  .pub-status{
+    font-family:'IBM Plex Mono',monospace;font-size:0.72rem;
+    background:var(--rust-soft);color:var(--rust);padding:6px 12px;
+    white-space:nowrap;border-radius:20px;text-transform:uppercase;letter-spacing:0.04em;
+  }
+  .pub-card h3{font-size:1.15rem;margin-bottom:10px;}
+  .pub-card p{color:var(--ink-soft);font-size:0.92rem;margin:0;}
+
+  /* ---------- CONTACT ---------- */
+  #contact{background:var(--deep);color:#fff;}
+  #contact .sec-head p{color:#B9D0CD;}
+  #contact .eyebrow{color:var(--rust-soft);}
+  .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;}
+  .contact-link{
+    display:flex;align-items:center;gap:16px;padding:22px 0;border-top:1px solid rgba(255,255,255,0.15);
+  }
+  .contact-link:last-child{border-bottom:1px solid rgba(255,255,255,0.15);}
+  .contact-link .icon{
+    width:38px;height:38px;border:1px solid rgba(255,255,255,0.3);border-radius:50%;
+    display:flex;align-items:center;justify-content:center;flex-shrink:0;
+  }
+  .contact-link .lbl{font-family:'IBM Plex Mono',monospace;font-size:0.72rem;color:#9FC0BC;text-transform:uppercase;letter-spacing:0.05em;}
+  .contact-link .val{font-size:1.02rem;margin-top:2px;}
+  footer{
+    text-align:center;padding:30px 0;font-size:0.78rem;color:#7FA29D;
+    font-family:'IBM Plex Mono',monospace;
+  }
+
+  /* ---------- REVEAL ---------- */
+  .reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease, transform .7s ease;}
+  .reveal.in{opacity:1;transform:translateY(0);}
+
+  /* ---------- RESPONSIVE ---------- */
+  @media (max-width:860px){
+    .nav-links{
+      position:absolute;top:72px;left:0;right:0;background:#fff;
+      flex-direction:column;gap:0;border-bottom:1px solid var(--line);
+      max-height:0;overflow:hidden;transition:max-height .25s ease;
+    }
+    .nav-links.open{max-height:320px;}
+    .nav-links a{padding:16px 32px;width:100%;border-top:1px solid var(--line);}
+    .nav-toggle{display:block;}
+    .hero-grid{grid-template-columns:1fr;}
+    .hero-visual{order:-1;max-width:280px;margin:0 auto 20px;}
+    .research-grid{grid-template-columns:1fr;}
+    .feature{grid-template-columns:1fr;}
+    .exp-layout{grid-template-columns:1fr;}
+    .contact-grid{grid-template-columns:1fr;}
+    .pub-card{grid-template-columns:1fr;}
+    section{padding:76px 0;}
+  }
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto;}
+    .reveal{transition:none;opacity:1;transform:none;}
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="#home" class="nav-name">Saeedeh Komasi</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#publications">Publications</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ================= HERO ================= -->
+<section id="home">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow">
+        <svg class="curve-mark" viewBox="0 0 22 14"><path d="M1 2 C 7 2, 8 12, 21 12" stroke="#B5541F" stroke-width="1.4" fill="none"/><path d="M1 12 C 7 12, 8 2, 21 2" stroke="#123B3D" stroke-width="1.4" fill="none"/></svg>
+        Petroleum Reservoir Engineer
+      </div>
+      <h1 class="hero-title">When the data doesn't add up, <em>I don't accept it</em> — I investigate.</h1>
+      <p class="hero-sub">I'm Saeedeh Komasi, a reservoir engineer working across geochemistry, special core analysis, and enhanced oil recovery. I'm most interested in the moment an experiment or a simulation disagrees with expectation — and in tracing that disagreement back to a reliable answer.</p>
+      <div class="hero-cta">
+        <a href="#research" class="btn btn-solid">View Research</a>
+        <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <svg viewBox="0 0 420 340" xmlns="http://www.w3.org/2000/svg">
+        <line x1="40" y1="30" x2="40" y2="300" stroke="#DDE3E1" stroke-width="1"/>
+        <line x1="40" y1="300" x2="400" y2="300" stroke="#DDE3E1" stroke-width="1"/>
+        <path d="M40 290 C 140 285, 200 260, 240 190 C 280 120, 320 60, 400 45" fill="none" stroke="#123B3D" stroke-width="2.4"/>
+        <path d="M40 45 C 120 60, 180 120, 230 190 C 270 250, 320 285, 400 292" fill="none" stroke="#B5541F" stroke-width="2.4"/>
+        <circle cx="235" cy="192" r="4.5" fill="#17212B"/>
+        <text x="245" y="188" font-family="IBM Plex Mono, monospace" font-size="11" fill="#4B5A63">crossover point</text>
+        <text x="40" y="318" font-family="IBM Plex Mono, monospace" font-size="11" fill="#4B5A63">Water Saturation, Sw →</text>
+        <text x="14" y="30" font-family="IBM Plex Mono, monospace" font-size="11" fill="#4B5A63" transform="rotate(-90 14 30)" text-anchor="end">kr →</text>
+        <text x="55" y="55" font-family="IBM Plex Mono, monospace" font-size="11" fill="#123B3D">k_ro</text>
+        <text x="55" y="292" font-family="IBM Plex Mono, monospace" font-size="11" fill="#B5541F">k_rw</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ================= RESEARCH INTERESTS ================= -->
+<section id="research" class="alt">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="eyebrow"><svg class="curve-mark" viewBox="0 0 22 14"><path d="M1 2 C 7 2, 8 12, 21 12" stroke="#B5541F" stroke-width="1.4" fill="none"/><path d="M1 12 C 7 12, 8 2, 21 2" stroke="#123B3D" stroke-width="1.4" fill="none"/></svg>Research Focus</div>
+      <h2>Reservoir behavior, from pore to field scale</h2>
+      <p>My work sits at the intersection of laboratory measurement, geochemical modeling, and reservoir simulation — using each to check and correct the others.</p>
+    </div>
+    <div class="research-grid reveal">
+      <div class="research-card">
+        <svg class="curve-mark" viewBox="0 0 34 22"><path d="M2 3 C 11 3, 12 19, 32 19" stroke="#B5541F" stroke-width="1.6" fill="none"/></svg>
+        <h3>Reservoir Souring &amp; Scale Management</h3>
+        <p>Injection-water compatibility studies to reduce carbonate and sulfate scale risk in mature waterfloods.</p>
+      </div>
+      <div class="research-card">
+        <svg class="curve-mark" viewBox="0 0 34 22"><path d="M2 19 C 11 19, 12 3, 32 3" stroke="#123B3D" stroke-width="1.6" fill="none"/></svg>
+        <h3>Chemical &amp; Low-Salinity EOR</h3>
+        <p>Surfactant and brine-engineering mechanisms for incremental recovery in carbonate reservoirs.</p>
+      </div>
+      <div class="research-card">
+        <svg class="curve-mark" viewBox="0 0 34 22"><circle cx="17" cy="11" r="8" stroke="#B5541F" stroke-width="1.6" fill="none"/><path d="M17 3 L17 11 L23 15" stroke="#B5541F" stroke-width="1.4" fill="none"/></svg>
+        <h3>Reservoir Geochemical Modeling</h3>
+        <p>Phreeqc- and OLI-based prediction of mineral precipitation from mixed formation and injected waters.</p>
+      </div>
+      <div class="research-card">
+        <svg class="curve-mark" viewBox="0 0 34 22"><path d="M2 3 C 11 3, 12 19, 32 19" stroke="#123B3D" stroke-width="1.6" fill="none"/><path d="M2 19 C 11 19, 12 3, 32 3" stroke="#B5541F" stroke-width="1.6" fill="none"/></svg>
+        <h3>Special Core Analysis (SCAL)</h3>
+        <p>Relative permeability and capillary pressure interpretation from centrifuge and imbibition data.</p>
+      </div>
+      <div class="research-card">
+        <svg class="curve-mark" viewBox="0 0 34 22"><rect x="3" y="12" width="5" height="8" fill="#B5541F"/><rect x="12" y="6" width="5" height="14" fill="#123B3D"/><rect x="21" y="9" width="5" height="11" fill="#B5541F"/></svg>
+        <h3>Reservoir Simulation &amp; History Matching</h3>
+        <p>Building and validating field-scale models against production, pressure, and lab-derived data.</p>
+      </div>
+      <div class="research-card">
+        <svg class="curve-mark" viewBox="0 0 34 22"><path d="M2 11 Q 9 3, 17 11 T 32 11" stroke="#123B3D" stroke-width="1.6" fill="none"/></svg>
+        <h3>Data-Driven Reservoir Management</h3>
+        <p>Combining simulation, experiment, and field history to question inconsistent or noisy datasets.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FEATURED PROJECT ================= -->
+<section id="featured">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="eyebrow"><svg class="curve-mark" viewBox="0 0 22 14"><path d="M1 2 C 7 2, 8 12, 21 12" stroke="#B5541F" stroke-width="1.4" fill="none"/><path d="M1 12 C 7 12, 8 2, 21 2" stroke="#123B3D" stroke-width="1.4" fill="none"/></svg>Featured Research</div>
+      <h2>A natural surfactant, tested against the reservoir's own chemistry</h2>
+    </div>
+    <div class="feature reveal">
+      <div class="feature-stat">
+        <div class="num">+30<span>%</span></div>
+        <div class="cap">Oil recovery factor vs. reference brine</div>
+        <div class="divider"></div>
+        <ul>
+          <li>Natural surfactant extracted and synthesized in-house</li>
+          <li>Salinity-resistant performance in a tight carbonate system</li>
+          <li>Benchmarked against low-salinity water and conventional surfactants</li>
+        </ul>
+      </div>
+      <div class="feature-text">
+        <h3>Synthesis and evaluation of a salinity-resistant natural surfactant</h3>
+        <p>For enhanced oil recovery from a tight carbonate reservoir, I designed and ran a complete set of spontaneous-imbibition experiments comparing a natural surfactant against low-salinity water and conventional surfactants.</p>
+        <p>Core samples, crude oil, and test solutions were prepared and evaluated end-to-end, then interpreted to identify which mechanisms were actually driving the improvement in recovery — not just that recovery improved.</p>
+        <div class="tag-row">
+          <span class="tag">Spontaneous Imbibition</span>
+          <span class="tag">Contact Angle</span>
+          <span class="tag">HPHT IFT</span>
+          <span class="tag">Tight Carbonate</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= EXPERIENCE / EDUCATION / SKILLS ================= -->
+<section id="experience" class="alt">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="eyebrow"><svg class="curve-mark" viewBox="0 0 22 14"><path d="M1 2 C 7 2, 8 12, 21 12" stroke="#B5541F" stroke-width="1.4" fill="none"/><path d="M1 12 C 7 12, 8 2, 21 2" stroke="#123B3D" stroke-width="1.4" fill="none"/></svg>Background</div>
+      <h2>Experience, education &amp; tools</h2>
+    </div>
+    <div class="exp-layout">
+      <div class="timeline reveal">
+        <div class="tl-item">
+          <div class="tl-date">2023 — 2026</div>
+          <h3>PetroVision Pasargad</h3>
+          <div class="role">Research &amp; Development Specialist</div>
+          <ul>
+            <li>Led reservoir studies to select suitable injection water and reduce scale-formation risk in an Iranian oil field</li>
+            <li>Evaluated water-injection scenarios and formation/seawater compatibility using Phreeqc and OLI</li>
+            <li>Interpreted relative permeability and capillary pressure data from centrifuge experiments, flagging unrealistic curves and noisy datasets</li>
+            <li>Authored technical reports documenting methodology and results</li>
+          </ul>
+        </div>
+        <div class="tl-item">
+          <div class="tl-date">2019 — 2022</div>
+          <h3>Institute of Enhanced Oil Recovery, IUST</h3>
+          <div class="role">Researcher</div>
+          <ul>
+            <li>Designed and executed spontaneous-imbibition experiments evaluating EOR performance in one of Iran's largest oil fields</li>
+            <li>Ran core cleaning, vacuum saturation, and aging processes to restore reservoir conditions on core samples</li>
+            <li>Analyzed laboratory results across multiple water samples and prepared technical reports</li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <div class="side-block reveal">
+          <h4>Education</h4>
+          <div class="edu-item">
+            <div class="deg">M.Sc. Petroleum Engineering</div>
+            <div class="school">Iran University of Science and Technology</div>
+            <div class="meta">2019–2022 · GPA 18.79/20 · Exceptional Talents Program</div>
+          </div>
+          <div class="edu-item">
+            <div class="deg">B.Sc. Petroleum Engineering</div>
+            <div class="school">Shiraz University</div>
+            <div class="meta">2015–2019 · GPA 17.44/20</div>
+          </div>
+        </div>
+        <div class="side-block reveal">
+          <h4>Honors</h4>
+          <ul class="awards-list">
+            <li>Admitted to M.Sc. via the Exceptional Talents Program, IUST</li>
+            <li>Ranked 2nd among M.Sc. Petroleum Engineering classmates</li>
+            <li>Top 15% of undergraduate entrants, Shiraz University</li>
+          </ul>
+        </div>
+        <div class="side-block reveal">
+          <h4>Tools &amp; Software</h4>
+          <div class="skill-group">
+            <div class="label">Simulation &amp; Modeling</div>
+            <div class="skill-tags">
+              <span class="tag">Eclipse E100</span>
+              <span class="tag">Pipesim</span>
+              <span class="tag">Phreeqc</span>
+              <span class="tag">Cydar</span>
+              <span class="tag">Matlab</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <div class="label">Laboratory &amp; Core Analysis</div>
+            <div class="skill-tags">
+              <span class="tag">Floviz</span>
+              <span class="tag">Pvti</span>
+              <span class="tag">Relative Permeability</span>
+              <span class="tag">Capillary Pressure</span>
+              <span class="tag">Contact Angle</span>
+              <span class="tag">HPHT IFT</span>
+              <span class="tag">Laboratory QC</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PUBLICATIONS ================= -->
+<section id="publications">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="eyebrow"><svg class="curve-mark" viewBox="0 0 22 14"><path d="M1 2 C 7 2, 8 12, 21 12" stroke="#B5541F" stroke-width="1.4" fill="none"/><path d="M1 12 C 7 12, 8 2, 21 2" stroke="#123B3D" stroke-width="1.4" fill="none"/></svg>Publications</div>
+      <h2>Writing in progress</h2>
+    </div>
+    <div class="pub-card reveal">
+      <span class="pub-status">Manuscript in preparation</span>
+      <div>
+        <h3>Synthesis and Evaluation of a Salinity-Resistant Natural Surfactant for Enhanced Oil Recovery from a Tight Carbonate Reservoir</h3>
+        <p>Based on the spontaneous-imbibition study above, this manuscript is being prepared for submission and covers the surfactant synthesis route, imbibition performance versus reference brines, and the mechanisms behind the recovery improvement.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="eyebrow"><svg class="curve-mark" viewBox="0 0 22 14"><path d="M1 2 C 7 2, 8 12, 21 12" stroke="#DDB89E" stroke-width="1.4" fill="none"/><path d="M1 12 C 7 12, 8 2, 21 2" stroke="#CFE0DE" stroke-width="1.4" fill="none"/></svg>Contact</div>
+      <h2>Let's talk about reservoirs</h2>
+      <p>I'm open to PhD and research opportunities in reservoir engineering, geochemistry, and EOR. References available upon request.</p>
+    </div>
+    <div class="contact-grid reveal">
+      <a href="mailto:komasisaeedeh@gmail.com" class="contact-link">
+        <div class="icon">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M3 5h18v14H3z" stroke="#fff" stroke-width="1.6"/><path d="M3 6l9 7 9-7" stroke="#fff" stroke-width="1.6"/></svg>
+        </div>
+        <div>
+          <div class="lbl">Email</div>
+          <div class="val">komasisaeedeh@gmail.com</div>
+        </div>
+      </a>
+      <a href="https://www.linkedin.com/in/saeedeh-komasi/" target="_blank" rel="noopener" class="contact-link">
+        <div class="icon">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M4 9h4v11H4zM6 3a2 2 0 100 4 2 2 0 000-4zM11 9h4v2s1.5-2.3 4.5-2.3S24 10 24 13.7V20h-4v-5.5c0-1.4-1-2.3-2.2-2.3S15 13 15 14.5V20h-4z" fill="#fff"/></svg>
+        </div>
+        <div>
+          <div class="lbl">LinkedIn</div>
+          <div class="val">saeedeh-komasi</div>
+        </div>
+      </a>
+    </div>
+  </div>
+  <footer>Saeedeh Komasi · Reservoir Engineering, Geochemistry &amp; EOR</footer>
+</section>
+
+<script>
+  // Mobile nav toggle
+  const navToggle = document.getElementById('navToggle');
+  const navLinks = document.getElementById('navLinks');
+  navToggle.addEventListener('click', () => navLinks.classList.toggle('open'));
+  navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navLinks.classList.remove('open')));
+
+  // Scroll reveal
+  const revealEls = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, { threshold: 0.12 });
+    revealEls.forEach(el => io.observe(el));
+  } else {
+    revealEls.forEach(el => el.classList.add('in'));
+  }
+</script>
+</body>
 </html>
