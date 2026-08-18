@@ -1535,3 +1535,408 @@ footer {
 .research-link:hover span {
     transform: translateX(5px);
 }
+/* =========================================
+   THESIS PAGE
+========================================= */
+
+.thesis-hero {
+    padding: 190px 0 120px;
+    background: var(--dark);
+    color: white;
+}
+
+.thesis-hero h1 {
+    max-width: 1050px;
+
+    font-size: clamp(50px, 7vw, 95px);
+
+    line-height: 0.95;
+
+    letter-spacing: -5px;
+
+    font-weight: 500;
+
+    margin-bottom: 45px;
+}
+
+.thesis-hero h1 span {
+    color: var(--accent);
+}
+
+.thesis-hero-text {
+    max-width: 700px;
+
+    color: #b6bfbc;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+
+    margin-bottom: 70px;
+}
+
+.thesis-meta {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 30px;
+
+    max-width: 950px;
+
+    border-top: 1px solid rgba(255,255,255,0.15);
+
+    padding-top: 25px;
+}
+
+.thesis-meta span,
+.thesis-meta strong {
+    display: block;
+}
+
+.thesis-meta span {
+    color: var(--accent);
+
+    font-size: 10px;
+
+    letter-spacing: 1.5px;
+
+    text-transform: uppercase;
+
+    margin-bottom: 8px;
+}
+
+.thesis-meta strong {
+    font-size: 13px;
+
+    font-weight: 500;
+
+    color: #c5cbc9;
+}
+
+
+/* =========================================
+   THESIS CONTENT
+========================================= */
+
+.thesis-content {
+    padding: 130px 0;
+
+    background: white;
+}
+
+.thesis-content-grid {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 100px;
+}
+
+.thesis-content h2 {
+    font-size: clamp(40px, 5vw, 65px);
+
+    line-height: 1;
+
+    letter-spacing: -3px;
+
+    font-weight: 500;
+}
+
+.thesis-content h2 span {
+    color: var(--accent-dark);
+}
+
+.thesis-text {
+    padding-top: 15px;
+}
+
+.thesis-text p {
+    color: var(--muted);
+
+    font-size: 17px;
+
+    margin-bottom: 25px;
+}
+
+
+/* =========================================
+   METHODOLOGY
+========================================= */
+
+.thesis-methodology {
+    padding: 130px 0;
+
+    background: var(--background);
+}
+
+.methodology-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 1px;
+
+    background: var(--border);
+
+    border: 1px solid var(--border);
+}
+
+.methodology-card {
+    background: var(--background);
+
+    min-height: 320px;
+
+    padding: 35px;
+}
+
+.methodology-card > span {
+    color: var(--accent-dark);
+
+    font-size: 12px;
+
+    font-weight: 700;
+}
+
+.methodology-card h3 {
+    font-size: 24px;
+
+    line-height: 1.1;
+
+    font-weight: 500;
+
+    margin: 90px 0 20px;
+}
+
+.methodology-card p {
+    color: var(--muted);
+
+    font-size: 13px;
+}
+
+
+/* =========================================
+   THESIS HIGHLIGHT
+========================================= */
+
+.thesis-highlight {
+    padding: 130px 0;
+
+    background: var(--dark);
+
+    color: white;
+}
+
+.thesis-highlight .section-container {
+    display: grid;
+
+    grid-template-columns: 0.5fr 1fr;
+
+    gap: 80px;
+
+    align-items: center;
+}
+
+.thesis-highlight-number {
+    font-size: clamp(130px, 17vw, 240px);
+
+    line-height: 0.75;
+
+    letter-spacing: -12px;
+
+    color: var(--accent);
+}
+
+.thesis-highlight h2 {
+    max-width: 700px;
+
+    font-size: clamp(40px, 5vw, 65px);
+
+    line-height: 1;
+
+    letter-spacing: -3px;
+
+    font-weight: 500;
+
+    margin-bottom: 30px;
+}
+
+.thesis-highlight p:not(.section-label) {
+    max-width: 600px;
+
+    color: #aeb7b4;
+
+    font-size: 16px;
+}
+
+
+/* =========================================
+   VARIABLES
+========================================= */
+
+.thesis-variables {
+    padding: 120px 0;
+
+    background: white;
+}
+
+.variable-list {
+    border-top: 1px solid var(--border);
+}
+
+.variable-list div {
+    display: grid;
+
+    grid-template-columns: 80px 1fr;
+
+    padding: 25px 0;
+
+    border-bottom: 1px solid var(--border);
+}
+
+.variable-list span {
+    color: var(--accent-dark);
+
+    font-size: 11px;
+}
+
+.variable-list strong {
+    font-size: 20px;
+
+    font-weight: 500;
+}
+
+
+/* =========================================
+   TOOLS
+========================================= */
+
+.thesis-tools {
+    padding: 90px 0;
+
+    background: #e9e7df;
+}
+
+.tool-row {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+}
+
+.tool-row span {
+    padding: 10px 16px;
+
+    border: 1px solid #c9c7c0;
+
+    border-radius: 30px;
+
+    font-size: 12px;
+
+    color: #5f6663;
+}
+
+
+/* =========================================
+   DOCUMENT
+========================================= */
+
+.thesis-document {
+    padding: 130px 0;
+
+    background: var(--background);
+}
+
+.thesis-document .section-container {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 80px;
+}
+
+.thesis-document h2 {
+    font-size: clamp(45px, 6vw, 75px);
+
+    line-height: 0.95;
+
+    letter-spacing: -3px;
+
+    font-weight: 500;
+
+    margin-bottom: 25px;
+}
+
+.thesis-document h2 span {
+    color: var(--accent-dark);
+}
+
+.thesis-document p:not(.section-label) {
+    max-width: 650px;
+
+    color: var(--muted);
+
+    font-size: 15px;
+}
+
+
+/* =========================================
+   THESIS RESPONSIVE
+========================================= */
+
+@media (max-width: 900px) {
+
+    .thesis-meta {
+        grid-template-columns: 1fr;
+    }
+
+    .thesis-content-grid {
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+    }
+
+    .methodology-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .thesis-highlight .section-container {
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+    }
+
+    .thesis-document .section-container {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .thesis-hero {
+        padding: 150px 0 90px;
+    }
+
+    .thesis-hero h1 {
+        letter-spacing: -3px;
+    }
+
+    .methodology-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .thesis-highlight-number {
+        font-size: 130px;
+    }
+
+    .variable-list div {
+        grid-template-columns: 55px 1fr;
+    }
+
+}
