@@ -982,3 +982,519 @@ footer {
     }
 
 }
+/* =========================================
+   RESEARCH PAGE
+========================================= */
+
+.research-hero {
+    padding: 190px 0 120px;
+    background: var(--dark);
+    color: white;
+}
+
+.research-hero h1 {
+    max-width: 1000px;
+
+    font-size: clamp(55px, 8vw, 105px);
+    line-height: 0.95;
+
+    letter-spacing: -5px;
+    font-weight: 500;
+
+    margin-bottom: 50px;
+}
+
+.research-hero h1 span {
+    color: var(--accent);
+}
+
+.research-intro {
+    max-width: 700px;
+
+    color: #b6bfbc;
+
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   RESEARCH PROJECT
+========================================= */
+
+.research-project {
+    padding: 120px 0;
+
+    background: var(--background);
+
+    border-bottom: 1px solid var(--border);
+}
+
+.project-dark {
+    background: var(--dark);
+    color: white;
+}
+
+.project-header {
+    display: grid;
+
+    grid-template-columns: 120px 1fr;
+
+    gap: 40px;
+
+    margin-bottom: 70px;
+}
+
+.project-number {
+    font-size: 14px;
+
+    color: var(--accent-dark);
+
+    font-weight: 700;
+
+    padding-top: 8px;
+}
+
+.project-type {
+    font-size: 11px;
+
+    letter-spacing: 2px;
+
+    color: var(--accent-dark);
+
+    font-weight: 700;
+
+    margin-bottom: 20px;
+}
+
+.project-header h2 {
+    max-width: 900px;
+
+    font-size: clamp(42px, 6vw, 75px);
+
+    line-height: 1;
+
+    letter-spacing: -3px;
+
+    font-weight: 500;
+}
+
+
+/* =========================================
+   PROJECT BODY
+========================================= */
+
+.project-body {
+    display: grid;
+
+    grid-template-columns: 1.2fr 0.8fr;
+
+    gap: 100px;
+
+    max-width: 1050px;
+
+    margin-left: 160px;
+}
+
+.project-overview h3,
+.project-methodology h3 {
+    font-size: 13px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1.5px;
+
+    color: var(--accent-dark);
+
+    margin-bottom: 18px;
+}
+
+.project-overview p {
+    max-width: 650px;
+
+    color: var(--muted);
+
+    font-size: 16px;
+
+    margin-bottom: 25px;
+}
+
+.project-dark .project-overview p {
+    color: #abb4b1;
+}
+
+.project-methodology ul {
+    list-style: none;
+}
+
+.project-methodology li {
+    padding: 12px 0;
+
+    border-bottom: 1px solid var(--border);
+
+    font-size: 14px;
+
+    color: #606865;
+}
+
+.project-dark .project-methodology li {
+    border-color: rgba(255,255,255,0.12);
+    color: #b7bfbc;
+}
+
+
+/* =========================================
+   PROJECT TOOLS
+========================================= */
+
+.project-tools {
+    margin-top: 70px;
+
+    margin-left: 160px;
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+}
+
+.project-tools span {
+    padding: 8px 14px;
+
+    border: 1px solid var(--border);
+
+    border-radius: 30px;
+
+    font-size: 11px;
+
+    color: var(--muted);
+}
+
+.project-dark .project-tools span {
+    border-color: rgba(255,255,255,0.18);
+
+    color: #b6bfbc;
+}
+
+
+/* =========================================
+   PROJECT RESULT
+========================================= */
+
+.project-result {
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: flex-start;
+}
+
+.result-number {
+    font-size: clamp(80px, 10vw, 150px);
+
+    line-height: 0.8;
+
+    letter-spacing: -8px;
+
+    color: var(--accent);
+}
+
+.result-label {
+    font-size: 14px;
+
+    color: #b7bfbc;
+
+    margin-top: 25px;
+
+    max-width: 200px;
+}
+
+.project-result p {
+    color: #7f8985;
+
+    font-size: 12px;
+
+    margin-top: 20px;
+}
+
+
+/* =========================================
+   PROJECT SUBHEADING
+========================================= */
+
+.project-subheading {
+    margin-top: 50px;
+}
+
+
+/* =========================================
+   THESIS
+========================================= */
+
+.thesis-section {
+    padding: 140px 0;
+
+    background: #e9e7df;
+}
+
+.thesis-section h2 {
+    max-width: 1000px;
+
+    font-size: clamp(45px, 6vw, 80px);
+
+    line-height: 1;
+
+    letter-spacing: -3px;
+
+    font-weight: 500;
+
+    margin-bottom: 80px;
+}
+
+.thesis-section h2 span {
+    color: var(--accent-dark);
+}
+
+.thesis-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 50px;
+
+    max-width: 1000px;
+}
+
+.thesis-grid h3 {
+    font-size: 13px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1.5px;
+
+    color: var(--accent-dark);
+
+    margin-bottom: 15px;
+}
+
+.thesis-grid p {
+    color: #5f6663;
+
+    font-size: 15px;
+}
+
+.thesis-tags {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 7px;
+}
+
+.thesis-tags span {
+    padding: 7px 11px;
+
+    background: rgba(255,255,255,0.55);
+
+    border-radius: 20px;
+
+    font-size: 11px;
+
+    color: #5e6562;
+}
+
+.thesis-stat {
+    margin-top: 90px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+}
+
+.thesis-stat strong {
+    font-size: 110px;
+
+    line-height: 0.8;
+
+    letter-spacing: -6px;
+
+    color: var(--dark);
+}
+
+.thesis-stat span {
+    max-width: 150px;
+
+    font-size: 13px;
+
+    color: #656c69;
+}
+
+
+/* =========================================
+   RESEARCH APPROACH
+========================================= */
+
+.research-approach {
+    padding: 130px 0;
+
+    background: var(--background);
+}
+
+.approach-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 1px;
+
+    background: var(--border);
+
+    border: 1px solid var(--border);
+}
+
+.approach-card {
+    background: var(--background);
+
+    padding: 40px;
+
+    min-height: 300px;
+}
+
+.approach-card > span {
+    color: var(--accent-dark);
+
+    font-size: 12px;
+
+    font-weight: 700;
+}
+
+.approach-card h3 {
+    font-size: 30px;
+
+    font-weight: 500;
+
+    margin: 80px 0 15px;
+}
+
+.approach-card p {
+    color: var(--muted);
+
+    font-size: 14px;
+}
+
+
+/* =========================================
+   RESEARCH CTA
+========================================= */
+
+.research-cta {
+    padding: 120px 0;
+
+    background: white;
+}
+
+.research-cta h2 {
+    font-size: clamp(50px, 7vw, 90px);
+
+    line-height: 0.95;
+
+    letter-spacing: -4px;
+
+    font-weight: 500;
+
+    margin-bottom: 45px;
+}
+
+.research-cta h2 span {
+    color: var(--muted);
+}
+
+
+/* =========================================
+   ACTIVE NAVIGATION
+========================================= */
+
+.nav-menu a.active {
+    color: var(--dark);
+
+    font-weight: 700;
+}
+
+
+/* =========================================
+   RESEARCH RESPONSIVE
+========================================= */
+
+@media (max-width: 900px) {
+
+    .project-body {
+        grid-template-columns: 1fr;
+
+        margin-left: 0;
+
+        gap: 50px;
+    }
+
+    .project-tools {
+        margin-left: 0;
+    }
+
+    .thesis-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .approach-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .research-hero {
+        padding: 150px 0 90px;
+    }
+
+    .research-hero h1 {
+        letter-spacing: -3px;
+    }
+
+    .project-header {
+        grid-template-columns: 1fr;
+
+        gap: 15px;
+
+        margin-bottom: 50px;
+    }
+
+    .research-project {
+        padding: 90px 0;
+    }
+
+    .project-header h2 {
+        letter-spacing: -2px;
+    }
+
+    .thesis-section {
+        padding: 90px 0;
+    }
+
+    .thesis-section h2 {
+        letter-spacing: -2px;
+    }
+
+    .thesis-stat {
+        margin-top: 60px;
+    }
+
+    .thesis-stat strong {
+        font-size: 80px;
+    }
+
+}
