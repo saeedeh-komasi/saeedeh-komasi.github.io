@@ -332,9 +332,9 @@ img {
 .video-wrapper video {
     width: 100%;
     display: block;
-
     aspect-ratio: 16 / 8;
     object-fit: cover;
+    filter: brightness(1.12) saturate(0.82);  
 }
 
 
