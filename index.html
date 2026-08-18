@@ -1,92 +1,114 @@
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Saeedeh Komasi | Petroleum Reservoir Engineer & Researcher</title>
+    <title>Saeedeh Komasi | Reservoir Engineer & Researcher</title>
 
     <meta name="description"
-          content="Saeedeh Komasi is a Petroleum Reservoir Engineer and Researcher specializing in Reservoir Engineering, Geochemistry, SCAL, and Enhanced Oil Recovery.">
+          content="Saeedeh Komasi — Reservoir Engineer and Researcher working across reservoir engineering, enhanced oil recovery, SCAL and experimental research.">
 
     <link rel="stylesheet" href="style.css">
+
 </head>
 
+
 <body>
+
 
 <!-- =========================
      NAVIGATION
 ========================= -->
 
 <header class="navbar">
+
     <div class="nav-container">
 
-        <a href="#home" class="logo">
+        <a href="index.html" class="logo">
             SK<span>.</span>
         </a>
 
+
         <nav class="nav-menu">
+
             <a href="#about">About</a>
+
             <a href="#research">Research</a>
-            <a href="#experience">Experience</a>
-            <a href="#education">Education</a>
-            <a href="#skills">Skills</a>
-            <a href="#references">References</a>
+
+            <a href="research.html">Projects</a>
+
+            <a href="assets/documents/Saeedeh_Komasi_CV.pdf"
+               target="_blank">
+                CV
+            </a>
+
             <a href="#contact">Contact</a>
+
         </nav>
 
-        <a href="assets/documents/Saeedeh_Komasi_CV.pdf"
-           class="nav-cv"
-           target="_blank">
-            CV
-        </a>
-
     </div>
+
 </header>
 
 
+
 <main>
+
 
 <!-- =========================
      HERO
 ========================= -->
 
-<section id="home" class="hero">
+<section class="hero">
 
     <div class="hero-container">
+
 
         <div class="hero-content">
 
             <p class="eyebrow">
-                PETROLEUM RESERVOIR ENGINEER & RESEARCHER
+                PETROLEUM ENGINEERING · RESEARCH
             </p>
+
 
             <h1>
+
                 Saeedeh<br>
-                <span>Komasi</span>
+
+                <span>Komasi.</span>
+
             </h1>
 
-            <p class="hero-description">
-                Exploring reservoir behavior through
-                experimentation, simulation, and data analysis.
+
+            <p class="hero-title">
+                Reservoir Engineer & Researcher
             </p>
 
-            <div class="hero-tags">
-                <span>Reservoir Engineering</span>
-                <span>SCAL</span>
-                <span>Enhanced Oil Recovery</span>
-                <span>Geochemistry</span>
-            </div>
 
-            <div class="hero-buttons">
+            <p class="hero-description">
 
-                <a href="#research" class="btn btn-primary">
-                    Explore My Research
+                I work across reservoir engineering,
+                enhanced oil recovery, SCAL and
+                experimental research.
+
+            </p>
+
+
+            <div class="hero-links">
+
+                <a href="research.html">
+                    Explore research
+                    <span>→</span>
                 </a>
 
                 <a href="assets/documents/Saeedeh_Komasi_CV.pdf"
-                   class="btn btn-secondary"
                    target="_blank">
-                    Download CV
+                    View CV
+                    <span>↗</span>
                 </a>
 
             </div>
@@ -94,282 +116,110 @@
         </div>
 
 
-        <!-- PROFILE IMAGE -->
-
         <div class="hero-image">
 
-            <div class="image-frame">
-
-                <!--
-                PLACE YOUR PHOTO HERE
-
-                File:
-                assets/images/profile.jpg
-                -->
-
-                <img src="assets/images/profile.jpg"
-                     alt="Saeedeh Komasi">
-
-            </div>
-
-            <div class="image-caption">
-                <span>Petroleum Engineering</span>
-                <span>Research & Development</span>
-            </div>
+            <img src="assets/images/profile.jpg"
+                 alt="Saeedeh Komasi">
 
         </div>
+
 
     </div>
 
 </section>
+
 
 
 <!-- =========================
-     INTRODUCTION VIDEO
+     INTRO VIDEO
 ========================= -->
 
-<section class="video-section">
+<section class="intro-video">
 
     <div class="section-container">
 
-        <div class="section-heading">
+        <div class="section-top">
 
-            <p class="section-label">
-                INTRODUCTION
-            </p>
+            <span>
+                01 / INTRODUCTION
+            </span>
 
-            <h2>
-                A little about<br>
-                <span>my research journey.</span>
-            </h2>
-
-        </div>
-
-
-        <div class="video-wrapper">
-
-            <!--
-            PLACE YOUR INTRODUCTION VIDEO HERE
-
-            File:
-            assets/video/introduction.mp4
-            -->
-
-            <video controls poster="assets/images/video-cover.jpg">
-
-                <source src="assets/video/introduction.mp4"
-                        type="video/mp4">
-
-                Your browser does not support the video tag.
-
-            </video>
+            <span>
+                About me
+            </span>
 
         </div>
+
+
+        <button class="video-trigger"
+                onclick="openVideo()">
+
+            <div class="video-placeholder">
+
+                <span class="play-button">
+                    ▶
+                </span>
+
+                <span>
+                    Watch introduction
+                </span>
+
+            </div>
+
+        </button>
 
     </div>
 
 </section>
+
 
 
 <!-- =========================
      ABOUT
 ========================= -->
 
-<section id="about" class="about section">
-
-    <div class="section-container about-grid">
-
-        <div>
-
-            <p class="section-label">
-                ABOUT ME
-            </p>
-
-            <h2>
-                Understanding <span>why,</span><br>
-                not just what.
-            </h2>
-
-        </div>
-
-
-        <div class="about-text">
-
-            <p>
-                I enjoy understanding the underlying causes of phenomena
-                and solving complex problems rather than simply performing
-                routine tasks.
-            </p>
-
-            <p>
-                When faced with inconsistent data or unexpected results,
-                I investigate the root causes and combine experimentation,
-                simulation, and data analysis to reach reliable conclusions.
-            </p>
-
-            <p>
-                My interests lie at the intersection of reservoir engineering,
-                reservoir geochemistry, special core analysis, and enhanced
-                oil recovery.
-            </p>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- =========================
-     RESEARCH INTERESTS
-========================= -->
-
-<section id="research" class="research section">
+<section id="about" class="about">
 
     <div class="section-container">
 
-        <div class="section-heading">
+        <div class="section-top">
 
-            <p class="section-label">
-                RESEARCH
-            </p>
+            <span>
+                02 / ABOUT
+            </span>
+
+        </div>
+
+
+        <div class="about-content">
 
             <h2>
-                Areas I am<br>
-                <span>interested in.</span>
+
+                Curious about why
+                things behave the way
+                they do.
+
             </h2>
 
-        </div>
 
-
-        <div class="research-grid">
-
-            <article class="research-card">
-
-                <span class="card-number">01</span>
-
-                <h3>
-                    Reservoir<br>
-                    Engineering
-                </h3>
+            <div class="about-text">
 
                 <p>
-                    Reservoir behavior, fluid–rock interaction,
-                    injection strategies, and reservoir studies.
+
+                    I enjoy understanding the underlying
+                    causes of phenomena rather than simply
+                    performing routine tasks.
+
                 </p>
-
-            </article>
-
-
-            <article class="research-card">
-
-                <span class="card-number">02</span>
-
-                <h3>
-                    Enhanced Oil<br>
-                    Recovery
-                </h3>
 
                 <p>
-                    Spontaneous imbibition, low-salinity water injection,
-                    surfactants, and EOR mechanisms.
+
+                    When faced with unexpected results or
+                    inconsistent data, I investigate the
+                    underlying causes through experimentation,
+                    simulation and data analysis.
+
                 </p>
-
-            </article>
-
-
-            <article class="research-card">
-
-                <span class="card-number">03</span>
-
-                <h3>
-                    Reservoir<br>
-                    Geochemistry
-                </h3>
-
-                <p>
-                    Water compatibility, mineral reactions,
-                    and carbonate and sulfate scale prediction.
-                </p>
-
-            </article>
-
-
-            <article class="research-card">
-
-                <span class="card-number">04</span>
-
-                <h3>
-                    Special Core<br>
-                    Analysis
-                </h3>
-
-                <p>
-                    Relative permeability, capillary pressure,
-                    wettability, and laboratory data quality control.
-                </p>
-
-            </article>
-
-        </div>
-
-    </div>
-
-</section>
-
-<div class="research-link-wrapper">
-
-    <a href="research.html" class="research-link">
-        View All Research
-        <span>→</span>
-    </a>
-
-</div>
-<!-- =========================
-     FEATURED RESEARCH PROJECT
-========================= -->
-
-<section class="featured-project section">
-
-    <div class="section-container">
-
-        <div class="featured-project-content">
-
-            <div>
-
-                <p class="section-label">
-                    FEATURED RESEARCH
-                </p>
-
-                <h2>
-                    Natural Surfactant<br>
-                    for <span>Enhanced Oil Recovery</span>
-                </h2>
-
-                <p class="project-description">
-                    Synthesis and evaluation of a salinity-resistant
-                    natural surfactant for enhanced oil recovery
-                    from a tight carbonate reservoir.
-                </p>
-
-                <div class="project-details">
-
-                    <div>
-                        <strong>Method</strong>
-                        <span>Spontaneous Imbibition</span>
-                    </div>
-
-                    <div>
-                        <strong>Reservoir</strong>
-                        <span>Tight Carbonate</span>
-                    </div>
-
-                    <div>
-                        <strong>Outcome</strong>
-                        <span>~30% Increase in Recovery</span>
-                    </div>
-
-                </div>
 
             </div>
 
@@ -380,52 +230,125 @@
 </section>
 
 
+
 <!-- =========================
-     EXPERIENCE
+     RESEARCH
 ========================= -->
 
-<section id="experience" class="experience section">
+<section id="research" class="research">
 
     <div class="section-container">
 
-        <div class="section-heading">
+        <div class="section-top">
 
-            <p class="section-label">
-                EXPERIENCE
-            </p>
+            <span>
+                03 / RESEARCH
+            </span>
 
-            <h2>
-                Research &<br>
-                <span>professional experience.</span>
-            </h2>
+            <span>
+                Areas of interest
+            </span>
 
         </div>
 
 
-        <div class="timeline">
+        <div class="research-list">
 
-            <div class="timeline-item">
+            <div class="research-item">
 
-                <div class="timeline-date">
-                    2023 — 2026
+                <span>01</span>
+
+                <h3>
+                    Reservoir Engineering
+                </h3>
+
+            </div>
+
+
+            <div class="research-item">
+
+                <span>02</span>
+
+                <h3>
+                    Enhanced Oil Recovery
+                </h3>
+
+            </div>
+
+
+            <div class="research-item">
+
+                <span>03</span>
+
+                <h3>
+                    SCAL & Core Analysis
+                </h3>
+
+            </div>
+
+
+            <div class="research-item">
+
+                <span>04</span>
+
+                <h3>
+                    Reservoir Geochemistry
+                </h3>
+
+            </div>
+
+        </div>
+
+
+        <div class="research-more">
+
+            <a href="research.html">
+                View research projects
+                <span>→</span>
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     SELECTED EXPERIENCE
+========================= -->
+
+<section class="experience">
+
+    <div class="section-container">
+
+        <div class="section-top">
+
+            <span>
+                04 / EXPERIENCE
+            </span>
+
+        </div>
+
+
+        <div class="experience-list">
+
+
+            <div class="experience-row">
+
+                <div class="experience-year">
+                    2023—2026
                 </div>
 
-                <div class="timeline-content">
+                <div>
 
                     <h3>
                         Research & Development Specialist
                     </h3>
 
-                    <h4>
-                        PetroVision Pasargad
-                    </h4>
-
                     <p>
-                        Conducted reservoir studies for injection-water
-                        selection and scale-risk assessment. Performed
-                        water–rock compatibility studies using PHREEQC
-                        and OLI and analyzed SCAL data including relative
-                        permeability and capillary pressure.
+                        PetroVision Pasargad
                     </p>
 
                 </div>
@@ -433,27 +356,20 @@
             </div>
 
 
-            <div class="timeline-item">
+            <div class="experience-row">
 
-                <div class="timeline-date">
-                    2019 — 2022
+                <div class="experience-year">
+                    2019—2022
                 </div>
 
-                <div class="timeline-content">
+                <div>
 
                     <h3>
                         Researcher
                     </h3>
 
-                    <h4>
-                        Institute of Enhanced Oil Recovery — IUST
-                    </h4>
-
                     <p>
-                        Contributed to laboratory investigations of
-                        enhanced oil recovery methods, including core
-                        preparation, cleaning, vacuum saturation,
-                        aging, and spontaneous imbibition experiments.
+                        Institute of Enhanced Oil Recovery · IUST
                     </p>
 
                 </div>
@@ -465,85 +381,61 @@
     </div>
 
 </section>
+
 
 
 <!-- =========================
      EDUCATION
 ========================= -->
 
-<section id="education" class="education section">
+<section class="education">
 
     <div class="section-container">
 
-        <div class="section-heading">
+        <div class="section-top">
 
-            <p class="section-label">
-                EDUCATION
-            </p>
-
-            <h2>
-                Academic<br>
-                <span>background.</span>
-            </h2>
+            <span>
+                05 / EDUCATION
+            </span>
 
         </div>
 
 
-        <div class="education-grid">
+        <div class="education-main">
 
-            <div class="education-card">
+            <div>
 
-                <span class="education-year">
-                    2019 — 2022
-                </span>
-
-                <h3>
-                    M.Sc. in Petroleum Engineering
-                </h3>
-
-                <p>
-                    Iran University of Science and Technology
+                <p class="degree">
+                    M.Sc. Petroleum Engineering
                 </p>
 
-                <div class="education-meta">
-                    <span>GPA 18.79 / 20</span>
-                    <span>Exceptional Talents Program</span>
-                </div>
+                <h3>
+                    Iran University of Science
+                    and Technology
+                </h3>
+
+                <span>
+                    2019—2022 · GPA 18.79/20
+                </span>
 
             </div>
 
 
-            <div class="education-card">
+            <div class="education-secondary">
 
-                <span class="education-year">
-                    2015 — 2019
-                </span>
+                <p class="degree">
+                    B.Sc. Petroleum Engineering
+                </p>
 
                 <h3>
-                    B.Sc. in Petroleum Engineering
-                </h3>
-
-                <p>
                     Shiraz University
-                </p>
+                </h3>
 
-                <div class="education-meta">
-                    <span>GPA 17.44 / 20</span>
-                    <span>Top 15% of entrants</span>
-                </div>
+                <span>
+                    2015—2019 · GPA 17.44/20
+                </span>
 
             </div>
-
-        </div>
-
-
-        <div class="achievement">
-
-            <span>ACADEMIC DISTINCTION</span>
-
-            <strong>
-                Ranked 2nd among M.Sc. Petroleum Engineering classmates.
-            </strong>
 
         </div>
 
@@ -552,217 +444,55 @@
 </section>
 
 
-<!-- =========================
-     SKILLS
-========================= -->
-
-<section id="skills" class="skills section">
-
-    <div class="section-container">
-
-        <div class="section-heading">
-
-            <p class="section-label">
-                SKILLS
-            </p>
-
-            <h2>
-                Tools &<br>
-                <span>technical expertise.</span>
-            </h2>
-
-        </div>
-
-
-        <div class="skills-list">
-
-            <div class="skill-group">
-
-                <h3>
-                    Reservoir Engineering
-                </h3>
-
-                <div class="skill-tags">
-                    <span>EOR</span>
-                    <span>SCAL</span>
-                    <span>Relative Permeability</span>
-                    <span>Capillary Pressure</span>
-                    <span>Spontaneous Imbibition</span>
-                </div>
-
-            </div>
-
-
-            <div class="skill-group">
-
-                <h3>
-                    Simulation & Geochemistry
-                </h3>
-
-                <div class="skill-tags">
-                    <span>PHREEQC</span>
-                    <span>OLI</span>
-                    <span>ECLIPSE E100</span>
-                    <span>MATLAB</span>
-                    <span>PVTi</span>
-                    <span>PIPESIM</span>
-                </div>
-
-            </div>
-
-
-            <div class="skill-group">
-
-                <h3>
-                    Laboratory & Analysis
-                </h3>
-
-                <div class="skill-tags">
-                    <span>Laboratory QC</span>
-                    <span>Contact Angle</span>
-                    <span>HPHT IFT</span>
-                    <span>CYDAR</span>
-                    <span>Floviz</span>
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-<!-- =========================
-     ACADEMIC REFERENCES
-========================= -->
-
-<section id="references" class="references section">
-    
-    <div class="section-container">
-
-        <div class="section-heading">
-
-            <p class="section-label">
-                ACADEMIC REFERENCES
-            </p>
-
-            <h2>
-                Academic<br>
-                <span>references.</span>
-            </h2>
-
-        </div>
-
-
-        <div class="references-grid">
-
-            <div class="reference-card">
-
-                <div class="reference-photo">
-                    <img src="assets/images/references/rohaldin-miri.jpg"
-                         alt="Dr. Rohaldin Miri">
-                </div>
-
-                <div class="reference-info">
-
-                    <h3>
-                        Dr. Rohaldin Miri
-                    </h3>
-
-                    <p>
-                        Associate Professor
-                    </p>
-
-                    <p>
-                        Iran University of Science and Technology
-                    </p>
-
-                    <a href="mailto:rohaldinmiri@iust.ac.ir">
-                        rohaldinmiri@iust.ac.ir
-                    </a>
-
-                </div>
-
-            </div>
-
-
-            <div class="reference-card">
-
-                <div class="reference-photo">
-                    <img src="assets/images/references/masoud-riazi.jpg"
-                         alt="Dr. Masoud Riazi">
-                </div>
-
-                <div class="reference-info">
-
-                    <h3>
-                        Dr. Masoud Riazi
-                    </h3>
-
-                    <p>
-                        Associate Professor
-                    </p>
-
-                    <p>
-                        Nazarbayev University
-                    </p>
-
-                    <a href="mailto:masoud.riazi@nu.edu.kz">
-                        masoud.riazi@nu.edu.kz
-                    </a>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
 
 <!-- =========================
      CONTACT
 ========================= -->
 
-<section id="contact" class="contact section">
+<section id="contact" class="contact">
 
-    <div class="section-container contact-container">
+    <div class="section-container">
 
-        <p class="section-label">
-            CONTACT
-        </p>
+        <div class="section-top">
+
+            <span>
+                06 / CONTACT
+            </span>
+
+        </div>
+
 
         <h2>
+
             Let's connect.
+
         </h2>
 
-        <p>
-            I am open to research opportunities,
-            academic collaborations, and reservoir
-            engineering positions.
-        </p>
-
-        <a href="mailto:komasisaeedeh@gmail.com"
-           class="email-link">
-            komasisaeedeh@gmail.com
-        </a>
 
         <div class="contact-links">
 
-<a href="https://www.linkedin.com/in/saeedeh-komasi/"
-   target="_blank"
-   rel="noopener noreferrer">
-    LinkedIn
-</a>
-
-            <a href="#" target="_blank">
-                Google Scholar
+            <a href="mailto:komasisaeedeh@gmail.com">
+                Email
+                <span>↗</span>
             </a>
 
-            <a href="https://github.com/saeedeh-komasi"
+
+            <a href="https://www.linkedin.com/in/saeedeh-komasi/"
+               target="_blank"
+               rel="noopener noreferrer">
+
+                LinkedIn
+                <span>↗</span>
+
+            </a>
+
+
+            <a href="assets/documents/Saeedeh_Komasi_CV.pdf"
                target="_blank">
-                GitHub
+
+                Curriculum Vitae
+                <span>↗</span>
+
             </a>
 
         </div>
@@ -771,7 +501,40 @@
 
 </section>
 
+
 </main>
+
+
+
+<!-- =========================
+     VIDEO MODAL
+========================= -->
+
+<div id="videoModal"
+     class="video-modal">
+
+    <div class="video-modal-inner">
+
+        <button class="video-close"
+                onclick="closeVideo()">
+
+            ×
+
+        </button>
+
+
+        <video controls
+               playsinline>
+
+            <source src="assets/video/introduction.mp4"
+                    type="video/mp4">
+
+        </video>
+
+    </div>
+
+</div>
+
 
 
 <!-- =========================
@@ -787,7 +550,7 @@
         </span>
 
         <span>
-            Petroleum Reservoir Engineer & Researcher
+            Reservoir Engineering · Research
         </span>
 
     </div>
@@ -795,5 +558,46 @@
 </footer>
 
 
+
+<script>
+
+function openVideo() {
+
+    document
+        .getElementById("videoModal")
+        .classList.add("show");
+
+}
+
+
+function closeVideo() {
+
+    const modal =
+        document.getElementById("videoModal");
+
+    const video =
+        modal.querySelector("video");
+
+    video.pause();
+
+    modal.classList.remove("show");
+
+}
+
+
+document
+    .getElementById("videoModal")
+    .addEventListener("click", function(event) {
+
+        if (event.target === this) {
+            closeVideo();
+        }
+
+    });
+
+</script>
+
+
 </body>
+
 </html>
