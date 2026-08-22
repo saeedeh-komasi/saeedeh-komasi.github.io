@@ -1050,3 +1050,246 @@ footer {
     }
 
 }
+/* ========================================
+   HERO PHOTO
+======================================== */
+
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 100px;
+    align-items: center;
+}
+
+.hero-photo img {
+    width: 100%;
+    aspect-ratio: 0.82;
+    object-fit: cover;
+    display: block;
+}
+
+.hero-photo p {
+    margin-top: 12px;
+    color: #8A8782;
+    font-size: 13px;
+}
+
+
+/* ========================================
+   INTRODUCTION VIDEO
+======================================== */
+
+.video-section {
+    display: grid;
+    grid-template-columns: 0.7fr 1.3fr;
+    gap: 70px;
+    align-items: center;
+}
+
+.video-information h2 {
+    font-size: 35px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.video-information p {
+    color: #8A8782;
+    font-size: 15px;
+    max-width: 400px;
+}
+
+.video-card {
+    background: none;
+    border: none;
+    color: inherit;
+    cursor: pointer;
+    text-align: left;
+}
+
+.video-card-image {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    background: #151515;
+}
+
+.video-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    filter: brightness(0.75);
+    transition: 0.3s ease;
+}
+
+.video-card:hover .video-card-image img {
+    filter: brightness(0.95);
+}
+
+.play-button {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+
+    width: 65px;
+    height: 65px;
+
+    border: 1px solid #F5F5F3;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 15px;
+}
+
+.video-card-title {
+    display: flex;
+    justify-content: space-between;
+
+    padding-top: 15px;
+
+    font-size: 13px;
+
+    color: #B8B6B1;
+}
+
+
+/* ========================================
+   CERTIFICATES
+======================================== */
+
+.certificates-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.certificate {
+    border: 1px solid #242424;
+    padding: 15px;
+    transition: 0.3s ease;
+}
+
+.certificate:hover {
+    border-color: #55534F;
+}
+
+.certificate img {
+    width: 100%;
+    aspect-ratio: 1 / 1.35;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.certificate span {
+    color: #8A8782;
+    font-size: 12px;
+}
+
+.certificate h3 {
+    margin-top: 8px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+/* ========================================
+   REFERENCES WITH PHOTOS
+======================================== */
+
+.references-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+}
+
+.reference {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 25px;
+    align-items: start;
+}
+
+.reference img {
+    width: 100px;
+    height: 120px;
+    object-fit: cover;
+    filter: grayscale(15%);
+}
+
+.reference h3 {
+    font-size: 21px;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+
+.reference p {
+    color: #B8B6B1;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.reference a {
+    color: #8A8782;
+    font-size: 13px;
+}
+
+
+/* ========================================
+   VIDEO MODAL
+======================================== */
+
+.video-modal {
+    position: fixed;
+
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.95);
+
+    display: none;
+
+    align-items: center;
+    justify-content: center;
+
+    z-index: 9999;
+
+    padding: 40px;
+}
+
+.video-modal.show {
+    display: flex;
+}
+
+.video-modal-inner {
+    position: relative;
+
+    width: min(1000px, 100%);
+}
+
+.video-modal video {
+    width: 100%;
+    max-height: 85vh;
+    display: block;
+}
+
+.video-close {
+    position: absolute;
+
+    right: 0;
+    top: -45px;
+
+    border: none;
+    background: none;
+
+    color: white;
+
+    font-size: 32px;
+
+    cursor: pointer;
+}
